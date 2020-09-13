@@ -1,5 +1,5 @@
 <template>
-<div>
+<div class="education">
     <p>
         Here is the education page
     </p>
