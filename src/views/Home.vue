@@ -4,14 +4,16 @@
 </div>
 </template>
 
-<script>
-// @ is an alias to /src
-import HomePage from '@/components/HomePage.vue'
+<script lang="ts">
+import {
+    defineComponent
+} from 'vue';
+import HomePage from '@/components/HomePage.vue'; // @ is an alias to /src
 
-export default {
+export default defineComponent({
     name: 'Home',
     components: {
-        HomePage
-    }
-}
+        HomePage,
+    },
+});
 </script>
