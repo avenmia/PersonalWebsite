@@ -5,7 +5,8 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "test:unit": "jest"
   },
   "dependencies": {
     "core-js": "^3.6.5",
@@ -22,7 +23,9 @@
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^7.0.0-0",
-    "vue-jest": "^3.0.6"
+    "jest": "^26.4.2",
+    "ts-jest": "^26.3.0",
+    "vue-jest": "^3.0.7"
   },
   "eslintConfig": {
     "root": true,
@@ -46,12 +49,16 @@
     ],
     "moduleFileExtensions": [
       "js",
+      "ts",
       "json",
       "vue"
     ],
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
     "transform": {
-      ".*\\.(vue)$": "vue-jest"
-    }
+      ".*\\.(vue)$": "vue-jest",
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testURL": "http://localhost/"
   },
   "browserslist": [
     "> 1%",
