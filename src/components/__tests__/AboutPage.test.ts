@@ -9,6 +9,8 @@ describe("AboutPage.vue", () => {
     
     test("Renders AboutPage", () => {
         const msg = "some message";
+        const wrapper = shallowMount(AboutPage)
 
+        fail();
     })
 })
