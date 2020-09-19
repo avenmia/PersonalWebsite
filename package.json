@@ -60,9 +60,12 @@
   "jest": {
     "collectCoverage": true,
     "collectCoverageFrom": [
-      "**/*.{js,vue}",
-      "!**/node_modules/**"
+      "**/*.{js,vue,ts}",
+      "!**/node_modules/**",
+      "!**/dist/**",
+      "!**/coverage/**"
     ],
+    "coverageDirectory": "./coverage",
     "moduleFileExtensions": [
       "js",
       "ts",
