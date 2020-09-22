@@ -1,6 +1,15 @@
 <template>
 <div class="home">
     <HomePage msg="Welcome to Mike's website" />
+    <section class="fullpage">
+        <h1>Section 1</h1>
+    </section>
+    <section class="fullpage">
+        <h1>Section 2</h1>
+    </section>
+    <section class="fullpage">
+        <h1>Section 3</h1>
+    </section>
 </div>
 </template>
 
@@ -17,3 +26,10 @@ export default defineComponent({
     },
 });
 </script>
+
+<style scoped>
+.fullpage {
+    height: 100vh;
+    width: 100%;
+}
+</style>
