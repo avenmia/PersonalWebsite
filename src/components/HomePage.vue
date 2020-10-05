@@ -1,9 +1,7 @@
 <template>
 <div class="homepage">
-    <h1>{{ msg }}</h1>
-    <p>
-        Welcome to Mike's webpage
-    </p>
+    <h1>Michael Avendano</h1>
+    <p>Software Engineer</p>
 </div>
 </template>
 
