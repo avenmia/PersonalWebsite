@@ -1,14 +1,13 @@
 <template>
 <div class="home">
-    <HomePage msg="Welcome to Mike's website" />
     <section class="fullpage">
-        <h1>Section 1</h1>
+        <HomePage msg="Welcome to Mike's website" />
     </section>
     <section class="fullpage">
-        <h1>Section 2</h1>
+        <AboutPage />
     </section>
     <section class="fullpage">
-        <h1>Section 3</h1>
+        <EducationPage />
     </section>
 </div>
 </template>
@@ -18,11 +17,15 @@ import {
     defineComponent
 } from 'vue';
 import HomePage from '@/components/HomePage.vue'; // @ is an alias to /src
+import AboutPage from '@/components/AboutPage.vue'; // @ is an alias to /src
+import EducationPage from '@/components/EducationPage.vue'; // @ is an alias to /src
 
 export default defineComponent({
     name: 'Home',
     components: {
         HomePage,
+        AboutPage,
+        EducationPage
     },
 });
 </script>
