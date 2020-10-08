@@ -2,6 +2,7 @@
 <div class="homepage">
     <h1>Michael Avendano</h1>
     <p>Software Engineer</p>
+    <p>{{version}}</p>
 </div>
 </template>
 
@@ -9,6 +10,7 @@
 export default {
     name: 'HomePage',
     props: {
+        version: String,
         msg: String
     }
 }
