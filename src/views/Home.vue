@@ -1,7 +1,7 @@
 <template>
 <div class="home">
     <section class="fullpage">
-        <HomePage msg="Welcome to Mike's website" v-bind:version="pjson.version" />
+        <HomePage msg="Welcome to Mike's website" v-bind:version="version" />
     </section>
     <section class="fullpage">
         <AboutPage />
@@ -30,6 +30,11 @@ export default defineComponent({
         AboutPage,
         EducationPage
     },
+    data() {
+        return {
+            version: pjson.version
+        }
+    }
 });
 </script>
 
