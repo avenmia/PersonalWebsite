@@ -1,8 +1,10 @@
 import { shallowMount } from "@vue/test-utils";
 import HomePage from "../HomePage.vue";
 
-describe("HomePage.vue", () => {
-  test("Renders HomePage", () => {
+describe("HomePage.vue", () => 
+{
+  test("Renders HomePage", () => 
+  {
     const version = "v0.1";
     const wrapper = shallowMount(HomePage, { propsData: { version } });
     expect(wrapper.html()).toContain(

@@ -1,20 +1,23 @@
 <template>
-<div class="home">
+  <div class="home">
     <section class="fullpage">
-        <HomePage msg="Welcome to Mike's website" v-bind:version="version" />
+      <HomePage
+        msg="Welcome to Mike's website"
+        :version="version"
+      />
     </section>
     <section class="fullpage">
-        <AboutPage />
+      <AboutPage />
     </section>
     <section class="fullpage">
-        <EducationPage />
+      <EducationPage />
     </section>
-</div>
+  </div>
 </template>
 
 <script lang="ts">
 import {
-    defineComponent
+  defineComponent
 } from 'vue';
 import HomePage from '@/components/HomePage.vue'; // @ is an alias to /src
 import AboutPage from '@/components/AboutPage.vue'; // @ is an alias to /src
@@ -24,17 +27,18 @@ import * as pjson from "../package.json"
 console.log(pjson.version);
 
 export default defineComponent({
-    name: 'Home',
-    components: {
-        HomePage,
-        AboutPage,
-        EducationPage
-    },
-    data() {
-        return {
-            version: pjson.version
-        }
+  name: 'Home',
+  components: {
+    HomePage,
+    AboutPage,
+    EducationPage
+  },
+  data() 
+  {
+    return {
+      version: pjson.version
     }
+  }
 });
 </script>
 

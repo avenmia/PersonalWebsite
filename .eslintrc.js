@@ -21,4 +21,7 @@ module.exports = {
       "allowSingleLine": true
     }]
   },
+  overrides: [{
+    "files": ["src/**/*.vue"]
+  }]
 };
