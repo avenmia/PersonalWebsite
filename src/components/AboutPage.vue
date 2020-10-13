@@ -1,15 +1,15 @@
 <template>
-<div class="about">
+  <div class="about">
     <p>
-        Here is the about page
+      Here is the about page
     </p>
-</div>
+  </div>
 </template>
 
 <script>
 export default {
-    name: 'AboutPage',
-    components: {}
+  name: 'AboutPage',
+  components: {}
 
 }
 </script>

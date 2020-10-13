@@ -1,16 +1,16 @@
 <template>
-<div class="education">
+  <div class="education">
     <p>
-        Here is the education page
+      Here is the education page
     </p>
-</div>
+  </div>
 </template>
 
 <script>
-export default {
-    name: 'EducationPage',
-    components: {}
-
+export default 
+{
+  name: 'EducationPage',
+  components: {}
 }
 </script>
 
