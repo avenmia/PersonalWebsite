@@ -1,19 +1,19 @@
 <template>
-<div class="homepage">
+  <div class="homepage">
     <h1>Michael Avendano</h1>
     <p>Software Engineer</p>
-    <p>{{version}}</p>
-</div>
+    <p>{{ version }}</p>
+  </div>
 </template>
 
 <script>
 export default {
-    name: 'HomePage',
-    props: {
-        version: String,
-        msg: String
-    }
-}
+  name: "HomePage",
+  props: {
+    version: String,
+    msg: String,
+  },
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
