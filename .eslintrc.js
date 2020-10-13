@@ -5,7 +5,6 @@ module.exports = {
   },
   extends: [
     'plugin:vue/vue3-recommended',
-    'airbnb-base',
   ],
   parserOptions: {
     ecmaVersion: 12,
@@ -17,5 +16,9 @@ module.exports = {
     '@typescript-eslint',
   ],
   rules: {
+    "indent": ["error", 2],
+    "brace-style": ["error", "allman", {
+      "allowSingleLine": true
+    }]
   },
 };
