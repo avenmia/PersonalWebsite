@@ -2,6 +2,7 @@
   <div class="homepage">
     <h1>Michael Avendano</h1>
     <p>Software Engineer</p>
+    <p>Welcome to Mike's website</p>
     <p>{{ version }}</p>
   </div>
 </template>
