@@ -9,6 +9,8 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
+        with:
+          persist-credentials: false
       
       - name: abort on errors
         run: set -e
