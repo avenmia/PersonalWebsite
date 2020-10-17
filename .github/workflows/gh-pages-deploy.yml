@@ -13,8 +13,14 @@ jobs:
       - name: abort on errors
         run: set -e
       
-      - name: Install vue cli
+      - name: Install dependencies
         run: npm install
 
       - name: build
-        run: npm run build && cd dist
+        run: npm run build
+      
+      - name: navigate to build output directory
+        run: cd dist
+      
+      - name: create a deploy repository
+        run: git init && git add -A && git commit -m 'deploy'
