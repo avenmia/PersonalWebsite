@@ -6,6 +6,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "test:unit": "jest",
+    "gh-pages-deploy": "node scripts/gh-pages-deploy.js",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
@@ -38,7 +39,8 @@
     "eslint-plugin-vue": "^7.0.1",
     "jest": "^26.4.2",
     "ts-jest": "^26.3.0",
-    "typescript": "~3.9.3"
+    "typescript": "~3.9.3",
+    "execa": "latest"
   },
   "eslintConfig": {
     "root": true,
