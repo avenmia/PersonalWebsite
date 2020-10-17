@@ -11,18 +11,18 @@ jobs:
         uses: actions/checkout@v2
         with:
           persist-credentials: false
+      - name: Install and build
+        run: |
+          npm install
+          npm run build
       
-      - name: abort on errors
-        run: set -e
-      
-      - name: Install dependencies
-        run: npm install
-
-      - name: build
-        run: npm run build
-      
-      - name: navigate to build output directory
-        run: cd dist
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@3.7.1
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: build
+          CLEAN: true
       
       - name: create a deploy repository
         run: git init && git add -A && git commit -m 'deploy'
