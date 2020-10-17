@@ -23,6 +23,3 @@ jobs:
           BRANCH: gh-pages
           FOLDER: dist
           CLEAN: true
-      
-      - name: create a deploy repository
-        run: git init && git add -A && git commit -m 'deploy'
