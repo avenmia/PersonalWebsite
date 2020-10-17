@@ -1,0 +1,17 @@
+name: Github Pages Deploy
+
+on: push
+
+jobs:
+  deploy:
+    name: Deploy site
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      
+      - name: abort on errors
+        run: set -e
+      
+      - name: build
+        run: npm run build && cd dist
