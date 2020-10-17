@@ -1,7 +1,7 @@
 <template>
   <div class="about">
     <p>
-      Here is the about page
+      Here is Mike's about page.
     </p>
   </div>
 </template>
