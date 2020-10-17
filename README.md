@@ -1,5 +1,8 @@
 # website
 
+### Published to
+https://avenmia.github.io/PersonalWebsite/
+
 ## Project setup
 ```
 npm install
