@@ -1,5 +1,5 @@
 <template>
-  <div class="homepage">
+  <div class="homesection">
     <h1>Michael Avendano</h1>
     <p>Software Engineer</p>
     <p>{{ version }}</p>
@@ -8,10 +8,9 @@
 
 <script>
 export default {
-  name: "HomePage",
+  name: "HomeSection",
   props: {
-    version: String,
-    msg: String,
+    version: String
   },
 };
 </script>

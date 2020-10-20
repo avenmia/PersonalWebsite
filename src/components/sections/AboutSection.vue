@@ -1,14 +1,14 @@
 <template>
-  <div class="about">
+  <div class="about section">
     <p>
-      Here is Mike's about page.
+      Here is Mike's about section.
     </p>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'AboutPage',
+  name: 'AboutSection',
   components: {}
 
 }

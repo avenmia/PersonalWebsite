@@ -1,12 +1,12 @@
 import { shallowMount } from "@vue/test-utils";
-import HomePage from "../HomePage.vue";
+import HomeSection from "../sections/HomeSection.vue";
 
-describe("HomePage.vue", () => 
+describe("HomeSection.vue", () => 
 {
-  test("Renders HomePage", () => 
+  test("Renders HomeSection", () => 
   {
     const version = "v0.1";
-    const wrapper = shallowMount(HomePage, { propsData: { version } });
+    const wrapper = shallowMount(HomeSection, { propsData: { version } });
     expect(wrapper.html()).toContain(
       `<h1>Michael Avendano</h1><p>Software Engineer</p><p>${version}</p>`
     );
