@@ -2,6 +2,11 @@
   <div class="homesection">
     <h1>Michael Avendano</h1>
     <p>Software Engineer</p>
+    <a href="https://www.linkedin.com/in/michael-avendano/">LinkedIn</a>
+    <br>
+    <a href="https://github.com/avenmia">Github</a>
+    <br>
+    <a href="https://stackoverflow.com/users/7331107/avenmia">Stack Overflow</a>
     <p>{{ version }}</p>
   </div>
 </template>
