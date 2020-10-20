@@ -1,13 +1,15 @@
 import Vue from "*.vue";
 import { shallowMount } from '@vue/test-utils'
-import AboutPage from "../AboutPage.vue"
+import AboutSection from "../sections/AboutSection.vue"
 
 
 
-describe("AboutPage.vue", () => {
+describe("AboutSection.vue", () => 
+{
     
-    test("Renders AboutPage", () => {
-        const wrapper = shallowMount(AboutPage);
-        expect(wrapper.html()).toContain('Here is the about page')
-    });
+  test("Renders AboutSection", () => 
+  {
+    const wrapper = shallowMount(AboutSection);
+    expect(wrapper.html()).toContain("Here is Mike's about section")
+  });
 })

@@ -1,16 +1,12 @@
 <template>
   <div class="home">
     <section class="fullpage">
-      <HomePage
-        msg="Welcome to Mike's website"
+      <HomeSection
         :version="version"
       />
     </section>
     <section class="fullpage">
-      <AboutPage />
-    </section>
-    <section class="fullpage">
-      <EducationPage />
+      <AboutSection />
     </section>
   </div>
 </template>
@@ -19,9 +15,8 @@
 import {
   defineComponent
 } from 'vue';
-import HomePage from '@/components/HomePage.vue'; // @ is an alias to /src
-import AboutPage from '@/components/AboutPage.vue'; // @ is an alias to /src
-import EducationPage from '@/components/EducationPage.vue'; // @ is an alias to /src
+import HomeSection from '@/components/sections/HomeSection.vue'; // @ is an alias to /src
+import AboutSection from '@/components/sections/AboutSection.vue'; // @ is an alias to /src
 import * as pjson from "../package.json"
 
 console.log(pjson.version);
@@ -29,9 +24,8 @@ console.log(pjson.version);
 export default defineComponent({
   name: 'Home',
   components: {
-    HomePage,
-    AboutPage,
-    EducationPage
+    HomeSection,
+    AboutSection
   },
   data() 
   {
