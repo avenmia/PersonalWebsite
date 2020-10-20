@@ -2,23 +2,25 @@
   <div class="homesection">
     <h1>Michael Avendano</h1>
     <p>Software Engineer</p>
-    <a href="https://www.linkedin.com/in/michael-avendano/">
-      <img
-        src="../../assets/linkedin.png"
-      >
-    </a>
-    <br>
-    <a href="https://github.com/avenmia">
-      <img
-        src="../../assets/github.png"
-      >
-    </a>
-    <br>
-    <a href="https://stackoverflow.com/users/7331107/avenmia">
-      <img
-        src="../../assets/stackoverflow.svg"
-      >
-    </a>
+    <div class="links">
+      <a href="https://www.linkedin.com/in/michael-avendano/">
+        <img
+          src="../../assets/linkedin.png"
+        >
+      </a>
+      <br>
+      <a href="https://github.com/avenmia">
+        <img
+          src="../../assets/github.png"
+        >
+      </a>
+      <br>
+      <a href="https://stackoverflow.com/users/7331107/avenmia">
+        <img
+          src="../../assets/stackoverflow.svg"
+        >
+      </a>
+    </div>
     <p>{{ version }}</p>
   </div>
 </template>
@@ -51,5 +53,10 @@ li {
 
 a {
     color: #42b983;
+    margin: 10vw;
+}
+
+.links {
+  display: inline-flex;
 }
 </style>
