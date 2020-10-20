@@ -1,5 +1,6 @@
 <template>
   <div class="homesection">
+    <div class="banner"></div>
     <h1>Michael Avendano</h1>
     <p>Software Engineer</p>
     <div class="links">
@@ -37,6 +38,19 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 
 <style scoped>
+
+.banner {
+  height: 50%;
+  width: 100%;
+  background-image: url("../../assets/self.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.homesection {
+  height: 100%;
+}
+
 h3 {
     margin: 40px 0 0;
 }
