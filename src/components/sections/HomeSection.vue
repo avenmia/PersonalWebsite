@@ -2,11 +2,23 @@
   <div class="homesection">
     <h1>Michael Avendano</h1>
     <p>Software Engineer</p>
-    <a href="https://www.linkedin.com/in/michael-avendano/">LinkedIn</a>
+    <a href="https://www.linkedin.com/in/michael-avendano/">
+      <img
+        src="../../assets/linkedin.png"
+      >
+    </a>
     <br>
-    <a href="https://github.com/avenmia">Github</a>
+    <a href="https://github.com/avenmia">
+      <img
+        src="../../assets/github.png"
+      >
+    </a>
     <br>
-    <a href="https://stackoverflow.com/users/7331107/avenmia">Stack Overflow</a>
+    <a href="https://stackoverflow.com/users/7331107/avenmia">
+      <img
+        src="../../assets/stackoverflow.svg"
+      >
+    </a>
     <p>{{ version }}</p>
   </div>
 </template>
