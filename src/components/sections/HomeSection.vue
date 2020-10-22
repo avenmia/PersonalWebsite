@@ -42,7 +42,7 @@ export default {
 .banner {
   height: 50%;
   width: 100%;
-  background-image: url("../../assets/self.jpg");
+  background-image: url("../../assets/1440x763ChiSkyline.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
