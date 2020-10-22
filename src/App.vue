@@ -1,6 +1,5 @@
 <template>
   <div class="home">
-    <div class="banner"></div>
     <section class="fullpage">
       <HomeSection
         :version="version"
@@ -49,17 +48,6 @@ export default defineComponent({
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: #2c3e50;
-}
-
-.banner {
-  height: 50%;
-  width: 100%;
-  max-width: 100%;
-  background-image: url("./assets/self.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  object-fit: fill;
-  margin: 0px;
 }
 
 #nav {
