@@ -72,5 +72,15 @@ a {
 
 .links {
   display: inline-flex;
+  background-color: #6D8886;
+  height: 100px;
+  border-radius: 25px;
+  justify-content: center;
+  align-items: center;
+}
+
+.links:nth-child()
+{
+  position: fixed;
 }
 </style>
