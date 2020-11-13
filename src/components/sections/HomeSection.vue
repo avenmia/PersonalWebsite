@@ -6,21 +6,15 @@
         <p>Software Engineer</p>
         <div class="links">
           <a href="https://www.linkedin.com/in/michael-avendano/">
-            <img
-              src="../../assets/linkedin.png"
-            >
+            <font-awesome-icon :icon="['fab', 'linkedin']" />
           </a>
           <br>
           <a href="https://github.com/avenmia">
-            <img
-              src="../../assets/github.png"
-            >
+            <font-awesome-icon :icon="['fab', 'github']" />
           </a>
           <br>
           <a href="https://stackoverflow.com/users/7331107/avenmia">
-            <img
-              src="../../assets/stackoverflow.svg"
-            >
+            <font-awesome-icon :icon="['fab', 'stack-overflow']" />
           </a>
         </div>
       </div>
@@ -30,11 +24,22 @@
 </template>
 
 <script>
+import { Vue } from 'vue';
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faUserSecret } from '@fortawesome/free-solid-svg-icons'
+import { faGithub, faLinkedin, faStackOverflow } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+
+library.add(faGithub, faLinkedin, faStackOverflow);
+
 export default {
   name: "HomeSection",
   props: {
     version: String
   },
+  components: {
+    FontAwesomeIcon
+  }
 };
 </script>
 
