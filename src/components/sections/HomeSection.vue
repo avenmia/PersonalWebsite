@@ -2,19 +2,19 @@
   <div class="home-section">
     <div class="home-container">
       <div class="home-container-section">
-        <h1>Michael Avendano</h1>
+        <h1 class="header">Michael Avendano</h1>
         <p>Software Engineer</p>
         <div class="links">
           <a href="https://www.linkedin.com/in/michael-avendano/">
-            <font-awesome-icon :icon="['fab', 'linkedin']" />
+            <font-awesome-icon size="2x" :icon="['fab', 'linkedin']" />
           </a>
           <br>
           <a href="https://github.com/avenmia">
-            <font-awesome-icon :icon="['fab', 'github']" />
+            <font-awesome-icon size="2x" :icon="['fab', 'github']" />
           </a>
           <br>
           <a href="https://stackoverflow.com/users/7331107/avenmia">
-            <font-awesome-icon :icon="['fab', 'stack-overflow']" />
+            <font-awesome-icon size="2x" :icon="['fab', 'stack-overflow']" />
           </a>
         </div>
       </div>
@@ -76,6 +76,20 @@ export default {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  padding-top: 50px;
+}
+
+.header {
+  font-size: 2em;
+}
+
+a {
+  color: #E9DACF;
+  padding: 20px;
+}
+
+a:visited {
+  color: #E9DACF;
 }
 
 </style>
