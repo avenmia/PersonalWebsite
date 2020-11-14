@@ -2,7 +2,9 @@
   <div class="home-section">
     <div class="home-container">
       <div class="home-container-section">
-        <h1 class="header">Michael Avendano</h1>
+        <h1 class="header">
+          Michael Avendano
+        </h1>
         <p>Software Engineer</p>
         <div class="links">
           <a href="https://www.linkedin.com/in/michael-avendano/">
@@ -19,7 +21,6 @@
         </div>
       </div>
     </div>
-    <p>{{ version }}</p>
   </div>
 </template>
 
@@ -34,9 +35,6 @@ library.add(faGithub, faLinkedin, faStackOverflow);
 
 export default {
   name: "HomeSection",
-  props: {
-    version: String
-  },
   components: {
     FontAwesomeIcon
   }

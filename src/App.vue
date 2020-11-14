@@ -8,6 +8,7 @@
     <section class="fullpage">
       <AboutSection />
     </section>
+    <p>{{ version }}</p>
   </div>
 </template>
 
