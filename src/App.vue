@@ -8,6 +8,9 @@
     <section class="fullpage">
       <AboutSection />
     </section>
+    <section class="fullpage">
+      <ResumeSection />
+    </section>
     <p>{{ version }}</p>
   </div>
 </template>
@@ -18,6 +21,7 @@ import {
 } from 'vue';
 import HomeSection from '@/components/sections/HomeSection.vue'; // @ is an alias to /src
 import AboutSection from '@/components/sections/AboutSection.vue'; // @ is an alias to /src
+import ResumeSection from '@/components/sections/ResumeSection.vue';
 import * as pjson from "../package.json"
 
 console.log(pjson.version);
@@ -26,7 +30,8 @@ export default defineComponent({
   name: 'Home',
   components: {
     HomeSection,
-    AboutSection
+    AboutSection,
+    ResumeSection
   },
   data() 
   {
