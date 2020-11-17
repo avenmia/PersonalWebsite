@@ -1,7 +1,7 @@
 <template>
   <div class="resume">
     <p>Resume</p>
-    <p>{{ resumeData }}</p>
+    <Skills :skills="Skills"/>
   </div>
 </template>
 
@@ -11,14 +11,15 @@ import {
   onMounted,
   reactive
 } from 'vue';
+import * as ResumeData from "../../assets/resumeData.json"
+import Skills from "@/components/resume/Skills.vue"
 
 
 
 export default defineComponent({
   name: 'Resume',
-  onRenderTriggered(e: any)
-  {
-    debugger;
+  components: {
+    Skills
   },
   setup()
   {
@@ -37,7 +38,22 @@ export default defineComponent({
     onMounted(async () => 
     {
       console.log(await fetchData());
+      console.log("On mounted")
+      console.log(ResumeData);
     })
+  },
+  data()
+  {
+    const {Skills, Education} = ResumeData?.Content;
+    const WorkExperience = ResumeData?.Content["Work Experience"];
+    const Associations = ResumeData?.Content["Professional Associations, Activities, Achievements"];
+    return {
+      Skills, Education, WorkExperience, Associations
+    }
+  },
+  onRenderTriggered(e: any)
+  {
+    debugger;
   },
 
 
