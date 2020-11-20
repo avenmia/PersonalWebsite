@@ -5,20 +5,20 @@
     <!-- <p>Coding Styles: {{ codeStyles }}</p> -->
     <p>Coding styles</p>
     <li v-for="style in codeStyles" :key="style">
-    {{ style }}
+      {{ style }}
     </li>
     <p>Technologies</p>
-    <li v-for="t in tech" :key="t">
-      {{ t }}
-     </li>
+    <li v-for="tech in technologies" :key="tech">
+      {{ tech }}
+    </li>
     <p>Version Control</p>
     <li v-for="vc in versionControl" :key="vc">
       {{ vc }}
-     </li>
+    </li>
     <p>Soft Skills</p>
     <li v-for="skill in softSkills" :key="skill">
-     {{ skill }}
-     </li>
+      {{ skill }}
+    </li>
   </div>  
 </template>
 
@@ -32,13 +32,11 @@ export default defineComponent({
   },
   data()
   {
-    console.log(`Data skills: %o`, this.skills)
-    const codeStyles = this.skills["Coding Styles"]
-    const tech = this.skills["Technologies"]
-    const versionControl = this.skills["Version Control"]
-    const softSkills = this.skills["Soft Skills"]
-    console.log("Coding Styles: %o", codeStyles)
-    return {codeStyles, tech, versionControl, softSkills};
+    return {
+      codingStyles: this.skills["Coding Styles"], 
+      technologies: this.skills["Technologies"], 
+      versionControl: this.skills["Version Control"],
+      softSkills: this.skills["Soft Skills"]};
   }
 });
 
