@@ -71,7 +71,7 @@ export default defineComponent({
 }
 
 .fullpage {
-    height: 100vh;
+    height: 200vh;
     width: 100%;
 }
 </style>

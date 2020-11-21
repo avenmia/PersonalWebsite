@@ -2,6 +2,9 @@
   <div class="resume">
     <p>Resume</p>
     <Skills :skills="Skills"/>
+    <WorkExperience :workExperience="WorkExperience" />
+    <Education :education="Education" />
+    <Associations :associations="Associations" />
   </div>
 </template>
 
@@ -13,13 +16,17 @@ import {
 } from 'vue';
 import * as ResumeData from "../../assets/resumeData.json"
 import Skills from "@/components/resume/Skills.vue"
-
-
+import WorkExperience from "@/components/resume/WorkExperience.vue"
+import Education from "@/components/resume/Education.vue"
+import Associations from "@/components/resume/Associations.vue"
 
 export default defineComponent({
   name: 'Resume',
   components: {
-    Skills
+    Skills, 
+    WorkExperience,
+    Education,
+    Associations
   },
   setup()
   {
@@ -34,13 +41,6 @@ export default defineComponent({
         }
       }).then(res => {return res.json()});
     }
-    
-    onMounted(async () => 
-    {
-      console.log(await fetchData());
-      console.log("On mounted")
-      console.log(ResumeData);
-    })
   },
   data()
   {

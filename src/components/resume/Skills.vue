@@ -1,6 +1,6 @@
 
 <template>
-  <div class="skills">
+  <div class="skills content-container">
     <h3>Skills</h3>
     <!-- <p>Coding Styles: {{ codeStyles }}</p> -->
     <p>Coding styles</p>
@@ -48,6 +48,11 @@ export default defineComponent({
 .skills
 {
 
+}
+
+.content-container 
+{
+  height: 100%;
 }
 
 </style>
