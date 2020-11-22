@@ -1,6 +1,5 @@
 <template>
   <div class="resume">
-    <p>Resume</p>
     <Skills :skills="Skills"/>
     <WorkExperience :workExperience="WorkExperience" />
     <Education :education="Education" />
