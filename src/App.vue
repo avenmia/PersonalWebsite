@@ -8,7 +8,7 @@
     <section class="fullpage">
       <AboutSection />
     </section>
-    <section class="fullpage">
+    <section class="fullpage-2x">
       <ResumeSection />
     </section>
     <p>{{ version }}</p>
@@ -71,6 +71,11 @@ export default defineComponent({
 }
 
 .fullpage {
+    height: 100vh;
+    width: 100%;
+}
+
+.fullpage-2x {
     height: 200vh;
     width: 100%;
 }
