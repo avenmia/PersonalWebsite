@@ -1,6 +1,6 @@
 
 <template>
-  <div class="work-experience">
+  <div id="work-experience-section" class="work-experience">
     <h3 class="header">Work Experience</h3>
     <hr>
     <div class="experience">

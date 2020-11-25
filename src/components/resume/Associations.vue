@@ -1,6 +1,6 @@
 
 <template>
-  <div class="associations">
+  <div id="associations-section" class="associations">
     <h3 class="header">Associations</h3>
     <hr>
     <div class="container">

@@ -1,11 +1,12 @@
 <template>
   <div class="home">
-    <section>
+    <Menu />
+    <section id="home-section">
       <HomeSection
         :version="version"
       />
     </section>
-    <section>
+    <section id="resume-section">
       <ResumeSection />
     </section>
     <p>{{ version }}</p>
@@ -16,6 +17,7 @@
 import {
   defineComponent
 } from 'vue';
+import Menu from "@/components/menu/Menu.vue";
 import HomeSection from '@/components/sections/HomeSection.vue'; // @ is an alias to /src
 import ResumeSection from '@/components/sections/ResumeSection.vue';
 import * as pjson from "../package.json"
@@ -26,7 +28,8 @@ export default defineComponent({
   name: 'Home',
   components: {
     HomeSection,
-    ResumeSection
+    ResumeSection,
+    Menu
   },
   data() 
   {
