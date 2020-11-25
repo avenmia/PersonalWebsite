@@ -1,11 +1,11 @@
 <template>
   <div class="home">
-    <section class="fullpage">
+    <section>
       <HomeSection
         :version="version"
       />
     </section>
-    <section class="fullpage-2x">
+    <section>
       <ResumeSection />
     </section>
     <p>{{ version }}</p>
@@ -70,16 +70,5 @@ html, body {
 
 #nav a.router-link-exact-active {
     color: #42b983;
-}
-
-.fullpage {
-    height: 100vh;
-    width: 100%;
-}
-
-.fullpage-2x {
-    height: 200vh;
-    width: 100%;
-    margin-bottom: 5%;
 }
 </style>
