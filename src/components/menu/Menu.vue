@@ -54,17 +54,20 @@ export default defineComponent({
     align-items: flex-start;
     margin-left: 2%;
     padding: 10px;
-    
   }
 
   a {
-    color: black;
+    color: #403A3C;
     text-decoration: none;
   }
 
+  a:hover {
+    color: black;
+    font-size: 14pt;
+  }
+
+
   .bars {
-    /* background-color: #403A3C; */
-    /* color: #E9DACF; */
     background-color: #E9DACF;
     color: #403A3C;
     border-radius: 5px;
