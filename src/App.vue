@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <Menu />
+    <Menu class="menu" />
     <section id="home-section">
       <HomeSection
         :version="version"
@@ -60,7 +60,11 @@ html, body {
   overflow-y: scroll;
 }
 
-
+.menu {
+  position: fixed;
+  top: 20px;
+  z-index: 100;
+}
 
 #nav {
     padding: 30px;
