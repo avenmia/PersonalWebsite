@@ -6,7 +6,7 @@
     <div class="experience">
       <div class="experience-container">
         <div class="experience-grid">
-          <div class="experience-image">
+          <div class="experience-pangaea-image">
           </div>
           <div class="experience-content">
             <div class="experience-title">
@@ -122,6 +122,15 @@ hr {
   grid-row-start: 1;
   grid-row-end: 2;
   background-image: url(https://i.imgur.com/lVYOYGP.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100px;
+}
+
+.experience-pangaea-image {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background-image: url("../../assets/pangaealogo.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100px;
