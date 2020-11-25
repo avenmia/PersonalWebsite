@@ -7,6 +7,7 @@
       />
     </section>
     <section id="resume-section">
+      <DownloadResume />
       <ResumeSection />
     </section>
     <p>{{ version }}</p>
@@ -20,6 +21,7 @@ import {
 import Menu from "@/components/menu/Menu.vue";
 import HomeSection from '@/components/sections/HomeSection.vue'; // @ is an alias to /src
 import ResumeSection from '@/components/sections/ResumeSection.vue';
+import DownloadResume from '@/components/resume/DownloadResume.vue'
 import * as pjson from "../package.json"
 
 console.log(pjson.version);
@@ -29,6 +31,7 @@ export default defineComponent({
   components: {
     HomeSection,
     ResumeSection,
+    DownloadResume,
     Menu
   },
   data() 
