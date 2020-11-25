@@ -5,9 +5,6 @@
         :version="version"
       />
     </section>
-    <section class="fullpage">
-      <AboutSection />
-    </section>
     <section class="fullpage-2x">
       <ResumeSection />
     </section>
@@ -20,7 +17,6 @@ import {
   defineComponent
 } from 'vue';
 import HomeSection from '@/components/sections/HomeSection.vue'; // @ is an alias to /src
-import AboutSection from '@/components/sections/AboutSection.vue'; // @ is an alias to /src
 import ResumeSection from '@/components/sections/ResumeSection.vue';
 import * as pjson from "../package.json"
 
@@ -30,7 +26,6 @@ export default defineComponent({
   name: 'Home',
   components: {
     HomeSection,
-    AboutSection,
     ResumeSection
   },
   data() 
@@ -78,5 +73,6 @@ export default defineComponent({
 .fullpage-2x {
     height: 200vh;
     width: 100%;
+    margin-bottom: 5%;
 }
 </style>
