@@ -1,6 +1,6 @@
 
 <template>
-  <div>
+  <div id="skills-section">
     <h3 class="header">Skills</h3>
     <hr>
     <div class="container">

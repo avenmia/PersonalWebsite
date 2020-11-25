@@ -1,6 +1,6 @@
 
 <template>
-  <div class="education">
+  <div id="education-section" class="education">
     <h3 class="header">Education</h3>
     <hr>
     <div class="container">
