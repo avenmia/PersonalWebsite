@@ -52,6 +52,13 @@ export default defineComponent({
     color: #E9DACF;
 }
 
+html, body {
+  background-color: #403A3C;
+  overflow-y: scroll;
+}
+
+
+
 #nav {
     padding: 30px;
 }
