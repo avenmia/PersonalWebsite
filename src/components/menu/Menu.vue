@@ -49,7 +49,12 @@ export default defineComponent({
     display: flex;
     flex-direction: column;
     background-color: #E9DACF;
+    border-radius: 5px;
     max-width: 150px;
+    align-items: flex-start;
+    margin-left: 2%;
+    padding: 10px;
+    
   }
 
   a {
@@ -63,17 +68,14 @@ export default defineComponent({
     background-color: #E9DACF;
     color: #403A3C;
     border-radius: 5px;
-    padding: 10px;
-    margin-left: 10%;
+    padding: 5px;
   }
 
   .times {
-    /* background-color: #403A3C; */
-    /* color: #E9DACF; */
+    align-self: flex-end;
     background-color: #E9DACF;
     color: #403A3C;
     border-radius: 5px;
     padding: 10px;
-    margin-left: 10%;
   }
 </style>
