@@ -2,6 +2,7 @@
   <div class="menu" v-if="isOpen">
     <font-awesome-icon class="times" size="2x" :icon="['fas', 'times']" @click="toggleMenu" />
     <a href="#home-section">Home</a>
+    <a href="#download-resume">Download Resume</a>
     <a href="#skills-section">Skills</a>
     <a href="#work-experience-section">Work Experience</a>
     <a href="#education-section">Education</a>
