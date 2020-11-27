@@ -169,6 +169,7 @@ hr {
     justify-content: center;
     text-align: start;
     margin: 5px;
+    margin-left: 0px;
   }
 
   .experience-content > *
@@ -178,7 +179,6 @@ hr {
 
   .experience-job-description
   {
-    display: none;
   }
 
   .experience-pangaea-image
