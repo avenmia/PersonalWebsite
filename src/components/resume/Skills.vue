@@ -135,19 +135,16 @@ hr {
 @media screen and (max-width: 550px)
 {
   .container {
-    align-items: center;
   }
   .grid {
     display: flex;
     flex-direction: column;
   }
   .skill-content {
-    align-self: center;
     margin: 5px;
   }
 
   .skill-header {
-    align-self: center;
     text-decoration-line: underline;
     font-weight: bold;
   }
