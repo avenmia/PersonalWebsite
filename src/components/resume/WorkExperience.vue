@@ -151,4 +151,45 @@ hr {
   text-align: start;
 }
 
+@media screen and (max-width: 550px)
+{
+  .experience-grid
+  {
+    display: flex;
+    flex-direction: column;    
+  }
+  
+  .experience-title
+  {
+    text-decoration-line: underline;
+  }
+
+  .experience-content
+  {
+    justify-content: center;
+    text-align: start;
+    margin: 5px;
+  }
+
+  .experience-content > *
+  {
+    margin: 5px;
+  }
+
+  .experience-job-description
+  {
+    display: none;
+  }
+
+  .experience-pangaea-image
+  {
+    display: none;
+  }
+
+  .experience-image
+  {
+    display: none;
+  }
+}
+
 </style>
