@@ -122,5 +122,20 @@ hr {
   grid-row-start: 2;
 }
 
+@media screen and (max-width: 550px)
+{
+  .grid
+  {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .key 
+  {
+    display: none;
+  }
+
+}
+
 
 </style>
