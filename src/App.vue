@@ -60,7 +60,6 @@ export default defineComponent({
 
 html, body {
   background-color: #403A3C;
-  overflow-y: scroll;
 }
 
 .menu {
