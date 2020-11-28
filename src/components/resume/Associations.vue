@@ -17,13 +17,12 @@ import { defineComponent } from "vue";
 export default defineComponent({
   name: "Associations",
   props: {
+    header: { type: String, default: () => "Associations"},
     associations: { type: Object, default: () => {} }
   },
-  data()
+  setup(props)
   {
-    console.log("Associations");
-    console.log(this.associations)
-    return this.associations;
+    return { props }
   }
 });
 

@@ -4,44 +4,24 @@
     <h3 class="header">Education</h3>
     <hr>
     <div class="container">
-      <div class="grid">
+      <div class="grid" v-for="ed in education" :key="ed">
         <div class="school">
-          University of Illinois at Chicago
+          {{ ed.School }}
         </div>
         <div class="key">
           Degree
         </div>
         <div class="value">
-          Bachelor of Science
+          {{ ed.Degree }}
         </div>
         <div class="key">
           Major
         </div>
         <div class="value">
-          Computer Science
+          {{ ed.Major }}
         </div>
         <div class="dates">
-          01-2017 to 12-2018
-        </div>
-      </div>
-      <div class="grid">
-        <div class="school">
-          University of Illinois at Chicago
-        </div>
-        <div class="key">
-          Degree
-        </div>
-        <div class="value">
-          Bachelor of Science
-        </div>
-        <div class="key">
-          Major
-        </div>
-        <div class="value">
-          Physics
-        </div>
-        <div class="dates">
-          08-2015 to 05-2015
+          {{ ed["Start Date"] }} to {{ ed["End Date"]}}
         </div>
       </div>
     </div>
@@ -51,16 +31,23 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 
+interface Education 
+{
+  School: String,
+  Degree: String,
+  Major: String,
+  "Start Date": String,
+  "End Date": String
+}
+
 export default defineComponent({
   name: "Education",
   props: {
-    education: { type: Object, default: () => {} }
+    education: { type: Object as () => Education[], default: () => {} }
   },
-  data()
+  setup(props)
   {
-    console.log("Education");
-    console.log(this.education)
-    return this.education;
+    return props;
   }
 });
 
