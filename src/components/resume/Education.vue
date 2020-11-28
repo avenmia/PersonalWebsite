@@ -95,6 +95,10 @@ hr {
   display: grid;
   grid-gap: 10px;
   grid-template-columns: 40% 30% 30%;
+  grid-template-areas: 
+    "header header header"
+    "key value value"
+    "key value value";
   margin-left: 15%;
   margin-right: 15%;
   margin-bottom: 2%;
@@ -105,6 +109,7 @@ hr {
 .school {
   font-size: 14pt;
   font-weight: bold;
+  grid-area: header;
 }
 
 .key {
@@ -124,17 +129,6 @@ hr {
 
 @media screen and (max-width: 550px)
 {
-  .grid
-  {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .key 
-  {
-    display: none;
-  }
-
 }
 
 
