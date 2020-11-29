@@ -4,44 +4,12 @@
     <h3 class="header">Skills</h3>
     <hr>
     <div class="container">
-      <div class="grid">
+      <div v-for="key in keys" :key="key" class="grid">
         <div class="skill-header">
-          Languages
+          {{ key }}
         </div>
-        <div class="skill-content" v-for="language in languages" :key="language">
-          {{ language }}
-        </div>
-      </div>
-      <div class="grid">
-        <div class="skill-header">
-          Technologies
-        </div>
-        <div class="skill-content" v-for="tech in technologies" :key="tech">
-          {{ tech }}
-        </div>
-      </div>
-      <div class="grid">
-        <div class="skill-header">
-          Coding Styles
-        </div>
-        <div class="skill-content" v-for="style in codingStyles" :key="style">
-          {{ style }}
-        </div>
-      </div>
-      <div class="grid">
-        <div class="skill-header">
-          Version Control
-        </div>
-        <div class="skill-content" v-for="vc in versionControl" :key="vc">
-          {{ vc }}
-        </div>
-      </div>
-      <div class="grid">
-        <div class="skill-header">
-          Soft Skills
-        </div>
-        <div class="skill-content" v-for="skill in softSkills" :key="skill">
-          {{ skill }}
+        <div class="skill-content" v-for="content in skills[key]" :key="content">
+          {{ content }}
         </div>
       </div>
     </div>
@@ -51,19 +19,29 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 
+interface Skills
+{
+  Languages: String[],
+  Technologies: String[],
+  "Coding Styles": String[],
+  "Version Control": String[],
+  "Soft Skills": String[]
+}
+
 export default defineComponent({
   name: "Skills",
   props: {
-    skills: { type: Object, default: () => {} }
+    skills: { type: Object as () => Skills, default: () => {} }
   },
-  data()
+  setup(props)
   {
     return {
-      languages: this.skills["Languages"],
-      codingStyles: this.skills["Coding Styles"], 
-      technologies: this.skills["Technologies"], 
-      versionControl: this.skills["Version Control"],
-      softSkills: this.skills["Soft Skills"]};
+      keys: Object.keys(props.skills),
+      languages: props.skills["Languages"],
+      codingStyles: props.skills["Coding Styles"], 
+      technologies: props.skills["Technologies"], 
+      versionControl: props.skills["Version Control"],
+      softSkills: props.skills["Soft Skills"]};
   }
 });
 
