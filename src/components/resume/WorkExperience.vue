@@ -121,8 +121,6 @@ hr {
   background-repeat: no-repeat;
   background-position: center;
   height: 100%;
-  max-width: 250px;
-
 }
 
 .experience-job {
