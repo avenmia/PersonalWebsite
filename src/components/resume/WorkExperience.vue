@@ -4,62 +4,32 @@
     <h3 class="header">Work Experience</h3>
     <hr>
     <div class="experience">
-      <div class="experience-container">
-        <div class="experience-grid">
-          <div class="experience-pangaea-image">
-          </div>
-          <div class="experience-content">
-            <div class="experience-title">
-              {{ workExperience[0].Employer }}
+      <div class="container">
+        <div v-for="work in workExperience" :key="work">
+          <div class="experience-grid">
+            <div v-if="containsPangaea(work)">
+              <div class="experience-pangaea-image"></div>
             </div>
-            <div class="experience-job">
-              {{ workExperience[0].Title }}
+            <div v-else>
+              <div class="experience-image"></div>
             </div>
-            <div class="experience-dates">
-            {{ workExperience[0]["Start Date"] }} - {{ workExperience[0]["End Date"]}}
-            </div>
-            <div class="experience-job-description">
-              <div v-for="description in workExperience[0].Description" :key="description">
-              {{ description }}
+            <div class="experience-content">
+              <div class="experience-title">
+                {{ work.Employer }}
+              </div>
+              <div class="experience-job">
+                {{ work.Title }}
+              </div>
+              <div class="experience-dates">
+                {{ work["Start Date"] }} - {{ work["End Date"] }}
+              </div>
+              <div class="experience-job-description">
+                <div v-for="description in work.Description" :key="description">
+                {{ description }}
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="experience-grid">
-          <div class="experience-image">
-          </div>
-          <div class="experience-content">
-            <div class="experience-title">
-              {{ workExperience[1].Employer }}
-            </div>
-            <div class="experience-job">
-              {{ workExperience[1].Title }}
-            </div>
-            <div class="experience-dates">
-            {{ workExperience[1]["Start Date"] }} - {{ workExperience[1]["End Date"]}}
-            </div>
-            <div class="experience-job-description" v-for="description in workExperience[1].Description" :key="description">
-              {{ description }}
-            </div>
-          </div>
-        </div>
-        <div class="experience-grid">
-          <div class="experience-image">
-          </div>
-          <div class="experience-content">
-            <div class="experience-title">
-              {{ workExperience[2].Employer }}
-            </div>
-            <div class="experience-job">
-              {{ workExperience[2].Title }}
-            </div>
-            <div class="experience-dates">
-            {{ workExperience[2]["Start Date"] }} - {{ workExperience[2]["End Date"]}}
-            </div>
-            <div class="experience-job-description" v-for="description in workExperience[2].Description" :key="description">
-              {{ description }}
-            </div>
-        </div>
         </div>
       </div>
     </div>
@@ -69,14 +39,31 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 
+interface WorkExperience
+{
+  Title: String,
+  Employer: String,
+  "Start Date": String,
+  "End Date": String,
+  Description: String[]
+}
+
 export default defineComponent({
   name: "WorkExperience",
   props: {
-    workExperience: { type: Object, default: () => {} }
+    workExperience: { type: Object as () => WorkExperience[], default: () => {} }
   },
-  data()
+  setup(props)
   {
-    return this.workExperience;
+    function containsPangaea(work: WorkExperience)
+    {
+      return work.Employer.includes("Pangaea");
+    }
+
+    return {
+      props,
+      containsPangaea
+    };
   }
 });
 
@@ -124,7 +111,7 @@ hr {
   background-image: url(https://i.imgur.com/lVYOYGP.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100px;
+  height: 100%;
 }
 
 .experience-pangaea-image {
@@ -133,7 +120,9 @@ hr {
   background-image: url("../../assets/pangaealogo.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100px;
+  height: 100%;
+  max-width: 250px;
+
 }
 
 .experience-job {
