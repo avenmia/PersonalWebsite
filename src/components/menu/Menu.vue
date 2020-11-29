@@ -14,7 +14,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
+import { defineComponent, ref } from "vue";
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
@@ -26,19 +26,15 @@ export default defineComponent({
   components: {
     FontAwesomeIcon
   },
-  data()
+  setup()
   {
+    const isOpen = ref(false);
+
+    const toggleMenu = (event: any) => event ? isOpen.value = !isOpen.value : isOpen.value;
+
     return {
-      isOpen: false
-    }
-  },
-  methods: {
-    toggleMenu(event:any)
-    {
-      if (event)
-      {
-        this.isOpen = !(this.isOpen);
-      }
+      isOpen,
+      toggleMenu
     }
   }
 })
