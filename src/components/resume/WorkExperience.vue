@@ -3,31 +3,27 @@
   <div id="work-experience-section" class="work-experience">
     <h3 class="header">Work Experience</h3>
     <hr>
-    <div class="experience">
-      <div class="container">
-        <div v-for="work in workExperience" :key="work">
-          <div class="experience-grid">
-            <div v-if="containsPangaea(work)">
-              <div class="experience-pangaea-image"></div>
+    <div class="container">
+      <div v-for="work in workExperience" :key="work">
+        <div class="experience-grid">
+          <div v-if="containsPangaea(work)">
+            <div class="experience-pangaea-image"></div>
+          </div>
+          <div v-else>
+            <div class="experience-image"></div>
+          </div>
+          <div class="experience-content">
+            <div class="experience-title">
+              {{ work.Employer }}
             </div>
-            <div v-else>
-              <div class="experience-image"></div>
+            <div class="experience-job">
+              {{ work.Title }}
             </div>
-            <div class="experience-content">
-              <div class="experience-title">
-                {{ work.Employer }}
-              </div>
-              <div class="experience-job">
-                {{ work.Title }}
-              </div>
-              <div class="experience-dates">
-                {{ work["Start Date"] }} - {{ work["End Date"] }}
-              </div>
-              <div class="experience-job-description">
-                <div v-for="description in work.Description" :key="description">
-                {{ description }}
-                </div>
-              </div>
+            <div class="experience-dates">
+              {{ work["Start Date"] }} - {{ work["End Date"] }}
+            </div>
+            <div v-for="description in work.Description" :key="description" class="job-description">
+              {{ description }}
             </div>
           </div>
         </div>
@@ -138,6 +134,11 @@ hr {
   text-align: start;
 }
 
+.job-description {
+  margin-top: 2px;
+  margin-bottom: 5px;
+}
+
 @media screen and (max-width: 550px)
 {
   .experience-grid
@@ -164,8 +165,9 @@ hr {
     margin: 5px;
   }
 
-  .experience-job-description
+  .job-description
   {
+    margin-bottom: 25px;
   }
 
   .experience-pangaea-image
