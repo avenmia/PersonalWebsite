@@ -1,16 +1,18 @@
 <template>
-  <div class="menu" v-if="isOpen">
-    <font-awesome-icon class="times" size="2x" :icon="['fas', 'times']" @click="toggleMenu" />
-    <a href="#home-section">Home</a>
-    <a href="#download-resume">Download Resume</a>
-    <a href="#skills-section">Skills</a>
-    <a href="#work-experience-section">Work Experience</a>
-    <a href="#education-section">Education</a>
-    <a href="#associations-section">Associations</a>
-  </div>
-  <div v-else>
-    <font-awesome-icon class="bars" size="2x" :icon="['fas', 'bars']" @click="toggleMenu" />
-  </div>
+  <transition appear :duration="5000">
+    <div class="menu" v-if="isOpen">
+      <font-awesome-icon class="times" size="2x" :icon="['fas', 'times']" @click="toggleMenu" />
+      <a href="#home-section">Home</a>
+      <a href="#download-resume">Download Resume</a>
+      <a href="#skills-section">Skills</a>
+      <a href="#work-experience-section">Work Experience</a>
+      <a href="#education-section">Education</a>
+      <a href="#associations-section">Associations</a>
+    </div>
+    <div v-else>
+      <font-awesome-icon class="bars" size="2x" :icon="['fas', 'bars']" @click="toggleMenu" />
+    </div>
+  </transition>
 </template>
 
 <script lang="ts">
@@ -43,25 +45,30 @@ export default defineComponent({
 
 <style scoped>
   .menu {
-    display: flex;
-    flex-direction: column;
-    background-color: #E9DACF;
-    border-radius: 5px;
-    max-width: 150px;
-    align-items: flex-start;
-    margin-left: 2%;
-    padding: 10px;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:#E9DACF;
+    overflow-x: hidden;
+    padding-top: 60px;
   }
 
-  a {
+  .menu a {
     color: #403A3C;
     text-decoration: none;
+    padding: 8px 8px 8px 32px;
+    font-size: 25px;
+    display: block;
+    transition: 0.3s;
   }
 
-  a:hover {
-    color: black;
-    font-size: 14pt;
+  .menu a:hover {
+    color: #E9DACF;
+    background-color: #403A3C;
   }
+
 
 
   .bars {
@@ -69,13 +76,20 @@ export default defineComponent({
     color: #403A3C;
     border-radius: 5px;
     padding: 5px;
+    z-index: 2;
+    position: absolute;
+    top: 10px;
+    left: 25px;
+    font-size: 36px;
+    margin-left: 10px;
   }
 
   .times {
-    align-self: flex-end;
-    background-color: #E9DACF;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
     color: #403A3C;
-    border-radius: 5px;
-    padding: 10px;
   }
 </style>

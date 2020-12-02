@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <Menu class="menu" />
+    <Menu />
     <section id="home-section">
       <HomeSection
         :version="version"
@@ -60,12 +60,6 @@ export default defineComponent({
 
 html, body {
   background-color: #403A3C;
-}
-
-.menu {
-  position: fixed;
-  top: 20px;
-  z-index: 100;
 }
 
 #nav {
