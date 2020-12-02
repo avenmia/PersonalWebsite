@@ -10,17 +10,19 @@
             <div class="experience-pangaea-image"></div>
           </div>
           <div v-else>
-            <div class="experience-image"></div>
+            <img :src="UICLogo" alt="uic-logo" />
           </div>
           <div class="experience-content">
             <div class="experience-title">
               {{ work.Employer }}
             </div>
-            <div class="experience-job">
-              {{ work.Title }}
-            </div>
-            <div class="experience-dates">
-              {{ work["Start Date"] }} - {{ work["End Date"] }}
+            <div class="job-dates-grid">
+              <div class="experience-job">
+                {{ work.Title }}
+              </div>
+              <div class="experience-dates">
+                {{ work["Start Date"] }} - {{ work["End Date"] }}
+              </div>
             </div>
             <div v-for="description in work.Description" :key="description" class="job-description">
               {{ description }}
@@ -34,6 +36,7 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
+import UICLogo from "@/assets/uicLogo.svg";
 
 interface WorkExperience
 {
@@ -58,7 +61,8 @@ export default defineComponent({
 
     return {
       props,
-      containsPangaea
+      containsPangaea,
+      UICLogo
     };
   }
 });
@@ -101,10 +105,17 @@ hr {
   margin-top: 1%;
 }
 
+.job-dates-grid
+{
+  display: grid;
+  grid-template-columns: 60% 40%;
+
+}
+
 .experience-image {
   grid-row-start: 1;
   grid-row-end: 2;
-  background-image: url(https://i.imgur.com/lVYOYGP.jpg);
+  background-image: url("../../assets/pangaeaLogo.png");
   background-repeat: no-repeat;
   background-position: center;
   height: 100%;
@@ -113,17 +124,17 @@ hr {
 .experience-pangaea-image {
   grid-row-start: 1;
   grid-row-end: 2;
-  background-image: url("../../assets/pangaealogo.png");
+  background-image: url("../../assets/pangaeaLogo.png");
   background-repeat: no-repeat;
   background-position: center;
   height: 100%;
 }
 
-.experience-job {
+.experience-title {
   font-size: 18pt;
 }
 
-.experience-title {
+.experience-job {
   font-size: 14pt;
   font-weight: bold;
 }
@@ -137,6 +148,10 @@ hr {
 .job-description {
   margin-top: 2px;
   margin-bottom: 5px;
+}
+
+img {
+  width: 150px;
 }
 
 @media screen and (max-width: 550px)
