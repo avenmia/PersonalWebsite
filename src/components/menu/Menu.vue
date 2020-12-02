@@ -1,5 +1,5 @@
 <template>
-  <transition appear :duration="5000">
+  <transition>
     <div class="menu" v-if="isOpen">
       <font-awesome-icon class="times" size="2x" :icon="['fas', 'times']" @click="toggleMenu" />
       <a href="#home-section">Home</a>
@@ -69,7 +69,18 @@ export default defineComponent({
     background-color: #403A3C;
   }
 
+.v-leave-active,
+.v-enter-active {
+  transition: 1s;
+}
 
+.v-enter-from {
+  transform: translate(-100%, 0);
+}
+
+.v-leave-to {
+  transform: translate(-100%, 0);
+}
 
   .bars {
     background-color: #E9DACF;
