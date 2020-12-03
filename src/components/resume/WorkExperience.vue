@@ -115,7 +115,7 @@ hr {
 .experience-image {
   grid-row-start: 1;
   grid-row-end: 2;
-  background-image: url("../../assets/pangaeaLogo.png");
+  background-image: url("../../assets/pangaealogo.png");
   background-repeat: no-repeat;
   background-position: center;
   height: 100%;
@@ -124,7 +124,7 @@ hr {
 .experience-pangaea-image {
   grid-row-start: 1;
   grid-row-end: 2;
-  background-image: url("../../assets/pangaeaLogo.png");
+  background-image: url("../../assets/pangaealogo.png");
   background-repeat: no-repeat;
   background-position: center;
   height: 100%;
