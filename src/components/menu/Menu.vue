@@ -56,7 +56,7 @@ export default defineComponent({
   }
 
   .menu a {
-    color: #403A3C;
+    color: #2B3349;
     text-decoration: none;
     padding: 8px 8px 8px 32px;
     font-size: 25px;
@@ -66,8 +66,8 @@ export default defineComponent({
   }
 
   .menu a:hover {
-    color: #E9DACF;
-    background-color: #403A3C;
+    color: #ffedd6;
+    background-color: #2B3349;
   }
 
 .v-leave-active,

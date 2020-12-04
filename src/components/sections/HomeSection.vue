@@ -87,6 +87,7 @@ export default {
   top: 10px;
   right: 15px;
   color: #ccc;
+  font-size: 8pt;
 }
 
 a {
