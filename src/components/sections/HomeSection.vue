@@ -67,7 +67,7 @@ export default {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: url("../../assets/max-bender-chicago.jpg");
+  background-image: url("../../assets/max-bender-1080x1920-contain.jpg");
   background-size: cover;
 }
 
@@ -99,4 +99,47 @@ a:visited {
   color: #ffedd6;
 }
 
+/* Small devices */
+@media screen and (max-width: 300px)
+{
+  .home-section {
+    background-image: url("../../assets/max-bender-653x280.jpg");
+  }
+}
+
+@media screen and (min-width: 300px)
+{
+  .home-section {
+    background-image: url("../../assets/max-bender-900x400.jpg");
+  }
+}
+
+@media screen and (min-width: 600px)
+{
+  .home-section {
+    background-image: url("../../assets/max-bender-1280x720.jpg")
+  }
+}
+
+@media screen and (min-width: 992px)
+{
+  .home-section {
+    background-image: url("../../assets/max-bender-960x768.jpg");
+  }
+}
+
+@media screen and (min-width: 1200px)
+{
+  .home-section {
+    background-image: url("../../assets/max-bender-1080x1920-contain.jpg");
+  }
+}
+
+/* Ultra wide monitors */
+@media screen and (min-width: 2000px)
+{
+  .home-section {
+    background-image: url("../../assets/max-bender-1080x1920-contain.jpg");
+  }
+}
 </style>
