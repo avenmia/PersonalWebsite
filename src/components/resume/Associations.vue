@@ -49,10 +49,12 @@ hr {
 
 .container {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  flex-direction: row;
+  justify-content: space-between;
   margin-top: 1%;
   margin-bottom: 1%;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 </style>
