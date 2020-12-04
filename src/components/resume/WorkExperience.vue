@@ -7,7 +7,7 @@
       <div v-for="work in workExperience" :key="work">
         <div class="experience-grid">
           <div v-if="containsPangaea(work)">
-            <div class="experience-pangaea-image"></div>
+            <img src="../../assets/pangaealogo.png" alt="pangaea-logo" />
           </div>
           <div v-else>
             <img :src="UICLogo" alt="uic-logo" />
@@ -56,6 +56,7 @@ export default defineComponent({
   {
     function containsPangaea(work: WorkExperience)
     {
+      console.log("Contains pangaea");
       return work.Employer.includes("Pangaea");
     }
 
@@ -109,25 +110,6 @@ hr {
 {
   display: grid;
   grid-template-columns: 60% 40%;
-
-}
-
-.experience-image {
-  grid-row-start: 1;
-  grid-row-end: 2;
-  background-image: url("../../assets/pangaealogo.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 100%;
-}
-
-.experience-pangaea-image {
-  grid-row-start: 1;
-  grid-row-end: 2;
-  background-image: url("../../assets/pangaealogo.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 100%;
 }
 
 .experience-title {
@@ -151,6 +133,7 @@ hr {
 }
 
 img {
+  margin-top: 25px;
   width: 150px;
 }
 
@@ -164,11 +147,6 @@ img {
   {
     display: flex;
     flex-direction: column;    
-  }
-  
-  .experience-title
-  {
-    text-decoration-line: underline;
   }
 
   .experience-content
@@ -189,15 +167,7 @@ img {
     margin-bottom: 25px;
   }
 
-  .experience-pangaea-image
-  {
-    display: none;
-  }
 
-  .experience-image
-  {
-    display: none;
-  }
 }
 
 </style>
