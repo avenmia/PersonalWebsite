@@ -21,6 +21,7 @@
         </div>
       </div>
     </div>
+    <p id="photo-credit"><span>Photo by <a href="https://unsplash.com/@maxwbender?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Max Bender</a> on <a href="https://unsplash.com/s/photos/chicago?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span></p>
   </div>
 </template>
 
@@ -55,7 +56,8 @@ export default {
   width: auto;
   height: 200px;
   border-radius: 10px;
-  padding: 5vh 10vw
+  padding: 5vh 10vw;
+  text-align: center;
   
 }
 
@@ -65,7 +67,7 @@ export default {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: url("../../assets/1440x763ChiSkyline.jpg");
+  background-image: url("../../assets/max-bender-chicago.jpg");
   background-size: cover;
 }
 
@@ -80,13 +82,20 @@ export default {
   font-size: 2em;
 }
 
+#photo-credit {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: #ccc;
+}
+
 a {
-  color: #E9DACF;
+  color: #ffedd6;
   padding: 20px;
 }
 
 a:visited {
-  color: #E9DACF;
+  color: #ffedd6;
 }
 
 </style>

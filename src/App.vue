@@ -50,15 +50,15 @@ export default defineComponent({
 }
 
 #app {
-    background-color: #403A3C;
+    background-color: #2B3349;
     font-family: Avenir, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: #E9DACF;
+    color: #ffedd6;
 }
 
 html, body {
-  background-color: #403A3C;
+  background-color: #2B3349;
 }
 
 #nav {
@@ -73,4 +73,5 @@ html, body {
 #nav a.router-link-exact-active {
     color: #42b983;
 }
+
 </style>

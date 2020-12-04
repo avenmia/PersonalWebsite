@@ -79,7 +79,7 @@ export default defineComponent({
   margin-bottom: 1px;
   margin-left: 15%;
   margin-right: 15%;
-  color: #E9DACF;
+  color: #ffedd6;
 }
 
 hr {
