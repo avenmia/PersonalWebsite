@@ -1,12 +1,14 @@
 <template>
-  <a href="./resume.pdf" download>
-    <button id="download-resume" class="download-resume">
-      <div class="container">
-        <font-awesome-icon class="download-icon" size="sm" :icon="['fas', 'download']" />
-        <span>Download Resume</span>
-      </div>
-    </button>
-  </a>
+  <div class="download-btn">
+    <a href="./resume.pdf" download>
+      <button id="download-resume" class="download-resume">
+        <div class="container">
+          <font-awesome-icon class="download-icon" size="sm" :icon="['fas', 'download']" />
+          <span>Download Resume</span>
+        </div>
+      </button>
+    </a>
+  </div>
 </template>
 
 <script lang="ts">
@@ -56,14 +58,18 @@ button:hover {
 .download-resume {
   padding: 10px;
   border-radius: 5px;
-  background-color: #E9DACF;
+  background-color: #ffedd6;
   color: #403A3C;
   border: none;
 }
 
 .download-icon {
   color: black;
-  background-color: #E9DACF;
+  background-color: #ffedd6;
   padding: 5px;
+}
+
+.download-btn {
+  text-align: center;
 }
 </style>
