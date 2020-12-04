@@ -154,6 +154,10 @@ img {
   width: 150px;
 }
 
+.container {
+  text-align: center;
+}
+
 @media screen and (max-width: 550px)
 {
   .experience-grid
