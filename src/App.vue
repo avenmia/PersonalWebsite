@@ -10,7 +10,7 @@
       <DownloadResume />
       <ResumeSection />
     </section>
-    <p>{{ version }}</p>
+    <p class="version">{{ version }}</p>
   </div>
 </template>
 
@@ -72,6 +72,10 @@ html, body {
 
 #nav a.router-link-exact-active {
     color: #42b983;
+}
+
+.class {
+  text-align: center;
 }
 
 </style>
