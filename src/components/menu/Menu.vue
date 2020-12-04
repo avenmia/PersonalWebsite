@@ -62,6 +62,7 @@ export default defineComponent({
     font-size: 25px;
     display: block;
     transition: 0.3s;
+    text-align: left;
   }
 
   .menu a:hover {
@@ -71,7 +72,7 @@ export default defineComponent({
 
 .v-leave-active,
 .v-enter-active {
-  transition: 1s;
+  transition: .5s;
 }
 
 .v-enter-from {
@@ -88,7 +89,7 @@ export default defineComponent({
     border-radius: 5px;
     padding: 5px;
     z-index: 2;
-    position: absolute;
+    position: fixed;
     top: 10px;
     left: 25px;
     font-size: 36px;
