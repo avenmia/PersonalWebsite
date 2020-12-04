@@ -74,7 +74,7 @@ html, body {
     color: #42b983;
 }
 
-.class {
+.version {
   text-align: center;
 }
 
