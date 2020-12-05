@@ -13,7 +13,7 @@
             <img :src="UICLogo" alt="uic-logo" />
           </div>
           <div class="experience-dates">
-            {{ work["Start Date"] }} - {{ work["End Date"] }}
+            {{ work["Start Date"] }} to {{ work["End Date"] }}
           </div>
           <div class="experience-content">
             <div class="experience-title">
