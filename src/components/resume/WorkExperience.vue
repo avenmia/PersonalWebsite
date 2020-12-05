@@ -12,6 +12,9 @@
           <div v-else>
             <img :src="UICLogo" alt="uic-logo" />
           </div>
+          <div class="experience-dates">
+            {{ work["Start Date"] }} - {{ work["End Date"] }}
+          </div>
           <div class="experience-content">
             <div class="experience-title">
               {{ work.Employer }}
@@ -19,9 +22,6 @@
             <div class="job-dates-grid">
               <div class="experience-job">
                 {{ work.Title }}
-              </div>
-              <div class="experience-dates">
-                {{ work["Start Date"] }} - {{ work["End Date"] }}
               </div>
             </div>
             <div v-for="description in work.Description" :key="description" class="job-description">
@@ -98,7 +98,7 @@ hr {
 .experience-grid
 {
   display: grid;
-  grid-template-columns: 33% 66%;
+  grid-template-columns: 66% 33%;
   grid-gap: 10px;  
   margin-left: 15%;
   margin-right: 15%;
@@ -122,13 +122,19 @@ hr {
 }
 
 .experience-content {
-  grid-column-start: 2;
-  align-self: start;
+  grid-column-start: 1;
+  grid-row: 1/3;
+  align-self: end;
   text-align: start;
 }
 
+.experience-dates {
+  grid-column-start: 2;
+  grid-row-start: 2;
+}
+
 .job-description {
-  margin-top: 2px;
+  margin-top: 10px;
   margin-bottom: 5px;
 }
 
