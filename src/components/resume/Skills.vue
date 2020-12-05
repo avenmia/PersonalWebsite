@@ -91,6 +91,7 @@ hr {
   justify-self: end;
   font-size: 16pt;
   align-self: start;
+  font-weight: bold;
 }
 
 .skill-content {
@@ -123,7 +124,6 @@ hr {
   }
 
   .skill-header {
-    text-decoration-line: underline;
     font-weight: bold;
   }
 }
