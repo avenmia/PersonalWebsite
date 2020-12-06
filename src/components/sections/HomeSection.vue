@@ -54,7 +54,7 @@ export default {
   background: black;
   order: 1;
   width: auto;
-  height: 300px;
+  height: 250px;
   border-radius: 10px;
   padding: 5vh 10vw;
   text-align: center;
@@ -73,9 +73,16 @@ export default {
 
 .links {
   display: inline-flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  padding-top: 50px;
+  width: 100%;
+}
+
+.links a:hover {
+  color: #2B3349;
+  background-color: #ffedd6;
+  border-radius: 50%;
+  padding: 10px;
 }
 
 .header {
@@ -92,7 +99,12 @@ export default {
 
 a {
   color: #ffedd6;
-  padding: 20px;
+  padding: 10px;
+}
+
+p {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
 }
 
 a:visited {
