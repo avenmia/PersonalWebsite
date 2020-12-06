@@ -99,6 +99,11 @@ export default defineComponent({
     width: 50px;
   }
 
+  .bars:hover {
+    height: 55px;
+    width: 55px;
+  }
+
   .times {
     position: absolute;
     top: 10px;
@@ -106,6 +111,10 @@ export default defineComponent({
     font-size: 36px;
     margin-left: 50px;
     color: #403A3C;
+  }
+
+  .times:hover {
+    font-size: 40px;
   }
 
   @media screen and (max-width: 1000px)
