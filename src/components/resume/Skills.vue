@@ -101,17 +101,27 @@ export default defineComponent({
 @media screen and (max-width: 550px)
 {
   .container {
+    line-height: 1.6em;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    margin-left: 5%;
   }
   .grid {
     display: flex;
     flex-direction: column;
   }
   .content {
-    margin: 5px;
+    margin-left: 0px; 
   }
 
   .page-header {
     font-weight: bold;
+  }
+
+  .header {
+    font-size: 1.667em;
+    line-height: 1.8em;
+    margin-top: .9em;
   }
 }
 
