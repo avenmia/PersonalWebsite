@@ -50,16 +50,17 @@ export default defineComponent({
     z-index: 1;
     top: 0;
     left: 0;
-    background-color:#E9DACF;
+    background-color:#ffedd6;
     overflow-x: hidden;
     padding-top: 60px;
+    width: 30%;
   }
 
   .menu a {
     color: #2B3349;
     text-decoration: none;
-    padding: 8px 8px 8px 32px;
-    font-size: 25px;
+    padding: 8px 32px 8px 32px;
+    font-size: 20pt;
     display: block;
     transition: 0.3s;
     text-align: left;
@@ -105,5 +106,25 @@ export default defineComponent({
     font-size: 36px;
     margin-left: 50px;
     color: #403A3C;
+  }
+
+  @media screen and (max-width: 1000px)
+  {
+    .menu {
+      width: 40%;
+    }
+    .menu a {
+      font-size: 16pt;
+    }
+  }
+
+  @media screen and (max-width: 550px)
+  {
+    .menu {
+      width: 40%;
+    }
+    .menu a {
+      font-size: 12pt;
+    }
   }
 </style>
