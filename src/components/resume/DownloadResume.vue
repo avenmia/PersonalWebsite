@@ -47,7 +47,8 @@ button:focus {
 }
 
 button:hover, button:hover * {
-  background-color: #d7bba8;
+  color: #ffedd6;
+  background-color: black;
 }
 
 button:hover {
@@ -68,6 +69,7 @@ button:hover {
   background-color: #ffedd6;
   padding: 5px;
   font-size: 20pt;
+  margin-right: 5px;
 }
 
 .download-btn {
