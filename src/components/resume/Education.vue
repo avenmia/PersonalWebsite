@@ -3,21 +3,12 @@
   <div id="education-section" class="education">
     <Header header="Education"/>
     <div class="container">
-      <div class="grid" v-for="ed in education" :key="ed">
-        <div class="school">
+      <div class="flex" v-for="ed in education" :key="ed">
+        <h2 class="school">
           {{ ed.School }}
-        </div>
-        <div class="key">
-          Degree
-        </div>
-        <div class="value">
-          {{ ed.Degree }}
-        </div>
-        <div class="key">
-          Major
-        </div>
-        <div class="value">
-          {{ ed.Major }}
+        </h2>
+        <div class="degree">
+          {{ ed.Degree }} in {{ ed.Major }}
         </div>
         <div class="dates">
           {{ ed["Start Date"] }} to {{ ed["End Date"]}}
@@ -65,14 +56,9 @@ export default defineComponent({
   justify-content: flex-start;
 }
 
-.grid {
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: 40% 30% 30%;
-  grid-template-areas: 
-    "header header header"
-    "key value value"
-    "key value value";
+.flex {
+  display: flex;
+  flex-direction: column;
   margin-left: 15%;
   margin-right: 15%;
   margin-bottom: 2%;
@@ -81,23 +67,17 @@ export default defineComponent({
 }
 
 .school {
-  font-size: 14pt;
-  font-weight: bold;
-  grid-area: header;
+  font-size: 1.667em;
+  line-height: 1.8em;
+  margin-top: .9em;
+  margin-bottom: .9em;
 }
 
-.key {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
-}
-
-.value {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
+.degree {
+  font-size: 1.333em;
+  line-height: 2.25em;
+  margin-top: 1.125em;
+  margin-bottom: 1.125em;
 }
 
 .dates {
@@ -105,6 +85,10 @@ export default defineComponent({
   grid-row-start: 2;
   margin-top: 1.5em;
   margin-bottom: 1.5em;
+}
+
+h2 {
+  font-weight: normal;
 }
 
 @media screen and (max-width: 550px)
