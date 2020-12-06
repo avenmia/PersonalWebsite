@@ -1,8 +1,7 @@
 
 <template>
   <div id="education-section" class="education">
-    <h3 class="header">Education</h3>
-    <hr>
+    <Header header="Education"/>
     <div class="container">
       <div class="grid" v-for="ed in education" :key="ed">
         <div class="school">
@@ -30,6 +29,7 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
+import Header from "@/components/resume/Header.vue";
 
 interface Education 
 {
@@ -42,6 +42,9 @@ interface Education
 
 export default defineComponent({
   name: "Education",
+  components: {
+    Header
+  },
   props: {
     education: { type: Object as () => Education[], default: () => {} }
   },
@@ -55,22 +58,6 @@ export default defineComponent({
 
 
 <style scoped>
-
-.header {
-  display: flex;
-  justify-content: center;
-  font-size: 24pt;
-  margin-bottom: 1px;
-  margin-left: 15%;
-  margin-right: 15%;
-  color: #ffedd6;
-}
-
-hr {
-  margin-left: 15%;
-  margin-right: 15%;
-  margin-top: 0px;
-}
 
 .container {
   display: flex;
@@ -102,16 +89,22 @@ hr {
 .key {
   grid-column-start: 1;
   grid-column-end: 2;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
 }
 
 .value {
   grid-column-start: 2;
   grid-column-end: 3;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
 }
 
 .dates {
   grid-column-start: 3;
   grid-row-start: 2;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
 }
 
 @media screen and (max-width: 550px)

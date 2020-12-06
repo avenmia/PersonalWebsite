@@ -1,8 +1,7 @@
 
 <template>
   <div id="work-experience-section" class="work-experience">
-    <h3 class="header">Work Experience</h3>
-    <hr>
+    <Header header="Work Experience"/>
     <div class="container">
       <div v-for="work in workExperience" :key="work">
         <div class="experience-grid">
@@ -37,6 +36,7 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 import UICLogo from "@/assets/uicLogo.svg";
+import Header from "@/components/resume/Header.vue";
 
 interface WorkExperience
 {
@@ -49,6 +49,9 @@ interface WorkExperience
 
 export default defineComponent({
   name: "WorkExperience",
+  components: {
+    Header
+  },
   props: {
     workExperience: { type: Object as () => WorkExperience[], default: () => {} }
   },
@@ -73,20 +76,22 @@ export default defineComponent({
 
 <style scoped>
 
-.header {
+.page-header {
   display: flex;
   justify-content: center;
-  font-size: 24pt;
-  margin-bottom: 1px;
+  font-size: 2em;
+  margin-bottom: 6px;
   margin-left: 15%;
   margin-right: 15%;
   color: #ffedd6;
+  line-height: 1.5em;
 }
 
 hr {
   margin-left: 15%;
   margin-right: 15%;
   margin-top: 0px;
+  margin-bottom: 1.5em;
 }
 
 .experience-container {
@@ -102,8 +107,6 @@ hr {
   grid-gap: 10px;  
   margin-left: 15%;
   margin-right: 15%;
-  margin-bottom: 2%;
-  margin-top: 1%;
 }
 
 .job-dates-grid
@@ -126,6 +129,8 @@ hr {
   grid-row: 1/3;
   align-self: end;
   text-align: start;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
 }
 
 .experience-dates {
@@ -134,8 +139,8 @@ hr {
 }
 
 .job-description {
-  margin-top: 10px;
-  margin-bottom: 5px;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
 }
 
 img {

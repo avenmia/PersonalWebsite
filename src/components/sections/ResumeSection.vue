@@ -1,6 +1,6 @@
 <template>
   <div class="resume">
-    <Skills :skills="Skills"/>
+    <Skills :skills="Skills" />
     <WorkExperience :workExperience="WorkExperience" />
     <Education :education="Education" />
     <Associations :associations="Associations" />

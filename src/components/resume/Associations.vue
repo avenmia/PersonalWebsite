@@ -1,8 +1,7 @@
 
 <template>
   <div id="associations-section" class="associations">
-    <h3 class="header">Associations</h3>
-    <hr>
+    <Header header="Associations"/>
     <div class="container">
       <div v-for="association in associations" :key="association">
         {{ association }}
@@ -13,9 +12,13 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
+import Header from "@/components/resume/Header.vue"
 
 export default defineComponent({
   name: "Associations",
+  components: {
+    Header
+  },
   props: {
     header: { type: String, default: () => "Associations"},
     associations: { type: Object, default: () => {} }
@@ -31,30 +34,23 @@ export default defineComponent({
 
 <style scoped>
 
-.header {
-  display: flex;
-  justify-content: center;
-  font-size: 24pt;
-  margin-bottom: 1px;
-  margin-left: 15%;
-  margin-right: 15%;
-  color: #ffedd6;
-}
-
-hr {
-  margin-left: 15%;
-  margin-right: 15%;
-  margin-top: 0px;
-}
-
 .container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 1%;
-  margin-bottom: 1%;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
   margin-left: 15%;
   margin-right: 15%;
+  font-size: 12pt;
+}
+
+@media screen and (max-width: 550px)
+{
+  .container {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
 }
 
 </style>
