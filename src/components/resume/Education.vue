@@ -88,6 +88,9 @@ h2 {
 
 @media screen and (max-width: 550px)
 {
+  .container {
+    margin-left: 5%;
+  }
 }
 
 

@@ -57,6 +57,7 @@ export default defineComponent({
   .container {
     flex-direction: column;
     justify-content: flex-start;
+    margin-left: 5%;
   }
 }
 

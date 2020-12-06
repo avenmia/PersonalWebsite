@@ -161,18 +161,15 @@ ul {
   {
     justify-content: center;
     text-align: start;
-    margin: 5px;
-    margin-left: 0px;
-  }
-
-  .experience-content > *
-  {
-    margin: 5px;
+    margin-left: 5%;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
   }
 
   .job-description
   {
-    margin-bottom: 25px;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
   }
 
 
