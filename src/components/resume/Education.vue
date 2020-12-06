@@ -4,9 +4,9 @@
     <Header header="Education"/>
     <div class="container">
       <div class="flex" v-for="ed in education" :key="ed">
-        <h2 class="school">
+        <div class="school">
           {{ ed.School }}
-        </h2>
+        </div>
         <div class="degree">
           {{ ed.Degree }} in {{ ed.Major }}
         </div>
@@ -59,31 +59,26 @@ export default defineComponent({
 .flex {
   display: flex;
   flex-direction: column;
-  margin-left: 15%;
-  margin-right: 15%;
-  margin-bottom: 2%;
-  margin-top: 1%;
   text-align: start;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
 }
 
 .school {
   font-size: 1.667em;
   line-height: 1.8em;
   margin-top: .9em;
-  margin-bottom: .9em;
 }
 
 .degree {
   font-size: 1.333em;
   line-height: 2.25em;
-  margin-top: 1.125em;
-  margin-bottom: 1.125em;
 }
 
 .dates {
   grid-column-start: 3;
   grid-row-start: 2;
-  margin-top: 1.5em;
+  margin-top: 0.5em;
   margin-bottom: 1.5em;
 }
 

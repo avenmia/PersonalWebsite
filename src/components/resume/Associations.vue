@@ -3,7 +3,7 @@
   <div id="associations-section" class="associations">
     <Header header="Associations"/>
     <div class="container">
-      <div v-for="association in associations" :key="association">
+      <div class="association-content" v-for="association in associations" :key="association">
         {{ association }}
       </div>
     </div>
@@ -36,13 +36,20 @@ export default defineComponent({
 
 .container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
+  margin: 0 auto;
   margin-top: 1.5em;
   margin-bottom: 1.5em;
-  margin-left: 15%;
-  margin-right: 15%;
   font-size: 12pt;
+  line-height: 1.6em;
+}
+
+.association-content {
+  font-size: 1.333em;
+  line-height: 2.25em;
+  margin-top: 1.125em;
+  margin-bottom: 1.125em;
 }
 
 @media screen and (max-width: 550px)

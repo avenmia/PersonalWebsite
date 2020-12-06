@@ -28,8 +28,7 @@ export default defineComponent({
   display: flex;
   justify-content: center;
   font-size: 2em;
-  margin-left: 15%;
-  margin-right: 15%;
+  margin: 0 auto;
   color: #ffedd6;
   line-height: 1.5em;
   margin-top: .75em;
@@ -37,8 +36,7 @@ export default defineComponent({
 }
 
 hr {
-  margin-left: 15%;
-  margin-right: 15%;
+  margin: 0 auto;
   margin-top: 0px;
   margin-bottom: .75em;
 }
