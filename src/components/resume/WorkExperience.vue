@@ -5,24 +5,22 @@
     <div class="container">
       <div v-for="work in workExperience" :key="work">
         <div class="experience-grid">
-          <div v-if="containsPangaea(work)">
+          <div class="image-container" v-if="containsPangaea(work)">
             <img src="../../assets/pangaealogo.png" alt="pangaea-logo" />
           </div>
-          <div v-else>
+          <div class="image-container" v-else>
             <img :src="UICLogo" alt="uic-logo" />
           </div>
           <div class="experience-dates">
             {{ work["Start Date"] }} to {{ work["End Date"] }}
           </div>
           <div class="experience-content">
-            <div class="experience-title">
+            <h2 class="experience-title">
               {{ work.Employer }}
-            </div>
-            <div class="job-dates-grid">
-              <div class="experience-job">
-                {{ work.Title }}
-              </div>
-            </div>
+            </h2>
+            <h3 class="experience-job">
+              {{ work.Title }}
+            </h3>
             <div v-for="description in work.Description" :key="description" class="job-description">
               {{ description }}
             </div>
@@ -76,24 +74,6 @@ export default defineComponent({
 
 <style scoped>
 
-.page-header {
-  display: flex;
-  justify-content: center;
-  font-size: 2em;
-  margin-bottom: 6px;
-  margin-left: 15%;
-  margin-right: 15%;
-  color: #ffedd6;
-  line-height: 1.5em;
-}
-
-hr {
-  margin-left: 15%;
-  margin-right: 15%;
-  margin-top: 0px;
-  margin-bottom: 1.5em;
-}
-
 .experience-container {
   display: flex;
   flex-direction: column;
@@ -116,11 +96,17 @@ hr {
 }
 
 .experience-title {
-  font-size: 18pt;
+  font-size: 1.667em;
+  line-height: 1.8em;
+  margin-top: .9em;
+  margin-bottom: .9em;
 }
 
 .experience-job {
-  font-size: 14pt;
+  font-size: 1.333em;
+  line-height: 2.25em;
+  margin-top: 1.125em;
+  margin-bottom: 1.125em;
   font-weight: bold;
 }
 
@@ -131,11 +117,15 @@ hr {
   text-align: start;
   margin-top: 1.5em;
   margin-bottom: 1.5em;
+  font-size: 12pt;
 }
 
 .experience-dates {
   grid-column-start: 2;
   grid-row-start: 2;
+  align-self: flex-start;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
 }
 
 .job-description {
@@ -143,9 +133,17 @@ hr {
   margin-bottom: 1.5em;
 }
 
+.image-container {
+  align-self: flex-end;
+}
+
 img {
   margin-top: 25px;
   width: 150px;
+}
+
+h2 {
+  font-weight: normal;
 }
 
 .container {

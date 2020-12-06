@@ -28,18 +28,19 @@ export default defineComponent({
   display: flex;
   justify-content: center;
   font-size: 2em;
-  margin-bottom: 6px;
   margin-left: 15%;
   margin-right: 15%;
   color: #ffedd6;
   line-height: 1.5em;
+  margin-top: .75em;
+  margin-bottom: 6px;
 }
 
 hr {
   margin-left: 15%;
   margin-right: 15%;
   margin-top: 0px;
-  margin-bottom: 1.5em;
+  margin-bottom: .75em;
 }
 
 </style>
