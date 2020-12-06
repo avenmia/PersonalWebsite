@@ -54,7 +54,7 @@ export default {
   background: black;
   order: 1;
   width: auto;
-  height: 200px;
+  height: 300px;
   border-radius: 10px;
   padding: 5vh 10vw;
   text-align: center;

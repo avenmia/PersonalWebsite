@@ -67,6 +67,7 @@ button:hover {
   color: black;
   background-color: #ffedd6;
   padding: 5px;
+  font-size: 20pt;
 }
 
 .download-btn {

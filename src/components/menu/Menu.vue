@@ -90,10 +90,12 @@ export default defineComponent({
     padding: 5px;
     z-index: 2;
     position: fixed;
-    top: 10px;
+    top: 25px;
     left: 25px;
     font-size: 36px;
     margin-left: 10px;
+    height: 50px;
+    width: 50px;
   }
 
   .times {
