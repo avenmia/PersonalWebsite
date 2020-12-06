@@ -79,7 +79,7 @@ export default {
 }
 
 .links a:hover {
-  color: #2B3349;
+  color: black;
   background-color: #ffedd6;
   border-radius: 50%;
   padding: 10px;
