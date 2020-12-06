@@ -1,14 +1,13 @@
 
 <template>
   <div id="skills-section">
-    <h3 class="header">Skills</h3>
-    <hr>
+    <Header header="Skills"/>
     <div class="container">
       <div v-for="key in keys" :key="key" class="grid">
-        <div class="skill-header">
+        <div class="header">
           {{ key }}
         </div>
-        <div class="skill-content" v-for="content in skills[key]" :key="content">
+        <div class="content" v-for="content in skills[key]" :key="content">
           {{ content }}
         </div>
       </div>
@@ -18,6 +17,7 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
+import Header from "@/components/resume/Header.vue";
 
 interface Skills
 {
@@ -30,6 +30,9 @@ interface Skills
 
 export default defineComponent({
   name: "Skills",
+  components: {
+    Header
+  },
   props: {
     skills: { type: Object as () => Skills, default: () => {} }
   },
@@ -50,26 +53,13 @@ export default defineComponent({
 
 <style scoped>
 
-.header {
-  display: flex;
-  justify-content: center;
-  font-size: 24pt;
-  margin-bottom: 1px;
-  margin-left: 15%;
-  margin-right: 15%;
-  color: #E9DACF;
-}
-
-hr {
-  margin-left: 15%;
-  margin-right: 15%;
-  margin-top: 0px;
-}
-
 .container {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  line-height: 1.6em;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
 }
 
 .grid {
@@ -77,16 +67,16 @@ hr {
   grid-template-columns: 25% 25% 25% 25%;
   margin-left: 15%;
   margin-right: 15%;
-  margin-bottom: 2%;
-  margin-top: 1%;
-  color: #E9DACF;
+  margin-bottom: 1.5em;
+  margin-top: 1.5em;
+  color: #ffedd6;
 }
 
 .grid > div {
   padding-top: 0px;
 }
 
-.skill-header {
+.header {
   grid-column-start: 2;
   justify-self: end;
   font-size: 16pt;
@@ -94,12 +84,11 @@ hr {
   font-weight: bold;
 }
 
-.skill-content {
+.content {
   margin-left: 5%;
   grid-column-start: 3;
   grid-column-end: 5;
   align-self: end;
-  padding-top: 4pt;
   justify-self: start;
   font-size: 12pt;
 }
@@ -119,11 +108,11 @@ hr {
     display: flex;
     flex-direction: column;
   }
-  .skill-content {
+  .content {
     margin: 5px;
   }
 
-  .skill-header {
+  .page-header {
     font-weight: bold;
   }
 }
