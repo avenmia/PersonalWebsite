@@ -47,6 +47,7 @@ export default defineComponent({
 
 * {
   margin: 0;
+  box-sizing: border-box;
 }
 
 #app {
@@ -72,6 +73,11 @@ html, body {
 
 #nav a.router-link-exact-active {
     color: #42b983;
+}
+
+#resume-section {
+  max-width: 960px;
+  margin: 0 auto;
 }
 
 .version {

@@ -11,18 +11,22 @@
           <div class="image-container" v-else>
             <img :src="UICLogo" alt="uic-logo" />
           </div>
-          <div class="experience-dates">
-            {{ work["Start Date"] }} to {{ work["End Date"] }}
-          </div>
           <div class="experience-content">
-            <h2 class="experience-title">
+            <div class="experience-title">
               {{ work.Employer }}
-            </h2>
-            <h3 class="experience-job">
+            </div>
+            <div class="experience-job">
               {{ work.Title }}
-            </h3>
+            </div>
+            <div class="experience-dates">
+              {{ work["Start Date"] }} to {{ work["End Date"] }}
+            </div>
             <div v-for="description in work.Description" :key="description" class="job-description">
-              {{ description }}
+              <ul>
+                <li>
+                  {{ description }}
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -83,31 +87,22 @@ export default defineComponent({
 .experience-grid
 {
   display: grid;
-  grid-template-columns: 66% 33%;
+  grid-template-columns: 85% 15%;
   grid-gap: 10px;  
-  margin-left: 15%;
-  margin-right: 15%;
-}
-
-.job-dates-grid
-{
-  display: grid;
-  grid-template-columns: 60% 40%;
+  margin: 0 auto;
 }
 
 .experience-title {
   font-size: 1.667em;
   line-height: 1.8em;
   margin-top: .9em;
-  margin-bottom: .9em;
 }
 
 .experience-job {
   font-size: 1.333em;
   line-height: 2.25em;
-  margin-top: 1.125em;
-  margin-bottom: 1.125em;
   font-weight: bold;
+  margin-bottom: .5em;
 }
 
 .experience-content {
@@ -121,11 +116,9 @@ export default defineComponent({
 }
 
 .experience-dates {
-  grid-column-start: 2;
-  grid-row-start: 2;
   align-self: flex-start;
-  margin-top: 1.5em;
   margin-bottom: 1.5em;
+  margin-top: .5em;
 }
 
 .job-description {
@@ -134,7 +127,9 @@ export default defineComponent({
 }
 
 .image-container {
-  align-self: flex-end;
+  align-self: center;
+  grid-row: 1/3;
+  justify-self: end;
 }
 
 img {
@@ -148,6 +143,10 @@ h2 {
 
 .container {
   text-align: center;
+}
+
+ul {
+  padding-left: 12pt;
 }
 
 @media screen and (max-width: 550px)

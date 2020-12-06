@@ -65,8 +65,6 @@ export default defineComponent({
 .grid {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
-  margin-left: 15%;
-  margin-right: 15%;
   margin-bottom: 1.5em;
   margin-top: 1.5em;
   color: #ffedd6;
