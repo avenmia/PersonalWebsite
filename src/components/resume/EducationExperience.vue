@@ -1,9 +1,16 @@
 
 <template>
-  <div id="education-section" class="education">
+  <div
+    id="education-section"
+    class="education"
+  >
     <PageHeader header="Education" />
     <div class="container">
-      <div class="flex" v-for="ed in education" :key="ed">
+      <div
+        v-for="ed in education"
+        :key="ed"
+        class="flex"
+      >
         <div class="school">
           {{ ed.School }}
         </div>
@@ -11,7 +18,7 @@
           {{ ed.Degree }} in {{ ed.Major }}
         </div>
         <div class="dates">
-          {{ ed["Start Date"] }} to {{ ed["End Date"]}}
+          {{ ed["Start Date"] }} to {{ ed["End Date"] }}
         </div>
       </div>
     </div>

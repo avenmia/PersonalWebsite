@@ -8,20 +8,31 @@
         <p>Software Engineer</p>
         <div class="links">
           <a href="https://www.linkedin.com/in/michael-avendano/">
-            <font-awesome-icon size="2x" :icon="['fab', 'linkedin']" />
+            <font-awesome-icon
+              size="2x"
+              :icon="['fab', 'linkedin']"
+            />
           </a>
           <br>
           <a href="https://github.com/avenmia">
-            <font-awesome-icon size="2x" :icon="['fab', 'github']" />
+            <font-awesome-icon
+              size="2x"
+              :icon="['fab', 'github']"
+            />
           </a>
           <br>
           <a href="https://stackoverflow.com/users/7331107/avenmia">
-            <font-awesome-icon size="2x" :icon="['fab', 'stack-overflow']" />
+            <font-awesome-icon
+              size="2x"
+              :icon="['fab', 'stack-overflow']"
+            />
           </a>
         </div>
       </div>
     </div>
-    <p id="photo-credit"><span>Photo by <a href="https://unsplash.com/@maxwbender?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Max Bender</a> on <a href="https://unsplash.com/s/photos/chicago?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span></p>
+    <p id="photo-credit">
+      <span>Photo by <a href="https://unsplash.com/@maxwbender?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Max Bender</a> on <a href="https://unsplash.com/s/photos/chicago?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+    </p>
   </div>
 </template>
 

@@ -1,7 +1,7 @@
 <template>
   <div class="resume">
     <SkillsList :skills="SkillsList" />
-    <WorkExperience :workExperience="WorkExperience" />
+    <WorkExperience :work-experience="WorkExperience" />
     <EducationExperience :education="EducationExperience" />
     <AssociationsExperience :associations="AssociationsExperience" />
   </div>
