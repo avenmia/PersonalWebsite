@@ -67,5 +67,4 @@ export default defineComponent({
     margin-left: 5%;
   }
 }
-
 </style>

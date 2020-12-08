@@ -83,5 +83,4 @@ html, body {
 .version {
   text-align: center;
 }
-
 </style>
