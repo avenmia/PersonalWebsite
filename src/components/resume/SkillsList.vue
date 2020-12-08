@@ -2,11 +2,19 @@
   <div id="skills-section">
     <PageHeader header="Skills" />
     <div class="container">
-      <div v-for="key in keys" :key="key" class="grid">
+      <div
+        v-for="key in keys"
+        :key="key"
+        class="grid"
+      >
         <div class="header">
           {{ key }}
         </div>
-        <div class="content" v-for="content in skills[key]" :key="content">
+        <div
+          v-for="content in skills[key]"
+          :key="content"
+          class="content"
+        >
           {{ content }}
         </div>
       </div>

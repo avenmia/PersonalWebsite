@@ -1,6 +1,8 @@
 <template>
   <div>
-    <h3 class="page-header">{{ header }}</h3>
+    <h3 class="page-header">
+      {{ header }}
+    </h3>
     <hr>
   </div>
 </template>

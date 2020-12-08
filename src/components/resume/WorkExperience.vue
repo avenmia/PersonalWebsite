@@ -1,15 +1,33 @@
 
 <template>
-  <div id="work-experience-section" class="work-experience">
+  <div
+    id="work-experience-section"
+    class="work-experience"
+  >
     <PageHeader header="Work Experience" />
     <div class="container">
-      <div v-for="work in workExperience" :key="work">
+      <div
+        v-for="work in workExperience"
+        :key="work"
+      >
         <div class="experience-grid">
-          <div class="image-container" v-if="containsPangaea(work)">
-            <img src="../../assets/pangaealogo.png" alt="pangaea-logo" />
+          <div
+            v-if="containsPangaea(work)"
+            class="image-container"
+          >
+            <img
+              src="../../assets/pangaealogo.png"
+              alt="pangaea-logo"
+            >
           </div>
-          <div class="image-container" v-else>
-            <img :src="UICLogo" alt="uic-logo" />
+          <div
+            v-else
+            class="image-container"
+          >
+            <img
+              :src="UICLogo"
+              alt="uic-logo"
+            >
           </div>
           <div class="experience-content">
             <div class="experience-title">
@@ -21,7 +39,11 @@
             <div class="experience-dates">
               {{ work["Start Date"] }} to {{ work["End Date"] }}
             </div>
-            <div v-for="description in work.Description" :key="description" class="job-description">
+            <div
+              v-for="description in work.Description"
+              :key="description"
+              class="job-description"
+            >
               <ul>
                 <li>
                   {{ description }}

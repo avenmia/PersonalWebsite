@@ -10,7 +10,9 @@
       <DownloadResume />
       <ResumeSection />
     </section>
-    <p class="version">{{ version }}</p>
+    <p class="version">
+      {{ version }}
+    </p>
   </div>
 </template>
 

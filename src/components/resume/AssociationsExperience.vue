@@ -1,9 +1,16 @@
 
 <template>
-  <div id="associations-section" class="associations">
+  <div
+    id="associations-section"
+    class="associations"
+  >
     <PageHeader header="Associations" />
     <div class="container">
-      <div class="association-content" v-for="association in associations" :key="association">
+      <div
+        v-for="association in associations"
+        :key="association"
+        class="association-content"
+      >
         {{ association }}
       </div>
     </div>

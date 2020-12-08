@@ -1,7 +1,15 @@
 <template>
   <transition>
-    <div class="menu" v-if="isOpen">
-      <font-awesome-icon class="times" size="2x" :icon="['fas', 'times']" @click="toggleMenu" />
+    <div
+      v-if="isOpen"
+      class="menu"
+    >
+      <font-awesome-icon
+        class="times"
+        size="2x"
+        :icon="['fas', 'times']"
+        @click="toggleMenu"
+      />
       <a href="#home-section">Home</a>
       <a href="#download-resume">Download Resume</a>
       <a href="#skills-section">Skills</a>
@@ -10,7 +18,12 @@
       <a href="#associations-section">Associations</a>
     </div>
     <div v-else>
-      <font-awesome-icon class="bars" size="2x" :icon="['fas', 'bars']" @click="toggleMenu" />
+      <font-awesome-icon
+        class="bars"
+        size="2x"
+        :icon="['fas', 'bars']"
+        @click="toggleMenu"
+      />
     </div>
   </transition>
 </template>

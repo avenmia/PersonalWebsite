@@ -1,9 +1,19 @@
 <template>
   <div class="download-btn">
-    <a href="./resume.pdf" download>
-      <button id="download-resume" class="download-resume">
+    <a
+      href="./resume.pdf"
+      download
+    >
+      <button
+        id="download-resume"
+        class="download-resume"
+      >
         <div class="container">
-          <font-awesome-icon class="download-icon" size="sm" :icon="['fas', 'download']" />
+          <font-awesome-icon
+            class="download-icon"
+            size="sm"
+            :icon="['fas', 'download']"
+          />
           <span>Download Resume</span>
         </div>
       </button>
