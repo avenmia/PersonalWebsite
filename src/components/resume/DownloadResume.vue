@@ -23,9 +23,9 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import { library } from '@fortawesome/fontawesome-svg-core';
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import { library } from '@fortawesome/fontawesome-svg-core';
 
 library.add(faDownload);
 
@@ -34,7 +34,7 @@ export default defineComponent({
   components: {
     FontAwesomeIcon
   }
-})
+});
 </script>
 
 <style scoped>

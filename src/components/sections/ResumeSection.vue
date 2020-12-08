@@ -8,12 +8,12 @@
 </template>
 
 <script lang="ts">
+import * as ResumeData from "../../assets/resumeData.json";
 import { defineComponent, onMounted, reactive } from 'vue';
-import SkillsList from "@/components/resume/SkillsList.vue"
-import WorkExperience from "@/components/resume/WorkExperience.vue"
-import EducationExperience from "@/components/resume/EducationExperience.vue"
-import AssociationsExperience from "@/components/resume/AssociationsExperience.vue"
-import * as ResumeData from "../../assets/resumeData.json"
+import AssociationsExperience from "@/components/resume/AssociationsExperience.vue";
+import EducationExperience from "@/components/resume/EducationExperience.vue";
+import SkillsList from "@/components/resume/SkillsList.vue";
+import WorkExperience from "@/components/resume/WorkExperience.vue";
 
 export default defineComponent({
   name: 'Resume',
@@ -31,9 +31,9 @@ export default defineComponent({
     const Associations = ResumeData?.Content["Professional Associations, Activities, Achievements"];
     return {
       SkillsList: Skills, EducationExperience: Education, WorkExperience, AssociationsExperience: Associations
-    }
+    };
   }
-})
+});
 </script>
 
 

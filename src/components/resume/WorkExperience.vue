@@ -59,8 +59,8 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import UICLogo from "@/assets/uicLogo.svg";
 import PageHeader from "@/components/resume/PageHeader.vue";
+import UICLogo from "@/assets/uicLogo.svg";
 
 interface WorkExperience
 {

@@ -37,10 +37,10 @@
 </template>
 
 <script>
+import { faGithub, faLinkedin, faStackOverflow } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import { library } from '@fortawesome/fontawesome-svg-core';
 import { Vue } from 'vue';
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { faGithub, faLinkedin, faStackOverflow } from '@fortawesome/free-brands-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 library.add(faGithub, faLinkedin, faStackOverflow);
 
