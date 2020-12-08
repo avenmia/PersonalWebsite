@@ -2,8 +2,7 @@
   <div class="home">
     <NavMenu />
     <section id="home-section">
-      <HomeSection :version="version"
-      />
+      <HomeSection :version="version" />
     </section>
     <section id="resume-section">
       <DownloadResume />
