@@ -13,7 +13,7 @@ import { defineComponent } from "vue";
 export default defineComponent({
   name: "PageHeader",
   props: {
-    header: { type: String, default: () => ""}
+    header: { type: String, default: () => "" }
   },
   setup(props)
   {

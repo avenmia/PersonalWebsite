@@ -26,7 +26,7 @@ export default defineComponent({
   setup()
   {
     const data = reactive({});
-    const {Skills, Education} = ResumeData?.Content;
+    const { Skills, Education } = ResumeData?.Content;
     const WorkExperience = ResumeData?.Content["Work Experience"];
     const Associations = ResumeData?.Content["Professional Associations, Activities, Achievements"];
     return {
