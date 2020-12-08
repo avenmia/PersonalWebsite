@@ -1,7 +1,7 @@
 
 <template>
   <div id="work-experience-section" class="work-experience">
-    <Header header="Work Experience"/>
+    <PageHeader header="Work Experience" />
     <div class="container">
       <div v-for="work in workExperience" :key="work">
         <div class="experience-grid">
@@ -38,7 +38,7 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 import UICLogo from "@/assets/uicLogo.svg";
-import Header from "@/components/resume/Header.vue";
+import PageHeader from "@/components/resume/PageHeader.vue";
 
 interface WorkExperience
 {
@@ -52,7 +52,7 @@ interface WorkExperience
 export default defineComponent({
   name: "WorkExperience",
   components: {
-    Header
+    PageHeader
   },
   props: {
     workExperience: { type: Object as () => WorkExperience[], default: () => {} }

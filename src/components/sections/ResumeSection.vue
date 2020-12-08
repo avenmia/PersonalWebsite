@@ -1,27 +1,27 @@
 <template>
   <div class="resume">
-    <Skills :skills="Skills" />
+    <SkillsList :skills="SkillsList" />
     <WorkExperience :workExperience="WorkExperience" />
-    <Education :education="Education" />
-    <Associations :associations="Associations" />
+    <EducationExperience :education="EducationExperience" />
+    <AssociationsExperience :associations="AssociationsExperience" />
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent, onMounted, reactive } from 'vue';
-import Skills from "@/components/resume/Skills.vue"
+import SkillsList from "@/components/resume/SkillsList.vue"
 import WorkExperience from "@/components/resume/WorkExperience.vue"
-import Education from "@/components/resume/Education.vue"
-import Associations from "@/components/resume/Associations.vue"
+import EducationExperience from "@/components/resume/EducationExperience.vue"
+import AssociationsExperience from "@/components/resume/AssociationsExperience.vue"
 import * as ResumeData from "../../assets/resumeData.json"
 
 export default defineComponent({
   name: 'Resume',
   components: {
-    Skills, 
+    SkillsList, 
     WorkExperience,
-    Education,
-    Associations
+    EducationExperience,
+    AssociationsExperience
   },
   setup()
   {
@@ -30,7 +30,7 @@ export default defineComponent({
     const WorkExperience = ResumeData?.Content["Work Experience"];
     const Associations = ResumeData?.Content["Professional Associations, Activities, Achievements"];
     return {
-      Skills, Education, WorkExperience, Associations
+      SkillsList: Skills, EducationExperience: Education, WorkExperience, AssociationsExperience: Associations
     }
   }
 })

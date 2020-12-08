@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <Menu />
+    <NavMenu />
     <section id="home-section">
       <HomeSection
         :version="version"
@@ -18,7 +18,7 @@
 import {
   defineComponent
 } from 'vue';
-import Menu from "@/components/menu/Menu.vue";
+import NavMenu from "@/components/menu/NavMenu.vue";
 import HomeSection from '@/components/sections/HomeSection.vue'; // @ is an alias to /src
 import ResumeSection from '@/components/sections/ResumeSection.vue';
 import DownloadResume from '@/components/resume/DownloadResume.vue'
@@ -32,7 +32,7 @@ export default defineComponent({
     HomeSection,
     ResumeSection,
     DownloadResume,
-    Menu
+    NavMenu
   },
   setup()
   {
