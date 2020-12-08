@@ -15,14 +15,14 @@
 </template>
 
 <script lang="ts">
+import * as pjson from "../package.json";
 import {
   defineComponent
 } from 'vue';
-import NavMenu from "@/components/menu/NavMenu.vue";
+import DownloadResume from '@/components/resume/DownloadResume.vue';
 import HomeSection from '@/components/sections/HomeSection.vue'; // @ is an alias to /src
+import NavMenu from "@/components/menu/NavMenu.vue";
 import ResumeSection from '@/components/sections/ResumeSection.vue';
-import DownloadResume from '@/components/resume/DownloadResume.vue'
-import * as pjson from "../package.json"
 
 console.log(pjson.version);
 
@@ -38,7 +38,7 @@ export default defineComponent({
   {
     return {
       version: pjson.version
-    }
+    };
   }
 });
 </script>

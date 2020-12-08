@@ -22,10 +22,10 @@ module.exports = {
     }],
     "semi": 1,
     "sort-imports": ["error", {
-      "ignoreCase": false,
+      "ignoreCase": true,
       "ignoreDeclarationSort": false,
       "ignoreMemberSort": false,
-      "memberSyntaxSortOrder": ["none", "single", "multiple", "all" ],
+      "memberSyntaxSortOrder": ["none", "all", "multiple", "single"],
       "allowSeparatedGroups": false
     }]
   },

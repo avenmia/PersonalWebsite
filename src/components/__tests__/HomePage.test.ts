@@ -1,5 +1,5 @@
-import { shallowMount } from "@vue/test-utils";
 import HomeSection from "../sections/HomeSection.vue";
+import { shallowMount } from "@vue/test-utils";
 
 describe("HomeSection.vue", () => 
 {

@@ -30,9 +30,9 @@
 
 <script lang="ts">
 import { defineComponent, ref } from "vue";
-import { library } from '@fortawesome/fontawesome-svg-core'
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import { library } from '@fortawesome/fontawesome-svg-core';
 
 library.add(faBars, faTimes);
 
@@ -50,9 +50,9 @@ export default defineComponent({
     return {
       isOpen,
       toggleMenu
-    }
+    };
   }
-})
+});
 
 </script>
 

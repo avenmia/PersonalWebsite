@@ -19,7 +19,7 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import PageHeader from "@/components/resume/PageHeader.vue"
+import PageHeader from "@/components/resume/PageHeader.vue";
 
 export default defineComponent({
   name: "AssociationsExperience",
@@ -32,7 +32,7 @@ export default defineComponent({
   },
   setup(props)
   {
-    return { props }
+    return { props };
   }
 });
 
