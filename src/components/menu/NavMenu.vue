@@ -97,56 +97,56 @@ export default defineComponent({
   transform: translate(-100%, 0);
 }
 
-  .bars {
-    background-color: #E9DACF;
-    color: #403A3C;
-    border-radius: 5px;
-    padding: 5px;
-    z-index: 2;
-    position: fixed;
-    top: 25px;
-    left: 25px;
-    font-size: 36px;
-    margin-left: 10px;
-    height: 50px;
-    width: 50px;
-  }
+.bars {
+  background-color: #E9DACF;
+  color: #403A3C;
+  border-radius: 5px;
+  padding: 5px;
+  z-index: 2;
+  position: fixed;
+  top: 25px;
+  left: 25px;
+  font-size: 36px;
+  margin-left: 10px;
+  height: 50px;
+  width: 50px;
+}
 
-  .bars:hover {
-    height: 55px;
-    width: 55px;
-  }
+.bars:hover {
+  height: 55px;
+  width: 55px;
+}
 
-  .times {
-    position: absolute;
-    top: 10px;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-    color: #403A3C;
-  }
+.times {
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  color: #403A3C;
+}
 
-  .times:hover {
-    font-size: 40px;
-  }
+.times:hover {
+  font-size: 40px;
+}
 
-  @media screen and (max-width: 1000px)
-  {
-    .menu {
-      width: 40%;
-    }
-    .menu a {
-      font-size: 16pt;
-    }
+@media screen and (max-width: 1000px)
+{
+  .menu {
+    width: 40%;
   }
+  .menu a {
+    font-size: 16pt;
+  }
+}
 
-  @media screen and (max-width: 550px)
-  {
-    .menu {
-      width: 40%;
-    }
-    .menu a {
-      font-size: 12pt;
-    }
+@media screen and (max-width: 550px)
+{
+  .menu {
+    width: 40%;
   }
+  .menu a {
+    font-size: 12pt;
+  }
+}
 </style>

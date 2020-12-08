@@ -42,5 +42,4 @@ hr {
   margin-top: 0px;
   margin-bottom: .75em;
 }
-
 </style>

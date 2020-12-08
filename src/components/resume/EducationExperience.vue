@@ -99,6 +99,4 @@ h2 {
     margin-left: 5%;
   }
 }
-
-
 </style>
