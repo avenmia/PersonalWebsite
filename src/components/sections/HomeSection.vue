@@ -69,7 +69,7 @@ export default {
   border-radius: 10px;
   padding: 5vh 10vw;
   text-align: center;
-  
+
 }
 
 .home-section {

@@ -6,6 +6,7 @@ module.exports = {
   extends: [
     'plugin:vue/vue3-recommended',
   ],
+  ignorePatterns: ["gh-pages-deploy.js"],
   parserOptions: {
     ecmaVersion: 12,
     parser: '@typescript-eslint/parser',
@@ -20,6 +21,9 @@ module.exports = {
     "brace-style": ["error", "allman", {
       "allowSingleLine": true
     }],
+    "no-multiple-empty-lines": "error",
+    "no-multi-spaces": ["error", { ignoreEOLComments: false }],
+    "no-trailing-spaces": "error",
     "semi": 1,
     "sort-imports": ["error", {
       "ignoreCase": true,

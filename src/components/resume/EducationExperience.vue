@@ -22,14 +22,14 @@
         </div>
       </div>
     </div>
-  </div>  
+  </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
 import PageHeader from "@/components/resume/PageHeader.vue";
 
-interface EducationExperience 
+interface EducationExperience
 {
   School: String,
   Degree: String,

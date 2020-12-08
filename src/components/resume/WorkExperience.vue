@@ -54,7 +54,7 @@
         </div>
       </div>
     </div>
-  </div>  
+  </div>
 </template>
 
 <script lang="ts">
@@ -110,7 +110,7 @@ export default defineComponent({
 {
   display: grid;
   grid-template-columns: 85% 15%;
-  grid-gap: 10px;  
+  grid-gap: 10px;
   margin: 0 auto;
 }
 
@@ -176,7 +176,7 @@ ul {
   .experience-grid
   {
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;
   }
 
   .experience-content
