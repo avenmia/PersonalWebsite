@@ -51,7 +51,7 @@ export default defineComponent({
       codingStyles: props.skills["Coding Styles"],
       technologies: props.skills["Technologies"],
       versionControl: props.skills["Version Control"],
-      softSkills: props.skills["Soft Skills"]};
+      softSkills: props.skills["Soft Skills"] };
   }
 });
 

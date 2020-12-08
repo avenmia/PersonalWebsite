@@ -27,7 +27,7 @@ export default defineComponent({
     PageHeader
   },
   props: {
-    header: { type: String, default: () => "Associations"},
+    header: { type: String, default: () => "Associations" },
     associations: { type: Object, default: () => {} }
   },
   setup(props)

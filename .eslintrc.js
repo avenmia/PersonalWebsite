@@ -21,6 +21,7 @@ module.exports = {
     "brace-style": ["error", "allman", {
       "allowSingleLine": true
     }],
+    "object-curly-spacing": ["error", "always"],
     "no-multiple-empty-lines": "error",
     "no-multi-spaces": ["error", { ignoreEOLComments: false }],
     "no-trailing-spaces": "error",
