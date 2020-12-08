@@ -1,7 +1,7 @@
 
 <template>
   <div id="associations-section" class="associations">
-    <Header header="Associations"/>
+    <PageHeader header="Associations" />
     <div class="container">
       <div class="association-content" v-for="association in associations" :key="association">
         {{ association }}
@@ -12,12 +12,12 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import Header from "@/components/resume/Header.vue"
+import PageHeader from "@/components/resume/PageHeader.vue"
 
 export default defineComponent({
-  name: "Associations",
+  name: "AssociationsExperience",
   components: {
-    Header
+    PageHeader
   },
   props: {
     header: { type: String, default: () => "Associations"},

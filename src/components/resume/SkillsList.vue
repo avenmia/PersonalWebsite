@@ -1,7 +1,6 @@
-
 <template>
   <div id="skills-section">
-    <Header header="Skills"/>
+    <PageHeader header="Skills" />
     <div class="container">
       <div v-for="key in keys" :key="key" class="grid">
         <div class="header">
@@ -17,9 +16,9 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import Header from "@/components/resume/Header.vue";
+import PageHeader from "@/components/resume/PageHeader.vue";
 
-interface Skills
+interface SkillsList
 {
   Languages: String[],
   Technologies: String[],
@@ -29,12 +28,12 @@ interface Skills
 }
 
 export default defineComponent({
-  name: "Skills",
+  name: "SkillsList",
   components: {
-    Header
+    PageHeader
   },
   props: {
-    skills: { type: Object as () => Skills, default: () => {} }
+    skills: { type: Object as () => SkillsList, default: () => {} }
   },
   setup(props)
   {

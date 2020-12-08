@@ -9,7 +9,7 @@
 import { defineComponent } from "vue";
 
 export default defineComponent({
-  name: "Header",
+  name: "PageHeader",
   props: {
     header: { type: String, default: () => ""}
   },

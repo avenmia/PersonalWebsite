@@ -24,7 +24,7 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 library.add(faBars, faTimes);
 
 export default defineComponent({
-  name: "Menu",
+  name: "NavMenu",
   components: {
     FontAwesomeIcon
   },

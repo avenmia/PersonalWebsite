@@ -1,7 +1,7 @@
 
 <template>
   <div id="education-section" class="education">
-    <Header header="Education"/>
+    <PageHeader header="Education" />
     <div class="container">
       <div class="flex" v-for="ed in education" :key="ed">
         <div class="school">
@@ -20,9 +20,9 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import Header from "@/components/resume/Header.vue";
+import PageHeader from "@/components/resume/PageHeader.vue";
 
-interface Education 
+interface EducationExperience 
 {
   School: String,
   Degree: String,
@@ -32,12 +32,12 @@ interface Education
 }
 
 export default defineComponent({
-  name: "Education",
+  name: "EducationExperience",
   components: {
-    Header
+    PageHeader
   },
   props: {
-    education: { type: Object as () => Education[], default: () => {} }
+    education: { type: Object as () => EducationExperience[], default: () => {} }
   },
   setup(props)
   {
