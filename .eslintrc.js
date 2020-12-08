@@ -19,6 +19,14 @@ module.exports = {
     "indent": ["error", 2],
     "brace-style": ["error", "allman", {
       "allowSingleLine": true
+    }],
+    "semi": 1,
+    "sort-imports": ["error", {
+      "ignoreCase": false,
+      "ignoreDeclarationSort": false,
+      "ignoreMemberSort": false,
+      "memberSyntaxSortOrder": ["none", "single", "multiple", "all" ],
+      "allowSeparatedGroups": false
     }]
   },
   overrides: [{
