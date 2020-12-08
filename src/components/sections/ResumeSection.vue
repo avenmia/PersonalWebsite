@@ -18,7 +18,7 @@ import WorkExperience from "@/components/resume/WorkExperience.vue";
 export default defineComponent({
   name: 'Resume',
   components: {
-    SkillsList, 
+    SkillsList,
     WorkExperience,
     EducationExperience,
     AssociationsExperience

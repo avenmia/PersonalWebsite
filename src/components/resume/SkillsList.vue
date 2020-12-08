@@ -19,7 +19,7 @@
         </div>
       </div>
     </div>
-  </div>  
+  </div>
 </template>
 
 <script lang="ts">
@@ -48,8 +48,8 @@ export default defineComponent({
     return {
       keys: Object.keys(props.skills),
       languages: props.skills["Languages"],
-      codingStyles: props.skills["Coding Styles"], 
-      technologies: props.skills["Technologies"], 
+      codingStyles: props.skills["Coding Styles"],
+      technologies: props.skills["Technologies"],
       versionControl: props.skills["Version Control"],
       softSkills: props.skills["Soft Skills"]};
   }
@@ -98,7 +98,7 @@ export default defineComponent({
   font-size: 12pt;
 }
 
-.content-container 
+.content-container
 {
   height: 100%;
 }
@@ -118,7 +118,7 @@ export default defineComponent({
     flex-direction: column;
   }
   .content {
-    margin-left: 0px; 
+    margin-left: 0px;
   }
 
   .page-header {
