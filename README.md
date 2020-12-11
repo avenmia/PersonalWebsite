@@ -1,7 +1,7 @@
 # Mike's Website
 
 ### Published to
-https://avenmia.github.io/PersonalWebsite/
+https://michaelavendano.com
 
 ## Project setup
 ```
