@@ -24,8 +24,6 @@ import HomeSection from '@/components/sections/HomeSection.vue'; // @ is an alia
 import NavMenu from "@/components/menu/NavMenu.vue";
 import ResumeSection from '@/components/sections/ResumeSection.vue';
 
-console.log(pjson.version);
-
 export default defineComponent({
   name: 'Home',
   components: {
