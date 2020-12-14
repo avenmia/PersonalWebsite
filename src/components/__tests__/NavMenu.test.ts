@@ -15,6 +15,12 @@ describe("NavMenu.vue", () =>
     const { getByTitle } = render(NavMenu);
     await fireEvent.click(screen.getByTitle('bars'));
     expect(screen.getByTitle('times')).toBeTruthy();
+    expect(screen.getByText('Home')).toBeTruthy();
+    expect(screen.getByText('Download Resume')).toBeTruthy();
+    expect(screen.getByText('Skills')).toBeTruthy();
+    expect(screen.getByText('Work Experience')).toBeTruthy();
+    expect(screen.getByText('Education')).toBeTruthy();
+    expect(screen.getByText('Associations')).toBeTruthy();
   });
 
   test("Times is not rendered until bars is clicked", async() =>
