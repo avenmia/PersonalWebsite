@@ -3,9 +3,11 @@
     <div
       v-if="isOpen"
       class="menu"
+      data-testid="menu"
     >
       <font-awesome-icon
         class="times"
+        title="times"
         size="2x"
         :icon="['fas', 'times']"
         @click="toggleMenu"
@@ -20,6 +22,7 @@
     <div v-else>
       <font-awesome-icon
         class="bars"
+        title="bars"
         size="2x"
         :icon="['fas', 'bars']"
         @click="toggleMenu"
