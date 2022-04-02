@@ -1,0 +1,23 @@
+name: CI
+on: push
+jobs:
+  build:
+    name: Lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install modules
+        run: yarn
+      - name: Run ESLint
+        run: yarn run eslint . --ext .js,.ts
+  lighthouseci:
+    name: Accessibility
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 14
+      - run: yarn install && yarn global add @lhci/cli@0.8.x
+      - run: npm run build
+      - run: lhci autorun
