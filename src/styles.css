@@ -1,0 +1,51 @@
+#experience {
+  background-color: #dce4e5;
+}
+
+h2 {
+  color: #175061;
+}
+
+#experience-container {
+  display: flex;
+}
+
+#skills {
+  height: 456px;
+  width: 392px;
+  background-color: #f2f2f2;
+  border-radius: 18px;
+}
+
+section #work-experience {
+  font-size: 24px;
+}
+
+section .work-experience-section h3 {
+  color: #01233f;
+}
+
+section .work-experience-section h4 {
+  color: #175061;
+  font-weight: bold;
+}
+
+section .skills-section ul {
+  column-count: 2;
+}
+
+section .skills-section-styles ul {
+  column-count: 1;
+}
+
+#skills h3 {
+  margin-left: 1em;
+}
+
+section .skills-section h4 {
+  margin-left: 1em;
+}
+
+section .skills-section-styles h4 {
+  margin-left: 1em;
+}

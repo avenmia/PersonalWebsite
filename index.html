@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="stylesheet" type="text/css" href="./src/styles.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Michael Avendano's Website</title>
   </head>
@@ -26,106 +27,95 @@
       <main>
         <section id="experience">
           <h2>Experience</h2>
-          <section id="skills">
-            <h3>Skills</h3>
-            <h4>Languages</h4>
-            <ul>
-              <li>TypeScript</li>
-              <li>C#</li>
-              <li>JavaScript</li>
-              <li>Python</li>
-            </ul>
-            <h4>Technologies</h4>
-            <ul>
-              <li>Vue.js</li>
-              <li>React.js</li>
-              <li>Node.js</li>
-              <li>ASP.NET Core</li>
-              <li>CosmosDb</li>
-              <li>MSSQL Server</li>
-            </ul>
-            <h4>Coding Styles</h4>
-            <ul>
-              <li>Test Driven Development</li>
-              <li>Object Oriented Programming</li>
-            </ul>
-          </section>
-          <section id="work-experience">
-            <h3>Work Experience</h3>
-            <dl>
-              <dt>Title</dt>
-              <dd>Software Engineer</dd>
-              <dt>Employer</dt>
-              <dd>Pangaea Information Technology</dd>
-              <dt>Start Date</dt>
-              <dd>01-2019</dd>
-              <dt>End Date</dt>
-              <dd>Present</dd>
-              <dt>Description</dt>
-              <dd>
-                Creating RESTful APIs in ASP.NET Core, ASP.NET, and Node.js with
-                Azure Functions.
-              </dd>
-              <dd>
-                Developing front-end applications with TypeScript & React.js.
-              </dd>
-              <dd>
-                Working as a back-end developer using C# with ASP.NET Core and
-                SQL Server.
-              </dd>
-              <dd>Using Test Driven Development to implement features.</dd>
-            </dl>
-            <dl>
-              <dt>Title</dt>
-              <dd>Volunteer</dd>
-              <dt>Employer</dt>
-              <dd>Code for Hawaii</dd>
-              <dt>Start Date</dt>
-              <dd>01-2022</dd>
-              <dt>End Date</dt>
-              <dd>Present</dd>
-              <dt>Description</dt>
-              <dd>
-                Triaging issues and contributing code to the Code for Hawaii
-                website.
-              </dd>
-              <dd>
-                Onboarding new members by providing tutorials and familiarizing
-                them with the code base.
-              </dd>
-              <dd>Helping facilitate meetings.</dd>
-            </dl>
-            <dl>
-              <dt>Title</dt>
-              <dd>Research Assistant</dd>
-              <dt>Employer</dt>
-              <dd>
-                Electronic Visualization Laboratory at University of Illinois at
-                Chicago
-              </dd>
-              <dt>Start Date</dt>
-              <dd>06-2018</dd>
-              <dt>End Date</dt>
-              <dd>12-2018</dd>
-              <dt>Description</dt>
-              <dd>
-                Gained experience using Node.js and Express.js to handle data
-                requests primarily utilizing WebSockets.
-              </dd>
-              <dd>
-                Utilized Mongoose to interface with MongoDB to create schemas
-                and store live data efficiently.
-              </dd>
-              <dd>
-                Used Vue.js to create intuitive front-end interfaces to interact
-                with remote devices.
-              </dd>
-              <dd>
-                Worked with various APIs for devices such as microphones and
-                Z-Wave devices.
-              </dd>
-            </dl>
-          </section>
+          <div id="experience-container">
+            <section id="work-experience">
+              <h3>Work Experience</h3>
+              <section class="work-experience-section">
+                <h3>Software Engineer</h3>
+                <h4>Pangaea Information Technology</h4>
+                <ul>
+                  <li>
+                    Creating RESTful APIs in ASP.NET Core, ASP.NET, and Node.js
+                    with Azure Functions
+                  </li>
+                  <li>
+                    Developing front-end applications with TypeScript & React.js
+                  </li>
+                  <li>
+                    Working as a back-end developer using C# with ASP.NET Core
+                    and SQL Server
+                  </li>
+                  <li>Using Test Driven Development to implement features</li>
+                </ul>
+              </section>
+              <section class="work-experience-section">
+                <h3>Volunteer</h3>
+                <h4>Code for Hawaii</h4>
+                <ul>
+                  <li>
+                    Triaging issues and contributing code to the Code for Hawaii
+                    website
+                  </li>
+                  <li>
+                    Onboarding new members by providing tutorials and
+                    familiarizing them with the code base
+                  </li>
+                  <li>Helping facilitate meetings</li>
+                </ul>
+              </section>
+              <section class="work-experience-section">
+                <h3>Research Assistant</h3>
+                <h4>
+                  Electronic Visualization Laboratory at University of Illinois
+                  at Chicago
+                </h4>
+                <ul>
+                  <li>
+                    Gained experience using Node.js and Express.js to handle
+                    data requests primarily utilizing WebSockets
+                  </li>
+                  <li>
+                    Utilized Mongoose to interface with MongoDB to create
+                    schemas and store live data efficiently
+                  </li>
+                  <li>
+                    Worked with various APIs for devices such as microphones and
+                    Z-Wave devices
+                  </li>
+                </ul>
+              </section>
+            </section>
+            <section id="skills">
+              <h3>Skills</h3>
+              <section class="skills-section">
+                <h4>Languages</h4>
+                <ul>
+                  <li>TypeScript</li>
+                  <li>C#</li>
+                  <li>JavaScript</li>
+                  <li>Python</li>
+                </ul>
+              </section>
+              <section class="skills-section">
+                <h4>Technologies</h4>
+                <ul>
+                  <li>Vue.js</li>
+                  <li>React.js</li>
+                  <li>Node.js</li>
+                  <li>ASP.NET Core</li>
+                  <li>CosmosDb</li>
+                  <li>MSSQL Server</li>
+                </ul>
+              </section>
+              <section class="skills-section-styles">
+                <h4>Coding Styles</h4>
+                <ul>
+                  <li>Test Driven Development</li>
+                  <li>Object Oriented Programming</li>
+                </ul>
+              </section>
+            </section>
+          </div>
         </section>
         <section id="education">
           <h2>Education</h2>
