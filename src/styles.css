@@ -32,13 +32,15 @@ hr {
 
 #experience-container {
   display: flex;
+  gap: 50px;
 }
 
 #skills {
-  height: 456px;
+  height: 415px;
   width: 392px;
   background-color: #f2f2f2;
   border-radius: 18px;
+  margin-right: 10%;
 }
 
 section #work-experience {
@@ -63,7 +65,7 @@ section .skills-section-styles ul {
 }
 
 #skills h3 {
-  margin-left: 0.5em;
+  margin: 0.5em;
   color: #175061;
   font-size: 25px;
 }
@@ -74,4 +76,18 @@ section .skills-section h4 {
 
 section .skills-section-styles h4 {
   margin-left: 1em;
+}
+
+.resume-btn {
+  background-color: #aa3234;
+  border-radius: 18px;
+  color: white;
+  margin-top: 20px;
+  border: none;
+  padding: 5px;
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: column;
 }
