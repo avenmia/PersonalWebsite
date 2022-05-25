@@ -82,13 +82,19 @@ section .skills-section-styles h4 {
   margin-left: 1em;
 }
 
+.resume-btn:hover {
+  background-color: #89282a;
+  cursor: pointer;
+}
+
 .resume-btn {
   background-color: #aa3234;
   border-radius: 18px;
   color: white;
   margin-top: 20px;
   border: none;
-  padding: 5px;
+  padding: 10px;
+  width: 100%;
 }
 
 .skills-container {
