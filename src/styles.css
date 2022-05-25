@@ -1,0 +1,104 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Lexend";
+}
+
+#experience {
+  background-color: #dce4e5;
+}
+
+h2 {
+  color: #175061;
+}
+
+hr {
+  width: 33%;
+  border-top: 5px solid #73989e;
+}
+
+.page-header {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.header-line {
+  width: 100%;
+  height: 47px;
+  border-bottom: 7px solid #73989e;
+  position: absolute;
+}
+
+#experience-container {
+  display: flex;
+  gap: 50px;
+}
+
+#skills {
+  height: 415px;
+  width: 392px;
+  background-color: #f2f2f2;
+  border-radius: 18px;
+  margin-right: 10%;
+  font-size: 18px;
+}
+
+section #work-experience {
+  font-size: 18px;
+  margin-left: 235px;
+  width: 600px;
+}
+
+section .work-experience-section h3 {
+  color: #01233f;
+}
+
+section .work-experience-section h4 {
+  color: #175061;
+  font-weight: bold;
+}
+
+section .skills-section ul {
+  column-count: 2;
+}
+
+section .skills-section-styles ul {
+  column-count: 1;
+}
+
+#skills h3 {
+  margin: 0.5em;
+  color: #175061;
+  font-size: 25px;
+}
+
+section .skills-section h4 {
+  margin-left: 1em;
+}
+
+section .skills-section-styles h4 {
+  margin-left: 1em;
+}
+
+.resume-btn:hover {
+  background-color: #89282a;
+  cursor: pointer;
+}
+
+.resume-btn {
+  background-color: #aa3234;
+  border-radius: 18px;
+  color: white;
+  margin-top: 20px;
+  border: none;
+  padding: 10px;
+  width: 100%;
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 250px;
+}
