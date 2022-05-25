@@ -1,6 +1,7 @@
 body {
   padding: 0px;
   margin: 0px;
+  font-family: "Lexend";
 }
 
 #experience {
@@ -41,10 +42,13 @@ hr {
   background-color: #f2f2f2;
   border-radius: 18px;
   margin-right: 10%;
+  font-size: 18px;
 }
 
 section #work-experience {
-  font-size: 24px;
+  font-size: 18px;
+  margin-left: 235px;
+  width: 600px;
 }
 
 section .work-experience-section h3 {
@@ -90,4 +94,5 @@ section .skills-section-styles h4 {
 .skills-container {
   display: flex;
   flex-direction: column;
+  margin-top: 250px;
 }
