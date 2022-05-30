@@ -19,7 +19,7 @@ header {
 .website-title {
   font-family: "Rock Salt";
   font-weight: normal;
-  color: #73989e;
+  color: #506e73;
   margin-bottom: 0px;
 }
 
@@ -33,7 +33,7 @@ header {
 }
 
 .social-links a {
-  color: #73989e;
+  color: #506e73;
 }
 
 .social-links i {
@@ -45,7 +45,7 @@ header {
   margin-right: 10px;
 }
 .page-links a {
-  color: #73989e;
+  color: #506e73;
   text-decoration: none;
 }
 
@@ -59,7 +59,7 @@ h2 {
 
 hr {
   width: 33%;
-  border-top: 5px solid #73989e;
+  border-top: 5px solid #506e73;
 }
 
 .page-header {
@@ -72,7 +72,7 @@ hr {
 .header-line {
   width: 100%;
   height: 47px;
-  border-bottom: 7px solid #73989e;
+  border-bottom: 7px solid #506e73;
   position: absolute;
 }
 
