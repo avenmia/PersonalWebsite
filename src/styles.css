@@ -10,10 +10,21 @@ header {
   justify-content: space-between;
 }
 
-.about-page-title {
+.website-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.website-title {
   font-family: "Rock Salt";
   font-weight: normal;
   color: #73989e;
+  margin-bottom: 0px;
+}
+
+.website-subtitle {
+  margin-top: 0px;
 }
 
 .social-links {
@@ -35,6 +46,7 @@ header {
 }
 .page-links a {
   color: #73989e;
+  text-decoration: none;
 }
 
 #experience {
