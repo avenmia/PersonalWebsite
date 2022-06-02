@@ -70,6 +70,7 @@ hr {
 
 .about-text {
   margin-left: 60%;
+  position: absolute;
 }
 
 .page-header-rtl {
@@ -78,6 +79,19 @@ hr {
 
 .page-header-rtl h2 {
   margin: 0px;
+}
+
+.profile-section {
+  display: flex;
+}
+
+.background-circle {
+  height: 502px;
+  width: 502px;
+  border-radius: 50%;
+  background-color: #dce4e5;
+  display: inline-block;
+  margin-left: 10%;
 }
 
 .header-line-rtl {
