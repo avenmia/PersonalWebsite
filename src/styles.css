@@ -178,3 +178,26 @@ section .skills-section-styles h4 {
   flex-direction: column;
   margin-top: 250px;
 }
+
+.projects-page-header-rtl {
+  margin-left: 60%;
+}
+
+.projects-page-header-rtl h2 {
+  margin: 0px;
+}
+
+.projects-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.project {
+  width: 406px;
+  height: 287px;
+  border-radius: 18px;
+  margin-top: 25px;
+  background-color: #c4c4c4;
+  font-size: 18px;
+  border: none;
+}
