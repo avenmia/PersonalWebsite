@@ -1,3 +1,5 @@
+/* General Styles */
+
 body {
   padding: 0px;
   margin: 0px;
@@ -10,6 +12,17 @@ header {
   flex-direction: row;
   justify-content: space-between;
 }
+
+h2 {
+  color: #175061;
+}
+
+hr {
+  width: 33%;
+  border-top: 5px solid #506e73;
+}
+
+/* ------------------------- */
 
 .website-header {
   display: flex;
@@ -58,15 +71,6 @@ header {
 
 .experience {
   background-color: #dce4e5;
-}
-
-h2 {
-  color: #175061;
-}
-
-hr {
-  width: 33%;
-  border-top: 5px solid #506e73;
 }
 
 .page-header-rtl h2 {
