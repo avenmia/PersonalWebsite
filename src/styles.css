@@ -51,12 +51,12 @@ header {
   text-decoration: none;
 }
 
-#about {
+.about {
   display: flex;
   gap: 200px;
 }
 
-#experience {
+.experience {
   background-color: #dce4e5;
 }
 
@@ -107,12 +107,12 @@ hr {
   position: absolute;
 }
 
-#experience-container {
+.experience-container {
   display: flex;
   gap: 50px;
 }
 
-#skills {
+.skills {
   height: 415px;
   width: 392px;
   background-color: #f2f2f2;
