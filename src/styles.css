@@ -201,3 +201,8 @@ section .skills-section-styles h4 {
   font-size: 18px;
   border: none;
 }
+
+.project:hover {
+  cursor: pointer;
+  background-color: #d39e9f;
+}
