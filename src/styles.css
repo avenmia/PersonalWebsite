@@ -49,6 +49,30 @@ hr {
 .page__item {
 }
 
+.page__header {
+}
+
+.page__header--rtl {
+  margin-left: 60%;
+}
+
+.page__header--ltr {
+  margin-right: 60%;
+}
+
+.page__header__title {
+  margin: 0px;
+}
+
+.page__header__title--ltr {
+  text-align: end;
+}
+
+.page__header__line {
+  width: 100%;
+  border-bottom: 7px solid #506e73;
+}
+
 /* ------------------------- */
 
 /* components */
@@ -95,10 +119,6 @@ hr {
 
 /* ------------------------- */
 
-.page-header-rtl h2 {
-  margin: 0px;
-}
-
 .background-circle {
   display: flex;
   height: 502px;
@@ -107,26 +127,6 @@ hr {
   background-color: #dce4e5;
   display: inline-block;
   margin-left: 10%;
-}
-
-.header-line-rtl {
-  width: 100%;
-  border-bottom: 7px solid #506e73;
-  position: absolute;
-}
-
-.page-header {
-  margin-right: 60%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-}
-
-.header-line {
-  width: 100%;
-  height: 47px;
-  border-bottom: 7px solid #506e73;
-  position: absolute;
 }
 
 .experience-container {
@@ -199,14 +199,6 @@ section .skills-section-styles h4 {
   display: flex;
   flex-direction: column;
   margin-top: 250px;
-}
-
-.projects-page-header-rtl {
-  margin-left: 60%;
-}
-
-.projects-page-header-rtl h2 {
-  margin: 0px;
 }
 
 .projects {
