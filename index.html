@@ -25,177 +25,193 @@
   <body>
     <div id="app">
       <header>
-        <nav class="social-links">
-          <a href="https://github.com/avenmia/" aria-label="GitHub link"
-            ><i class="fa-brands fa-github-square fa-3x"></i
+        <nav class="navbar">
+          <a
+            class="navbar__link"
+            href="https://github.com/avenmia/"
+            aria-label="GitHub link"
+            ><i class="fa-brands fa-github-square fa-3x navbar__link__icon"></i
           ></a>
           <a
+            class="navbar__link"
             href="https://www.linkedin.com/in/michael-avendano/"
             aria-label="LinkedIn link"
-            ><i class="fa-brands fa-linkedin fa-3x"></i
+            ><i class="fa-brands fa-linkedin fa-3x navbar__link__icon"></i
           ></a>
           <a
+            class="navbar__link"
             href="https://stackoverflow.com/users/7331107/avenmia"
             aria-label="Stack Overflow link"
-            ><i class="fa-brands fa-stack-overflow fa-3x"></i
+            ><i class="fa-brands fa-stack-overflow fa-3x navbar__link__icon"></i
           ></a>
         </nav>
-        <div class="website-header">
-          <h1 class="website-title">Michael Avendano</h1>
-          <h2 class="website-subtitle">Software Engineer</h2>
+        <div class="site-title">
+          <h1 class="site-title__name">Michael Avendano</h1>
+          <h2 class="site-title__job">Software Engineer</h2>
         </div>
-        <nav class="page-links">
-          <a href="#about">About</a>
-          <a href="#experience">Experience</a>
-          <a href="#projects">Projects</a>
+        <nav class="page-nav">
+          <a class="page-nav__link" href="#about">About</a>
+          <a class="page-nav__link" href="#experience">Experience</a>
+          <a class="page-nav__link" href="#projects">Projects</a>
         </nav>
       </header>
       <main>
-        <section id="about">
-          <div class="profile-section">
-            <div class="background-circle">
-              <img
-                src="./src/assets/mike_517x517.png"
-                height="517px"
-                width="517px"
-                alt="Profile picture of Michael Avendano"
-              />
-            </div>
+        <section class="page page--light">
+          <div class="page__header page__header--rtl">
+            <h2 class="page__header__title">ABOUT</h2>
+            <div class="page__header__line"></div>
           </div>
-          <div>
-            <div class="page-header-rtl">
-              <h2>ABOUT</h2>
-              <div class="header-line-rtl"></div>
+          <div class="page__container">
+            <div class="page__item">
+              <div class="background-circle">
+                <img
+                  src="./src/assets/mike_517x517.png"
+                  height="517px"
+                  width="517px"
+                  alt="Profile picture of Michael Avendano"
+                />
+              </div>
             </div>
-            <div class="about-text">
-              <p>
-                Hi! I’m Michael Avendano. I’m based in Honolulu, Hawai’i,
-                currently working at Pangaea Information Technologies as a
-                full-stack developer. In my spare time, I also volunteer at Code
-                for Hawaii.
-              </p>
-              <p>
-                My hobbies often revolve around puzzle-solving. Whether it’s
-                through code, chess, or martial arts, I enjoy finding creative
-                ways to approach problems.
-              </p>
-              <p>
-                Finding new solutions keeps me motivated while the ability to
-                help others through code inspires me to keep learning.
-              </p>
-            </div>
-          </div>
-        </section>
-        <section id="experience">
-          <div class="page-header">
-            <h2>EXPERIENCE</h2>
-            <div class="header-line"></div>
-          </div>
-          <div id="experience-container">
-            <section id="experience">
-              <section class="work-experience-section">
-                <h3>Software Engineer</h3>
-                <h4>Pangaea Information Technology</h4>
-                <h5>01-2019 to Present</h5>
-                <ul>
-                  <li>
-                    Creating RESTful APIs in ASP.NET Core, ASP.NET, and Node.js
-                    with Azure Functions
-                  </li>
-                  <li>
-                    Developing front-end applications with TypeScript & React.js
-                  </li>
-                  <li>
-                    Working as a back-end developer using C# with ASP.NET Core
-                    and SQL Server
-                  </li>
-                  <li>Using Test Driven Development to implement features</li>
-                </ul>
-              </section>
-              <section class="work-experience-section">
-                <h3>Volunteer</h3>
-                <h4>Code for Hawaii</h4>
-                <h5>01-2022 to Present</h5>
-                <ul>
-                  <li>
-                    Triaging issues and contributing code to the Code for Hawaii
-                    website
-                  </li>
-                  <li>
-                    Onboarding new members by providing tutorials and
-                    familiarizing them with the code base
-                  </li>
-                  <li>Helping facilitate meetings</li>
-                </ul>
-              </section>
-              <section class="work-experience-section">
-                <h3>Research Assistant</h3>
-                <h4>
-                  Electronic Visualization Laboratory at University of Illinois
-                  at Chicago
-                </h4>
-                <h5>06-2018 to 12-2018</h5>
-                <ul>
-                  <li>
-                    Gained experience using Node.js and Express.js to handle
-                    data requests primarily utilizing WebSockets
-                  </li>
-                  <li>
-                    Utilized Mongoose to interface with MongoDB to create
-                    schemas and store live data efficiently
-                  </li>
-                  <li>
-                    Worked with various APIs for devices such as microphones and
-                    Z-Wave devices
-                  </li>
-                </ul>
-              </section>
-            </section>
-            <div class="skills-container">
-              <section id="skills">
-                <h3>Skills</h3>
-                <section class="skills-section">
-                  <h4>Languages</h4>
-                  <ul>
-                    <li>TypeScript</li>
-                    <li>C#</li>
-                    <li>JavaScript</li>
-                    <li>Python</li>
-                  </ul>
-                </section>
-                <section class="skills-section">
-                  <h4>Technologies</h4>
-                  <ul>
-                    <li>Vue.js</li>
-                    <li>React.js</li>
-                    <li>Node.js</li>
-                    <li>ASP.NET Core</li>
-                    <li>CosmosDb</li>
-                    <li>MSSQL Server</li>
-                  </ul>
-                </section>
-                <section class="skills-section-styles">
-                  <h4>Coding Styles</h4>
-                  <ul>
-                    <li>Test Driven Development</li>
-                    <li>Object Oriented Programming</li>
-                  </ul>
-                </section>
-              </section>
-              <div id="resume">
-                <a href="./src/assets/resume.pdf" download>
-                  <button class="resume-btn">VIEW RESUME</button>
-                </a>
+            <div class="page__item">
+              <div>
+                <p>
+                  Hi! I’m Michael Avendano. I’m based in Honolulu, Hawai’i,
+                  currently working at Pangaea Information Technologies as a
+                  full-stack developer. In my spare time, I also volunteer at
+                  Code for Hawaii.
+                </p>
+                <p>
+                  My hobbies often revolve around puzzle-solving. Whether it’s
+                  through code, chess, or martial arts, I enjoy finding creative
+                  ways to approach problems.
+                </p>
+                <p>
+                  Finding new solutions keeps me motivated while the ability to
+                  help others through code inspires me to keep learning.
+                </p>
               </div>
             </div>
           </div>
         </section>
-        <section id="projects">
-          <div class="projects-page-header-rtl">
-            <h2>PROJECTS</h2>
-            <div class="header-line-rtl"></div>
+        <section class="page page--dark">
+          <div class="page__header page__header--ltr">
+            <h2 class="page__header__title page__header__title--ltr">
+              EXPERIENCE
+            </h2>
+            <div class="page__header__line"></div>
           </div>
-          <div class="projects-container">
+          <div class="page__container">
+            <div class="page__item">
+              <section>
+                <section class="work__experience">
+                  <h3 class="work__experience__header">Software Engineer</h3>
+                  <h4 class="work__experience__subheader">
+                    Pangaea Information Technology
+                  </h4>
+                  <h5>01-2019 to Present</h5>
+                  <ul>
+                    <li>
+                      Creating RESTful APIs in ASP.NET Core, ASP.NET, and
+                      Node.js with Azure Functions
+                    </li>
+                    <li>
+                      Developing front-end applications with TypeScript &
+                      React.js
+                    </li>
+                    <li>
+                      Working as a back-end developer using C# with ASP.NET Core
+                      and SQL Server
+                    </li>
+                    <li>Using Test Driven Development to implement features</li>
+                  </ul>
+                </section>
+                <section class="work__experience">
+                  <h3 class="work__experience__header">Volunteer</h3>
+                  <h4 class="work__experience__subheader">Code for Hawaii</h4>
+                  <h5>01-2022 to Present</h5>
+                  <ul>
+                    <li>
+                      Triaging issues and contributing code to the Code for
+                      Hawaii website
+                    </li>
+                    <li>
+                      Onboarding new members by providing tutorials and
+                      familiarizing them with the code base
+                    </li>
+                    <li>Helping facilitate meetings</li>
+                  </ul>
+                </section>
+                <section class="work__experience">
+                  <h3 class="work__experience__header">Research Assistant</h3>
+                  <h4 class="work__experience__subheader">
+                    Electronic Visualization Laboratory at University of
+                    Illinois at Chicago
+                  </h4>
+                  <h5>06-2018 to 12-2018</h5>
+                  <ul>
+                    <li>
+                      Gained experience using Node.js and Express.js to handle
+                      data requests primarily utilizing WebSockets
+                    </li>
+                    <li>
+                      Utilized Mongoose to interface with MongoDB to create
+                      schemas and store live data efficiently
+                    </li>
+                    <li>
+                      Worked with various APIs for devices such as microphones
+                      and Z-Wave devices
+                    </li>
+                  </ul>
+                </section>
+              </section>
+            </div>
+            <div class="page__item">
+              <div class="skills">
+                <section class="skills__area">
+                  <h3 class="skills__header">Skills</h3>
+                  <section class="skills__item">
+                    <h4 class="skills__item__header">Languages</h4>
+                    <ul class="skills__values--2col">
+                      <li>TypeScript</li>
+                      <li>C#</li>
+                      <li>JavaScript</li>
+                      <li>Python</li>
+                    </ul>
+                  </section>
+                  <section class="skills__item">
+                    <h4 class="skills__item__header">Technologies</h4>
+                    <ul class="skills__values--2col">
+                      <li>Vue.js</li>
+                      <li>React.js</li>
+                      <li>Node.js</li>
+                      <li>ASP.NET Core</li>
+                      <li>CosmosDb</li>
+                      <li>MSSQL Server</li>
+                    </ul>
+                  </section>
+                  <section class="skills-section-styles">
+                    <h4 class="skills__item__header">Coding Styles</h4>
+                    <ul class="skills__values--1col">
+                      <li>Test Driven Development</li>
+                      <li>Object Oriented Programming</li>
+                    </ul>
+                  </section>
+                </section>
+                <div class="resume">
+                  <a href="./src/assets/resume.pdf" download>
+                    <button class="resume__btn">VIEW RESUME</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="page page--light">
+          <div class="page__header page__header--rtl">
+            <h2 class="page__header__title">PROJECTS</h2>
+            <div class="page__header__line"></div>
+          </div>
+          <div class="page__container projects">
             <a href="https://github.com/avenmia/PersonalWebsite"
               ><button class="project">Personal Website</button></a
             >

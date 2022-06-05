@@ -1,63 +1,21 @@
+/* General Styles */
+
+html {
+  height: 100%;
+}
+
 body {
   padding: 0px;
   margin: 0px;
   font-family: "Lexend";
   font-display: swap;
+  height: 100%;
 }
 
 header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-}
-
-.website-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.website-title {
-  font-family: "Rock Salt";
-  font-display: swap;
-  font-weight: normal;
-  color: #506e73;
-  margin-bottom: 0px;
-}
-
-.website-subtitle {
-  margin-top: 0px;
-}
-
-.social-links {
-  align-self: center;
-  margin-left: 10px;
-}
-
-.social-links a {
-  color: #506e73;
-}
-
-.social-links i {
-  margin-right: 10px;
-}
-
-.page-links {
-  align-self: center;
-  margin-right: 10px;
-}
-.page-links a {
-  color: #506e73;
-  text-decoration: none;
-}
-
-#about {
-  display: flex;
-  gap: 200px;
-}
-
-#experience {
-  background-color: #dce4e5;
 }
 
 h2 {
@@ -69,13 +27,111 @@ hr {
   border-top: 5px solid #506e73;
 }
 
-.page-header-rtl h2 {
+/* ------------------------- */
+
+/* layout */
+
+.page {
+}
+
+.page--light {
+  background-color: #fff;
+}
+
+.page--dark {
+  background-color: #dce4e5;
+}
+
+.page__container {
+  display: flex;
+}
+
+.page__item {
+}
+
+.page__header {
+}
+
+.page__header--rtl {
+  margin-left: 60%;
+}
+
+.page__header--ltr {
+  margin-right: 60%;
+}
+
+.page__header__title {
   margin: 0px;
 }
 
-.profile-section {
-  display: flex;
+.page__header__title--ltr {
+  text-align: end;
 }
+
+.page__header__line {
+  width: 100%;
+  border-bottom: 7px solid #506e73;
+}
+
+/* ------------------------- */
+
+/* components */
+
+.navbar {
+  align-self: center;
+  margin-left: 10px;
+}
+
+.navbar__link {
+  color: #506e73;
+}
+
+.navbar__link__icon {
+  margin-right: 10px;
+}
+
+.site-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.site-title__name {
+  font-family: "Rock Salt";
+  font-display: swap;
+  font-weight: normal;
+  color: #506e73;
+  margin-bottom: 0px;
+}
+
+.site-title__job {
+  margin-top: 0px;
+}
+
+.page-nav {
+  align-self: center;
+  margin-right: 10px;
+}
+.page-nav__link {
+  color: #506e73;
+  text-decoration: none;
+}
+
+.work__experience {
+  font-size: 18px;
+  width: 600px;
+}
+
+.work__experience__header {
+  color: #01233f;
+}
+
+.work__experience__subheader {
+  color: #175061;
+  font-weight: bold;
+}
+
+/* ------------------------- */
 
 .background-circle {
   display: flex;
@@ -87,32 +143,7 @@ hr {
   margin-left: 10%;
 }
 
-.header-line-rtl {
-  width: 100%;
-  border-bottom: 7px solid #506e73;
-  position: absolute;
-}
-
-.page-header {
-  margin-right: 60%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-}
-
-.header-line {
-  width: 100%;
-  height: 47px;
-  border-bottom: 7px solid #506e73;
-  position: absolute;
-}
-
-#experience-container {
-  display: flex;
-  gap: 50px;
-}
-
-#skills {
+.skills__area {
   height: 415px;
   width: 392px;
   background-color: #f2f2f2;
@@ -121,49 +152,30 @@ hr {
   font-size: 18px;
 }
 
-section #work-experience {
-  font-size: 18px;
-  margin-left: 235px;
-  width: 600px;
-}
-
-section .work-experience-section h3 {
-  color: #01233f;
-}
-
-section .work-experience-section h4 {
-  color: #175061;
-  font-weight: bold;
-}
-
-section .skills-section ul {
+.skills__values--2col {
   column-count: 2;
 }
 
-section .skills-section-styles ul {
+.skills__values--1col {
   column-count: 1;
 }
 
-#skills h3 {
+.skills__header {
   margin: 0.5em;
   color: #175061;
   font-size: 25px;
 }
 
-section .skills-section h4 {
+.skills__item__header {
   margin-left: 1em;
 }
 
-section .skills-section-styles h4 {
-  margin-left: 1em;
-}
-
-.resume-btn:hover {
+.resume__btn:hover {
   background-color: #89282a;
   cursor: pointer;
 }
 
-.resume-btn {
+.resume__btn {
   background-color: #aa3234;
   border-radius: 18px;
   color: white;
@@ -173,22 +185,13 @@ section .skills-section-styles h4 {
   width: 100%;
 }
 
-.skills-container {
+.skills {
   display: flex;
   flex-direction: column;
   margin-top: 250px;
 }
 
-.projects-page-header-rtl {
-  margin-left: 60%;
-}
-
-.projects-page-header-rtl h2 {
-  margin: 0px;
-}
-
-.projects-container {
-  display: flex;
+.projects {
   justify-content: space-around;
 }
 
