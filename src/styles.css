@@ -49,6 +49,7 @@ hr {
 }
 
 .page__item {
+  width: min(60vw, 100%);
 }
 
 .page__header {
