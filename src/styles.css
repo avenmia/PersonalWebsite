@@ -1,5 +1,11 @@
 /* General Styles */
 
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
 html {
   height: 100%;
 }
@@ -23,7 +29,7 @@ h2 {
 }
 
 hr {
-  width: 33%;
+  /* width: 33%; */
   border-top: 5px solid #506e73;
 }
 
@@ -32,18 +38,14 @@ hr {
 /* layout */
 
 .page {
-}
-
-.page--light {
-  background-color: #fff;
-}
-
-.page--dark {
-  background-color: #dce4e5;
+  margin-left: auto;
+  margin-right: auto;
+  width: min(60vw, 600px);
 }
 
 .page__container {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .page__item {
@@ -52,20 +54,17 @@ hr {
 .page__header {
 }
 
-.page__header--rtl {
-  margin-left: 60%;
+.section--light {
+  background-color: #fff;
 }
 
-.page__header--ltr {
-  margin-right: 60%;
+.section--dark {
+  background-color: #dce4e5;
 }
 
 .page__header__title {
   margin: 0px;
-}
-
-.page__header__title--ltr {
-  text-align: end;
+  text-align: center;
 }
 
 .page__header__line {
@@ -79,7 +78,6 @@ hr {
 
 .navbar {
   align-self: center;
-  margin-left: 10px;
 }
 
 .navbar__link {
@@ -87,7 +85,6 @@ hr {
 }
 
 .navbar__link__icon {
-  margin-right: 10px;
 }
 
 .site-title {
@@ -110,7 +107,6 @@ hr {
 
 .page-nav {
   align-self: center;
-  margin-right: 10px;
 }
 .page-nav__link {
   color: #506e73;
@@ -119,7 +115,6 @@ hr {
 
 .work__experience {
   font-size: 18px;
-  width: 600px;
 }
 
 .work__experience__header {
@@ -144,12 +139,12 @@ hr {
 }
 
 .skills__area {
-  height: 415px;
-  width: 392px;
+  /* height: 415px;
+  width: 392px; */
   background-color: #f2f2f2;
   border-radius: 18px;
-  margin-right: 10%;
-  font-size: 18px;
+  /* margin-right: 10%; */
+  /* font-size: 18px; */
 }
 
 .skills__values--2col {
@@ -188,7 +183,7 @@ hr {
 .skills {
   display: flex;
   flex-direction: column;
-  margin-top: 250px;
+  /* margin-top: 250px; */
 }
 
 .projects {
@@ -196,10 +191,7 @@ hr {
 }
 
 .project {
-  width: 406px;
-  height: 287px;
   border-radius: 18px;
-  margin-top: 25px;
   background-color: #c4c4c4;
   font-size: 18px;
   border: none;
