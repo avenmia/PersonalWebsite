@@ -58,13 +58,15 @@
       <main>
         <section id="about" class="section section--light">
           <div class="page">
-            <div class="page__header page__header--rtl">
-              <h2 class="page__header__title">ABOUT</h2>
-              <div class="page__header__line"></div>
-            </div>
             <div class="page__container">
-              <div class="page__item">
-                <div>
+              <div class="page__item page__item--right">
+                <div class="page__header page__header--rtl">
+                  <h2 class="page__header__title page__header__title--rtl">
+                    ABOUT
+                  </h2>
+                  <div class="page__header__line"></div>
+                </div>
+                <div class="page__content page__content--right">
                   <p>
                     Hi! I’m Michael Avendano. I’m based in Honolulu, Hawai’i,
                     currently working at Pangaea Information Technologies as a
@@ -82,7 +84,7 @@
                   </p>
                 </div>
               </div>
-              <div class="page__item">
+              <div class="page__item page__item--left">
                 <picture>
                   <source
                     media="(min-width: 480px)"
@@ -103,15 +105,15 @@
         </section>
         <section id="experience" class="section section--dark">
           <div class="page">
-            <div class="page__header page__header--ltr">
-              <h2 class="page__header__title page__header__title--ltr">
-                EXPERIENCE
-              </h2>
-              <div class="page__header__line"></div>
-            </div>
             <div class="page__container">
-              <div class="page__item">
-                <section>
+              <div class="page__item page__item--left">
+                <div class="page__header page__header--ltr">
+                  <h2 class="page__header__title page__header__title--ltr">
+                    EXPERIENCE
+                  </h2>
+                  <div class="page__header__line"></div>
+                </div>
+                <section class="page__content page__content--left">
                   <section class="work__experience">
                     <h3 class="work__experience__header">Software Engineer</h3>
                     <h4 class="work__experience__subheader">
@@ -176,8 +178,8 @@
                   </section>
                 </section>
               </div>
-              <div class="page__item">
-                <div class="skills">
+              <div class="page__item page__item--right">
+                <div class="skills page__content--right">
                   <section class="skills__area">
                     <h3 class="skills__header">Skills</h3>
                     <section class="skills__item">
@@ -220,17 +222,23 @@
         </section>
         <section class="section section--light">
           <div class="page">
-            <div class="page__header page__header--rtl">
-              <h2 class="page__header__title">PROJECTS</h2>
-              <div class="page__header__line"></div>
-            </div>
-            <div class="page__container projects">
-              <a href="https://github.com/avenmia/PersonalWebsite"
-                ><button class="project">Personal Website</button></a
-              >
-              <a href="https://github.com/avenmia/quantum-lamps">
-                <button class="project">Quantum Lamps</button></a
-              >
+            <div class="page__container">
+              <div class="page__item page__item--left">
+                <div class="page__header page__header--rtl">
+                  <h2 class="page__header__title page__header__title--rtl">
+                    PROJECTS
+                  </h2>
+                  <div class="page__header__line"></div>
+                </div>
+              </div>
+              <section class="projects">
+                <a href="https://github.com/avenmia/PersonalWebsite"
+                  ><button class="project">Personal Website</button></a
+                >
+                <a href="https://github.com/avenmia/quantum-lamps">
+                  <button class="project">Quantum Lamps</button></a
+                >
+              </section>
             </div>
           </div>
         </section>
