@@ -59,6 +59,14 @@ hr {
   gap: 3em;
 }
 
+.page__item {
+  width: min(60vw, 100%);
+}
+
+.page__header {
+  width: 100%;
+}
+
 @media screen and (min-width: 900px) {
   .page {
     width: 100%;
@@ -81,7 +89,8 @@ hr {
   }
 
   .page__container {
-    flex-wrap: nowrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
   .page__content--left {
@@ -91,14 +100,23 @@ hr {
   .page__content--right {
     margin-right: 20%;
   }
-}
 
-.page__item {
-  width: min(60vw, 100%);
-}
+  .page--projects {
+    display: grid;
+    grid-template-rows: 0px 1fr;
+  }
 
-.page__header {
-  width: 100%;
+  .page__header--projects {
+    grid-row-start: 1;
+    grid-column-start: 2;
+  }
+
+  .page__item--projects {
+    width: 100%;
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
 }
 
 .section {
@@ -246,10 +264,4 @@ hr {
 .project:hover {
   cursor: pointer;
   background-color: #d39e9f;
-}
-
-@media screen and (min-width: 900px) {
-  .skills {
-    margin-top: 30%;
-  }
 }
