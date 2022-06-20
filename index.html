@@ -60,12 +60,12 @@
           <div class="page">
             <div class="page__container">
               <div class="page__item page__item--right">
-                <div class="page__header page__header--rtl">
-                  <h2 class="page__header__title page__header__title--rtl">
-                    ABOUT
-                  </h2>
-                  <div class="page__header__line"></div>
-                </div>
+                <!-- <div class="page__header page__header--rtl"> -->
+                <h2 class="page__header__title page__header__title--rtl">
+                  ABOUT
+                </h2>
+                <!-- <div class="page__header__line"></div> -->
+                <!-- </div> -->
                 <div class="page__content page__content--right">
                   <p>
                     Hi! I’m Michael Avendano. I’m based in Honolulu, Hawai’i,
@@ -85,20 +85,23 @@
                 </div>
               </div>
               <div class="page__item page__item--left">
-                <picture>
-                  <source
-                    media="(min-width: 480px)"
-                    srcset="./src/assets/mike_517x517.png"
-                  />
-                  <source
-                    media="(min-width: 100px)"
-                    srcset="./src/assets/mike_175x175.png"
-                  />
-                  <img
-                    src="./src/assets/mike.png"
-                    alt="IfItDoesntMatchAnyMedia"
-                  />
-                </picture>
+                <?xml version="1.0" encoding="UTF-8"?>
+                <div class="background-circle">
+                  <picture>
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="./src/assets/mike_517x517.png"
+                    />
+                    <source
+                      media="(min-width: 100px)"
+                      srcset="./src/assets/mike_175x175.png"
+                    />
+                    <img
+                      src="./src/assets/mike.png"
+                      alt="IfItDoesntMatchAnyMedia"
+                    />
+                  </picture>
+                </div>
               </div>
             </div>
           </div>
@@ -107,12 +110,10 @@
           <div class="page">
             <div class="page__container">
               <div class="page__item page__item--left">
-                <div class="page__header page__header--ltr">
-                  <h2 class="page__header__title page__header__title--ltr">
-                    EXPERIENCE
-                  </h2>
-                  <div class="page__header__line"></div>
-                </div>
+                <h2 class="page__header__title page__header__title--ltr">
+                  EXPERIENCE
+                </h2>
+                <div class="page__header__line"></div>
                 <section class="page__content page__content--left">
                   <section class="work__experience">
                     <h3 class="work__experience__header">Software Engineer</h3>
@@ -178,8 +179,8 @@
                   </section>
                 </section>
               </div>
-              <div class="page__item page__item--right">
-                <div class="skills page__content--right">
+              <div class="page__item page__item--right skills__container">
+                <div class="page__content--right">
                   <section class="skills__area">
                     <h3 class="skills__header">Skills</h3>
                     <section class="skills__item">
