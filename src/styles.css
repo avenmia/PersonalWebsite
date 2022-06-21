@@ -37,10 +37,6 @@ hr {
 
 /* layout */
 
-.experience--title {
-  width: fit-content;
-}
-
 .page {
   margin-left: auto;
   margin-right: auto;
@@ -124,6 +120,9 @@ hr {
     grid-column-end: 3;
   }
 
+  .experience--title {
+    width: fit-content;
+  }
   .experience--title::before {
     content: "";
     border-bottom: 7px solid #506e73;
@@ -135,8 +134,8 @@ hr {
     margin-left: -200%;
   }
 
-  .page__header__line {
-    display: none;
+  .page__header__line--ltr {
+    display: none !important;
   }
 }
 
@@ -213,16 +212,11 @@ hr {
   background-image: url("./assets/background-circle.svg");
   background-repeat: no-repeat;
   height: 100%;
-  /* background: url("background-circle.svg"); */
 }
 
 .skills__area {
-  /* height: 415px;
-  width: 392px; */
   background-color: #f2f2f2;
   border-radius: 18px;
-  /* margin-right: 10%; */
-  /* font-size: 18px; */
 }
 
 .skills__values--2col {
