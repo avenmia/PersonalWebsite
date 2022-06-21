@@ -1,5 +1,11 @@
 /* General Styles */
 
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
 html {
   height: 100%;
 }
@@ -7,7 +13,7 @@ html {
 body {
   padding: 0px;
   margin: 0px;
-  font-family: "Lexend";
+  font-family: "Lexend", sans-serif;
   font-display: swap;
   height: 100%;
 }
@@ -23,7 +29,7 @@ h2 {
 }
 
 hr {
-  width: 33%;
+  /* width: 33%; */
   border-top: 5px solid #506e73;
 }
 
@@ -32,45 +38,118 @@ hr {
 /* layout */
 
 .page {
-}
-
-.page--light {
-  background-color: #fff;
-}
-
-.page--dark {
-  background-color: #dce4e5;
-}
-
-.page__container {
-  display: flex;
-}
-
-.page__item {
-}
-
-.page__header {
-}
-
-.page__header--rtl {
-  margin-left: 60%;
-}
-
-.page__header--ltr {
-  margin-right: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  width: min(60vw, 600px);
 }
 
 .page__header__title {
   margin: 0px;
-}
-
-.page__header__title--ltr {
-  text-align: end;
+  text-align: center;
 }
 
 .page__header__line {
   width: 100%;
   border-bottom: 7px solid #506e73;
+}
+
+.page__container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3em;
+}
+
+.page__item {
+  width: min(60vw, 100%);
+}
+
+.page__header {
+  width: 100%;
+}
+
+@media screen and (min-width: 900px) {
+  .page {
+    width: 100%;
+  }
+
+  .page__header__title--rtl {
+    text-align: left;
+  }
+
+  .page__header__title--ltr {
+    /* text-align: right; */
+    margin-left: 20%;
+    text-align: left;
+  }
+
+  .page__item--right {
+    order: 2;
+  }
+
+  .page__item--left {
+    order: 1;
+  }
+
+  .page__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .page__content--left {
+    margin-left: 20%;
+  }
+
+  .page__content--right {
+    margin-right: 20%;
+  }
+
+  .page--projects {
+    display: grid;
+    grid-template-rows: 0px 1fr;
+  }
+
+  .page__header--projects {
+    grid-row-start: 1;
+    grid-column-start: 2;
+  }
+
+  .page__item--projects {
+    width: 100%;
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .experience--title {
+    width: fit-content;
+  }
+  .experience--title::before {
+    content: "";
+    border-bottom: 7px solid #506e73;
+    height: 100%;
+    display: block;
+    margin-left: -100%;
+    position: relative;
+    top: 40px;
+    margin-left: -200%;
+  }
+
+  .page__header__line--ltr {
+    display: none !important;
+  }
+}
+
+.section {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.section--light {
+  background-color: #fff;
+}
+
+.section--dark {
+  background-color: #dce4e5;
 }
 
 /* ------------------------- */
@@ -79,7 +158,6 @@ hr {
 
 .navbar {
   align-self: center;
-  margin-left: 10px;
 }
 
 .navbar__link {
@@ -87,7 +165,6 @@ hr {
 }
 
 .navbar__link__icon {
-  margin-right: 10px;
 }
 
 .site-title {
@@ -110,7 +187,6 @@ hr {
 
 .page-nav {
   align-self: center;
-  margin-right: 10px;
 }
 .page-nav__link {
   color: #506e73;
@@ -119,7 +195,6 @@ hr {
 
 .work__experience {
   font-size: 18px;
-  width: 600px;
 }
 
 .work__experience__header {
@@ -134,22 +209,14 @@ hr {
 /* ------------------------- */
 
 .background-circle {
-  display: flex;
-  height: 502px;
-  width: 502px;
-  border-radius: 50%;
-  background-color: #dce4e5;
-  display: inline-block;
-  margin-left: 10%;
+  background-image: url("./assets/background-circle.svg");
+  background-repeat: no-repeat;
+  height: 100%;
 }
 
 .skills__area {
-  height: 415px;
-  width: 392px;
   background-color: #f2f2f2;
   border-radius: 18px;
-  margin-right: 10%;
-  font-size: 18px;
 }
 
 .skills__values--2col {
@@ -170,6 +237,23 @@ hr {
   margin-left: 1em;
 }
 
+.skills__container {
+  display: flex;
+  flex-direction: column;
+  /* margin-top: 250px; */
+}
+
+@media screen and (min-width: 900px) {
+  .skills__container {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .skills__area {
+    padding: 20px;
+  }
+}
+
 .resume__btn:hover {
   background-color: #89282a;
   cursor: pointer;
@@ -179,30 +263,31 @@ hr {
   background-color: #aa3234;
   border-radius: 18px;
   color: white;
-  margin-top: 20px;
+  margin-top: 1em;
   border: none;
   padding: 10px;
   width: 100%;
 }
 
-.skills {
-  display: flex;
-  flex-direction: column;
-  margin-top: 250px;
+@media screen and (min-width: 900px) {
+  .resume__btn {
+    width: 392px;
+  }
 }
 
 .projects {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 
 .project {
-  width: 406px;
-  height: 287px;
   border-radius: 18px;
-  margin-top: 25px;
   background-color: #c4c4c4;
   font-size: 18px;
   border: none;
+  padding: 4em;
+  margin-top: 1em;
 }
 
 .project:hover {
