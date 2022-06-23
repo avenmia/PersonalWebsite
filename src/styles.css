@@ -21,7 +21,13 @@ body {
 header {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
+}
+
+@media screen and (min-width: 900px) {
+  header {
+    justify-content: space-between;
+  }
 }
 
 h2 {
@@ -157,16 +163,12 @@ hr {
 /* components */
 
 .navbar {
-  align-self: center;
+  display: none;
 }
 
-.navbar__link {
-  color: #506e73;
+.page-nav {
+  display: none;
 }
-
-.navbar__link__icon {
-}
-
 .site-title {
   display: flex;
   flex-direction: column;
@@ -185,12 +187,27 @@ hr {
   margin-top: 0px;
 }
 
-.page-nav {
-  align-self: center;
-}
-.page-nav__link {
-  color: #506e73;
-  text-decoration: none;
+@media screen and (min-width: 900px) {
+  .navbar {
+    display: block;
+    align-self: center;
+  }
+
+  .navbar__link {
+    color: #506e73;
+  }
+
+  .navbar__link__icon {
+  }
+
+  .page-nav {
+    display: block;
+    align-self: center;
+  }
+  .page-nav__link {
+    color: #506e73;
+    text-decoration: none;
+  }
 }
 
 .work__experience {
