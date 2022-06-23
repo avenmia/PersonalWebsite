@@ -55,6 +55,22 @@
           <a class="page-nav__link" href="#projects">Projects</a>
         </nav>
       </header>
+      <nav role="navigation">
+        <div id="menuToggle">
+          <input name="toggle" type="checkbox" />
+          <label for="toggle">
+            <span>menu</span>
+            <div></div>
+            <div></div>
+            <div></div>
+          </label>
+          <ul id="menu">
+            <a href="#about"><li>About</li></a>
+            <a href="#experience"><li>Experience</li></a>
+            <a href="#projects"><li>Projects</li></a>
+          </ul>
+        </div>
+      </nav>
       <main>
         <section id="about" class="section section--light">
           <div class="page">
@@ -226,7 +242,7 @@
             </div>
           </div>
         </section>
-        <section class="section section--light">
+        <section id="projects" class="section section--light">
           <div class="page">
             <div class="page__container page--projects">
               <div
