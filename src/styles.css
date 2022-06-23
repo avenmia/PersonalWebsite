@@ -188,8 +188,6 @@ hr {
 }
 
 .mobile-navbar {
-  display: flex;
-  justify-content: space-around;
   width: 100%;
   border: 5px solid #506e73;
   position: -webkit-sticky;
@@ -199,12 +197,21 @@ hr {
   padding: 20px;
 }
 
+.mobile-navbar ul {
+  display: flex;
+  justify-content: space-around;
+}
+
 .mobile-navbar li {
   color: white;
   list-style-type: none;
 }
-.mobile-navbar a {
+.mobile-navbar a,
+a:hover,
+a:focus,
+a:active {
   text-decoration: none;
+  color: inherit;
 }
 
 @media screen and (min-width: 900px) {
