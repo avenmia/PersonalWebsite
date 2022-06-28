@@ -39,12 +39,6 @@ hr {
   border-top: 5px solid #506e73;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
 /* ------------------------- */
 
 /* layout */
@@ -215,6 +209,12 @@ ul {
   width: 15px;
   background-color: black;
   margin: 2px;
+}
+
+.list--mobile-nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 @media screen and (min-width: 900px) {
