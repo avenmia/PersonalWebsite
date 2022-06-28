@@ -24,13 +24,45 @@
   </head>
   <body>
     <div id="app">
-      <nav class="mobile-navbar">
-        <ul>
-          <li><a class="page-nav__link" href="#about">About</a></li>
-          <li><a class="page-nav__link" href="#experience">Experience</a></li>
-          <li><a class="page-nav__link" href="#projects">Projects</a></li>
-        </ul>
-      </nav>
+      <div class="mobile-menu-wrapper">
+        <label for="toggle">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </label>
+        <input id="toggle" class="menu-toggle" type="checkbox" name="toggle" />
+        <nav class="mobile-navbar">
+          <ul>
+            <li><a class="link page-nav-link" href="#about">About</a></li>
+            <li>
+              <a class="link page-nav-link" href="#experience">Experience</a>
+            </li>
+            <li><a class="link page-nav-link" href="#projects">Projects</a></li>
+            <li>
+              <a
+                class="link social-link__github"
+                href="https://github.com/avenmia/"
+                >GitHub</a
+              >
+            </li>
+            <li>
+              <a
+                class="link social-link__linkedin"
+                href="https://www.linkedin.com/in/michael-avendano/"
+                >LinkedIn</a
+              >
+            </li>
+            <li>
+              <a
+                class="link social-link__stackoverflow"
+                href="https://stackoverflow.com/users/7331107/avenmia"
+                >Stack Overflow</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+
       <header>
         <nav class="navbar">
           <a

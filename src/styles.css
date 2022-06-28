@@ -39,6 +39,12 @@ hr {
   border-top: 5px solid #506e73;
 }
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 /* ------------------------- */
 
 /* layout */
@@ -187,34 +193,39 @@ hr {
   margin-top: 0px;
 }
 
+.menu-toggle {
+  display: none;
+}
+.menu-toggle:checked + .mobile-navbar {
+  display: none;
+}
+
 .mobile-navbar {
-  width: 100%;
-  border: 5px solid #506e73;
-  position: -webkit-sticky;
-  position: sticky;
   background-color: #506e73;
-  top: 0;
-  padding: 20px;
+  width: 10rem;
 }
 
-.mobile-navbar ul {
-  display: flex;
-  justify-content: space-around;
-}
-
-.mobile-navbar li {
-  color: white;
-  list-style-type: none;
-}
-.mobile-navbar a,
-a:hover,
-a:focus,
-a:active {
+.link {
   text-decoration: none;
-  color: inherit;
+  color: white;
+}
+
+.bar {
+  height: 5px;
+  width: 15px;
+  background-color: black;
+  margin: 2px;
 }
 
 @media screen and (min-width: 900px) {
+  .bar {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
   .mobile-navbar {
     display: none;
   }
