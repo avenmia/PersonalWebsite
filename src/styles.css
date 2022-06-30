@@ -214,10 +214,11 @@ hr {
 }
 
 .bar {
-  height: 5px;
-  width: 15px;
-  background-color: black;
-  margin: 2px;
+  height: 0.2rem;
+  width: 1.5rem;
+  background-color: #506e73;
+  margin: 5px;
+  border-radius: 5px;
 }
 
 .list--mobile-nav {
