@@ -194,14 +194,23 @@ hr {
   display: none;
 }
 
+.mobile-menu-wrapper {
+  position: fixed;
+  left: 1rem;
+  top: 1rem;
+}
+
 .mobile-navbar {
   background-color: #506e73;
-  width: 10rem;
+  width: 9rem;
+  position: fixed;
 }
 
 .link {
   text-decoration: none;
   color: white;
+  margin-left: 1rem;
+  margin-top: 1rem;
 }
 
 .bar {
