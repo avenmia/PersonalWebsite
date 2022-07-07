@@ -25,12 +25,15 @@
   <body>
     <div id="app">
       <div class="mobile-menu-wrapper">
-        <label for="toggle">
+        <input id="toggle" class="menu-toggle" type="checkbox" name="toggle" />
+        <label class="toggle-label" for="toggle">
+          <div class="close-menu">
+            <span>X</span>
+          </div>
           <div class="bar"></div>
           <div class="bar"></div>
           <div class="bar"></div>
         </label>
-        <input id="toggle" class="menu-toggle" type="checkbox" name="toggle" />
         <nav class="mobile-navbar">
           <ul class="list--mobile-nav">
             <li><a class="link page-nav-link" href="#about">About</a></li>
@@ -291,6 +294,6 @@
         </section>
       </main>
     </div>
-    <!-- <script type="module" src="/src/main.ts"></script> -->
+    <script type="module" src="/src/main.ts"></script>
   </body>
 </html>

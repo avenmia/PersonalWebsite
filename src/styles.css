@@ -190,7 +190,8 @@ hr {
 .menu-toggle {
   display: none;
 }
-.menu-toggle:checked + .mobile-navbar {
+
+.mobile-navbar {
   display: none;
 }
 
@@ -198,12 +199,21 @@ hr {
   position: fixed;
   left: 1rem;
   top: 1rem;
+  z-index: 5;
 }
 
 .mobile-navbar {
-  background-color: #506e73;
-  width: 9rem;
+  background-color: rgba(80, 110, 115, 0.8);
+  width: 100%;
+  height: 100%;
   position: fixed;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+}
+
+.close-menu {
+  display: none;
 }
 
 .link {
@@ -223,8 +233,9 @@ hr {
 
 .list--mobile-nav {
   list-style-type: none;
-  margin: 0;
+  margin: 5px;
   padding: 0;
+  margin-top: 10%;
 }
 
 @media screen and (min-width: 900px) {
