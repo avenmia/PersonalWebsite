@@ -429,17 +429,14 @@ hr {
 .project {
   border-radius: 18px;
   background-color: var(--project-bg-color);
-  font-size: 18px;
   border: none;
-  padding: 8em;
+  padding: 12rem;
   margin-top: 1em;
 }
 
 .website {
   background: url(./assets/mike_517x517.png) no-repeat;
   background-position: center;
-  color: black;
-  font-size: 20px;
   filter: brightness(50%);
 }
 
