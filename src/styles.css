@@ -82,7 +82,6 @@ hr {
   }
 
   .page__header__title--ltr {
-    /* text-align: right; */
     margin-left: 20%;
     text-align: left;
   }
@@ -189,6 +188,11 @@ hr {
 
 .menu-toggle {
   display: none;
+}
+
+.about {
+  position: relative;
+  top: 75px;
 }
 
 /* .mobile-navbar {
