@@ -198,6 +198,7 @@ hr {
 
 .site-title__job {
   margin-top: 0px;
+  font-size: 24px;
 }
 
 .menu-toggle {
@@ -226,7 +227,6 @@ hr {
 
 .close-icon[data-state="visible"] {
   display: block;
-  cursor: pointer;
   color: white;
   font-size: 24px;
 }
@@ -269,6 +269,12 @@ hr {
 .link__external::after {
   content: "\f08e";
   font: var(--fa-font-solid);
+}
+
+.menu-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 900px) {

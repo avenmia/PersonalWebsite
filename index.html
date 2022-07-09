@@ -25,15 +25,14 @@
   <body>
     <div id="app">
       <div class="mobile-menu-wrapper">
-        <input id="toggle" class="menu-toggle" type="checkbox" name="toggle" />
-        <label class="toggle-label" for="toggle">
+        <button class="menu-btn">
           <div id="close-icon" class="close-icon" data-state="hide">
             <span>X</span>
           </div>
           <div class="bar" data-state="visible"></div>
           <div class="bar" data-state="visible"></div>
           <div class="bar" data-state="visible"></div>
-        </label>
+        </button>
         <nav class="mobile-navbar" data-state="close">
           <ul class="list--mobile-nav">
             <li><a class="link page-nav-link" href="#about">About</a></li>
@@ -79,18 +78,21 @@
             class="navbar__link"
             href="https://github.com/avenmia/"
             aria-label="GitHub link"
+            title="GitHub Link"
             ><i class="fa-brands fa-github-square fa-3x navbar__link__icon"></i
           ></a>
           <a
             class="navbar__link"
             href="https://www.linkedin.com/in/michael-avendano/"
             aria-label="LinkedIn link"
+            title="LinkedIn Link"
             ><i class="fa-brands fa-linkedin fa-3x navbar__link__icon"></i
           ></a>
           <a
             class="navbar__link"
             href="https://stackoverflow.com/users/7331107/avenmia"
             aria-label="Stack Overflow link"
+            title="Stack Overflow Link"
             ><i class="fa-brands fa-stack-overflow fa-3x navbar__link__icon"></i
           ></a>
         </nav>

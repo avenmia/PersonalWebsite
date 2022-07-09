@@ -1,4 +1,4 @@
-const hamburger: HTMLElement | null = document.querySelector(".toggle-label");
+const hamburger: HTMLElement | null = document.querySelector(".menu-btn");
 const menu: HTMLElement | null = document.querySelector(".mobile-navbar");
 const closeIcon: HTMLElement | null = document.querySelector("#close-icon");
 const bars = document.querySelectorAll(".bar");
