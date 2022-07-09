@@ -326,6 +326,7 @@ hr {
 .skills__area {
   background-color: #f2f2f2;
   border-radius: 18px;
+  padding: 1rem;
 }
 
 .skills__values--2col {
