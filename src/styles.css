@@ -430,14 +430,14 @@ hr {
   border-radius: 18px;
   background-color: var(--project-bg-color);
   border: none;
-  padding: 12rem;
   margin-top: 1em;
+  padding: 12rem;
 }
 
 .website {
-  background: url(./assets/mike_517x517.png) no-repeat;
+  background: url(./assets/code_500x500.png) no-repeat;
   background-position: center;
-  filter: brightness(50%);
+  filter: brightness(30%);
 }
 
 .quantum_lamps {
