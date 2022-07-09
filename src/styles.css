@@ -364,10 +364,6 @@ hr {
   padding: 1rem;
 }
 
-.skills__values--2col {
-  column-count: 2;
-}
-
 .skills__values--1col {
   column-count: 1;
 }
@@ -392,6 +388,10 @@ hr {
   .skills__container {
     align-items: center;
     justify-content: center;
+  }
+
+  .skills__values--2col {
+    column-count: 2;
   }
 
   .skills__area {
