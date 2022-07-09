@@ -24,13 +24,48 @@
   </head>
   <body>
     <div id="app">
-      <nav class="mobile-navbar">
-        <ul>
-          <li><a class="page-nav__link" href="#about">About</a></li>
-          <li><a class="page-nav__link" href="#experience">Experience</a></li>
-          <li><a class="page-nav__link" href="#projects">Projects</a></li>
-        </ul>
-      </nav>
+      <div class="mobile-menu-wrapper">
+        <input id="toggle" class="menu-toggle" type="checkbox" name="toggle" />
+        <label class="toggle-label" for="toggle">
+          <div id="close-icon" class="close-icon" data-state="hide">
+            <span>X</span>
+          </div>
+          <div class="bar" data-state="visible"></div>
+          <div class="bar" data-state="visible"></div>
+          <div class="bar" data-state="visible"></div>
+        </label>
+        <nav class="mobile-navbar" data-state="close">
+          <ul class="list--mobile-nav">
+            <li><a class="link page-nav-link" href="#about">About</a></li>
+            <li>
+              <a class="link page-nav-link" href="#experience">Experience</a>
+            </li>
+            <li><a class="link page-nav-link" href="#projects">Projects</a></li>
+            <li>
+              <a
+                class="link social-link__github"
+                href="https://github.com/avenmia/"
+                >GitHub</a
+              >
+            </li>
+            <li>
+              <a
+                class="link social-link__linkedin"
+                href="https://www.linkedin.com/in/michael-avendano/"
+                >LinkedIn</a
+              >
+            </li>
+            <li>
+              <a
+                class="link social-link__stackoverflow"
+                href="https://stackoverflow.com/users/7331107/avenmia"
+                >Stack Overflow</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+
       <header>
         <nav class="navbar">
           <a
@@ -66,7 +101,7 @@
         <section id="about" class="section section--light">
           <div class="page">
             <div class="page__container">
-              <div class="page__item page__item--right">
+              <div class="page__item page__item--right about-content">
                 <div class="page__header page__header--rtl">
                   <h2 class="page__header__title page__header__title--rtl">
                     ABOUT
@@ -132,7 +167,7 @@
                     <h4 class="work__experience__subheader">
                       Pangaea Information Technology
                     </h4>
-                    <h5>01-2019 to Present</h5>
+                    <h5 class="work__experience__date">01-2019 to Present</h5>
                     <ul>
                       <li>
                         Creating RESTful APIs in ASP.NET Core, ASP.NET, and
@@ -154,7 +189,7 @@
                   <section class="work__experience">
                     <h3 class="work__experience__header">Volunteer</h3>
                     <h4 class="work__experience__subheader">Code for Hawaii</h4>
-                    <h5>01-2022 to Present</h5>
+                    <h5 class="work__experience__date">01-2022 to Present</h5>
                     <ul>
                       <li>
                         Triaging issues and contributing code to the Code for
@@ -173,7 +208,7 @@
                       Electronic Visualization Laboratory at University of
                       Illinois at Chicago
                     </h4>
-                    <h5>06-2018 to 12-2018</h5>
+                    <h5 class="work__experience__date">06-2018 to 12-2018</h5>
                     <ul>
                       <li>
                         Gained experience using Node.js and Express.js to handle
@@ -246,12 +281,25 @@
               </div>
               <div class="page__item page__item--projects">
                 <section class="projects">
-                  <a href="https://github.com/avenmia/PersonalWebsite"
-                    ><button class="project">Personal Website</button></a
-                  >
-                  <a href="https://github.com/avenmia/quantum-lamps">
-                    <button class="project">Quantum Lamps</button></a
-                  >
+                  <div>
+                    <a href="https://github.com/avenmia/PersonalWebsite">
+                      <button
+                        class="project website"
+                        aria-label="Personal Website Project Link"
+                      ></button>
+                    </a>
+
+                    <div class="project__text">Personal Website</div>
+                  </div>
+                  <div>
+                    <a href="https://github.com/avenmia/quantum-lamps">
+                      <button
+                        class="project quantum_lamps"
+                        aria-label="Quantum Lamps Project Link"
+                      ></button
+                    ></a>
+                    <div class="project__text">Quantum Lamps</div>
+                  </div>
                 </section>
               </div>
             </div>
@@ -259,6 +307,6 @@
         </section>
       </main>
     </div>
-    <!-- <script type="module" src="/src/main.ts"></script> -->
+    <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
