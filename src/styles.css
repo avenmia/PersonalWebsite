@@ -14,7 +14,7 @@
   --project-hover-color: #d39e9f;
   --project-bg-color: #c4c4c4;
   --backup-color2: #506e73;
-  --backup-color3: #01233f;
+  --work-exp-header-color: #01233f;
   --menu-bg-color: rgba(80, 110, 115, 0.8);
 }
 
@@ -43,12 +43,13 @@ header {
 }
 
 h2 {
+  font-size: 28px;
   color: var(--section-header-color);
 }
 
 hr {
   /* width: 33%; */
-  border-top: 5px solid var(--backup-color2);
+  border-top: 5px solid var(--section-accent-dark);
 }
 
 /* ------------------------- */
@@ -63,12 +64,13 @@ hr {
 
 .page__header__title {
   margin: 0px;
+  margin-bottom: 0.5rem;
   text-align: center;
 }
 
 .page__header__line {
   width: 100%;
-  border-bottom: 7px solid var(--backup-color2);
+  border-bottom: 7px solid var(--section-accent-dark);
 }
 
 .page__container {
@@ -142,12 +144,12 @@ hr {
   }
   .experience--title::before {
     content: "";
-    border-bottom: 7px solid var(--backup-color2);
+    border-bottom: 7px solid var(--section-accent-dark);
     height: 100%;
     display: block;
     margin-left: -100%;
     position: relative;
-    top: 40px;
+    top: 47px;
     margin-left: -200%;
   }
 
@@ -157,7 +159,7 @@ hr {
 }
 
 .section {
-  padding-top: 2em;
+  padding-top: 4em;
   padding-bottom: 2em;
 }
 
@@ -190,7 +192,7 @@ hr {
   font-family: "Rock Salt";
   font-display: swap;
   font-weight: normal;
-  color: var(--backup-color2);
+  color: var(--section-accent-dark);
   margin-bottom: 0px;
 }
 
@@ -201,10 +203,6 @@ hr {
 .menu-toggle {
   display: none;
 }
-
-/* .mobile-navbar {
-  display: none;
-} */
 
 .mobile-navbar[data-state="open"] {
   display: block;
@@ -217,7 +215,7 @@ hr {
 .bar[data-state="visible"] {
   height: 0.2rem;
   width: 1.5rem;
-  background-color: var(--backup-color2);
+  background-color: var(--section-accent-dark);
   margin: 5px;
   border-radius: 5px;
 }
@@ -268,7 +266,11 @@ hr {
 }
 
 @media screen and (min-width: 900px) {
-  .about {
+  #about {
+    padding-top: 0rem;
+  }
+
+  .about-content {
     position: relative;
     top: 75px;
   }
@@ -302,7 +304,7 @@ hr {
   }
 
   .navbar__link {
-    color: var(--backup-color2);
+    color: var(--section-accent-dark);
     margin-left: 1rem;
   }
 
@@ -315,9 +317,10 @@ hr {
     align-self: center;
   }
   .page-nav__link {
-    color: var(--backup-color2);
+    color: var(--section-accent-dark);
     text-decoration: none;
     margin-left: 1rem;
+    font-size: 20px;
   }
 
   .page-nav__link:hover {
@@ -327,15 +330,22 @@ hr {
 
 .work__experience {
   font-size: 18px;
+  margin-top: 2rem;
 }
 
 .work__experience__header {
-  color: var(--backup-color3);
+  margin: 0px;
+  color: var(--work-exp-header-color);
 }
 
 .work__experience__subheader {
+  margin: 0px;
   color: var(--section-header-color);
   font-weight: bold;
+}
+
+.work__experience__date {
+  margin: 0px;
 }
 
 /* ------------------------- */
@@ -421,11 +431,31 @@ hr {
   background-color: var(--project-bg-color);
   font-size: 18px;
   border: none;
-  padding: 4em;
+  padding: 8em;
   margin-top: 1em;
 }
 
+.website {
+  background: url(./assets/mike_517x517.png) no-repeat;
+  background-position: center;
+  color: black;
+  font-size: 20px;
+  filter: brightness(50%);
+}
+
+.quantum_lamps {
+  background: url(./assets/quantum_lamps_500x500.png) no-repeat;
+  background-position: center;
+  filter: brightness(50%);
+}
+
 .project:hover {
+  filter: brightness(100%);
   cursor: pointer;
   background-color: var(--project-hover-color);
+}
+
+.project__text {
+  text-align: center;
+  font-size: 24px;
 }
