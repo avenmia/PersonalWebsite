@@ -27,14 +27,14 @@
       <div class="mobile-menu-wrapper">
         <input id="toggle" class="menu-toggle" type="checkbox" name="toggle" />
         <label class="toggle-label" for="toggle">
-          <div class="close-menu">
+          <div id="close-icon" class="close-icon" data-state="hide">
             <span>X</span>
           </div>
-          <div class="bar"></div>
-          <div class="bar"></div>
-          <div class="bar"></div>
+          <div class="bar" data-state="visible"></div>
+          <div class="bar" data-state="visible"></div>
+          <div class="bar" data-state="visible"></div>
         </label>
-        <nav class="mobile-navbar">
+        <nav class="mobile-navbar" data-state="close">
           <ul class="list--mobile-nav">
             <li><a class="link page-nav-link" href="#about">About</a></li>
             <li>

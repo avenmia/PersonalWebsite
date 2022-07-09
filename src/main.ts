@@ -1,27 +1,28 @@
 const hamburger: HTMLElement | null = document.querySelector(".toggle-label");
 const menu: HTMLElement | null = document.querySelector(".mobile-navbar");
-const closeMenu: HTMLElement | null = document.querySelector(".close-menu");
+const closeIcon: HTMLElement | null = document.querySelector("#close-icon");
+const bars = document.querySelectorAll(".bar");
+// Look into custom attributes for handling menu state
+// Add css classes that can be added or removed rather than hardcoding the styles.
 
 function toggleMenu() {
-  if (!menu || !hamburger || !closeMenu) {
+  if (!menu || !hamburger || !closeIcon) {
     return;
   }
-  const menuDisplay = menu.style.display;
-  if (menuDisplay === "block") {
-    menu.style.display = "none";
-    closeMenu.style.display = "none";
-    const bars = document.querySelectorAll(".bar");
-    bars.forEach((bar) => ((bar as HTMLElement).style.display = "block"));
-
-    return;
+  // If menu is open, close the menu
+  if (menu.getAttribute("data-state") === "open") {
+    menu.setAttribute("data-state", "close");
+    closeIcon.setAttribute("data-state", "hide");
+    Array.from(bars).forEach((bar) => {
+      bar.setAttribute("data-state", "visible");
+    });
+  } else {
+    menu.setAttribute("data-state", "open");
+    closeIcon.setAttribute("data-state", "visible");
+    Array.from(bars).forEach((bar) => {
+      bar.setAttribute("data-state", "hide");
+    });
   }
-  menu.style.display = "block";
-  closeMenu.style.display = "block";
-  closeMenu.style.color = "white";
-  closeMenu.style.fontSize = "24px";
-  closeMenu.style.margin = "5px";
-  const bars = document.querySelectorAll(".bar");
-  bars.forEach((bar) => ((bar as HTMLElement).style.display = "none"));
 }
 
 hamburger?.addEventListener("click", toggleMenu);
