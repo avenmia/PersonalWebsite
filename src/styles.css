@@ -266,6 +266,11 @@ hr {
   margin-top: 50px;
 }
 
+.link__external::after {
+  content: "\f08e";
+  font: var(--fa-font-solid);
+}
+
 @media screen and (min-width: 900px) {
   #about {
     padding-top: 0rem;
