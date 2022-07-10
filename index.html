@@ -25,15 +25,14 @@
   <body>
     <div id="app">
       <div class="mobile-menu-wrapper">
-        <input id="toggle" class="menu-toggle" type="checkbox" name="toggle" />
-        <label class="toggle-label" for="toggle">
+        <button aria-label="menu button" class="menu-btn">
           <div id="close-icon" class="close-icon" data-state="hide">
             <span>X</span>
           </div>
           <div class="bar" data-state="visible"></div>
           <div class="bar" data-state="visible"></div>
           <div class="bar" data-state="visible"></div>
-        </label>
+        </button>
         <nav class="mobile-navbar" data-state="close">
           <ul class="list--mobile-nav">
             <li><a class="link page-nav-link" href="#about">About</a></li>
@@ -41,26 +40,33 @@
               <a class="link page-nav-link" href="#experience">Experience</a>
             </li>
             <li><a class="link page-nav-link" href="#projects">Projects</a></li>
+            <br />
             <li>
               <a
-                class="link social-link__github"
+                class="link link__external social-link__github"
                 href="https://github.com/avenmia/"
-                >GitHub</a
-              >
+                rel="noopener noreferrer"
+                target="_blank"
+                >GitHub
+              </a>
             </li>
             <li>
               <a
-                class="link social-link__linkedin"
+                class="link link__external social-link__linkedin"
                 href="https://www.linkedin.com/in/michael-avendano/"
-                >LinkedIn</a
-              >
+                rel="noopener noreferrer"
+                target="_blank"
+                >LinkedIn
+              </a>
             </li>
             <li>
               <a
-                class="link social-link__stackoverflow"
+                class="link link__external social-link__stackoverflow"
                 href="https://stackoverflow.com/users/7331107/avenmia"
-                >Stack Overflow</a
-              >
+                rel="noopener noreferrer"
+                target="_blank"
+                >Stack Overflow
+              </a>
             </li>
           </ul>
         </nav>
@@ -72,18 +78,21 @@
             class="navbar__link"
             href="https://github.com/avenmia/"
             aria-label="GitHub link"
+            title="GitHub Link"
             ><i class="fa-brands fa-github-square fa-3x navbar__link__icon"></i
           ></a>
           <a
             class="navbar__link"
             href="https://www.linkedin.com/in/michael-avendano/"
             aria-label="LinkedIn link"
+            title="LinkedIn Link"
             ><i class="fa-brands fa-linkedin fa-3x navbar__link__icon"></i
           ></a>
           <a
             class="navbar__link"
             href="https://stackoverflow.com/users/7331107/avenmia"
             aria-label="Stack Overflow link"
+            title="Stack Overflow Link"
             ><i class="fa-brands fa-stack-overflow fa-3x navbar__link__icon"></i
           ></a>
         </nav>
@@ -110,13 +119,13 @@
                 </div>
                 <div class="page__content page__content--right">
                   <p>
-                    Hi! I’m Michael Avendano. I’m based in Honolulu, Hawai’i,
-                    currently working at Pangaea Information Technologies as a
-                    full-stack developer. In my spare time, I also volunteer at
-                    Code for Hawaii.
+                    Hi! I'm Michael Avendano. I'm based in Honolulu,
+                    Hawai&#x02bb;i, currently working at Pangaea Information
+                    Technologies as a full-stack developer. In my spare time, I
+                    also volunteer at Code for Hawaii.
                   </p>
                   <p>
-                    My hobbies often revolve around puzzle-solving. Whether it’s
+                    My hobbies often revolve around puzzle-solving. Whether it's
                     through code, chess, or martial arts, I enjoy finding
                     creative ways to approach problems.
                   </p>

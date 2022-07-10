@@ -198,6 +198,7 @@ hr {
 
 .site-title__job {
   margin-top: 0px;
+  font-size: 24px;
 }
 
 .menu-toggle {
@@ -262,7 +263,19 @@ hr {
   list-style-type: none;
   margin: 5px;
   padding: 0;
-  margin-top: 10%;
+  margin-top: 50px;
+}
+
+/* Hex code is for the external link icon */
+.link__external::after {
+  content: "\f08e";
+  font: var(--fa-font-solid);
+}
+
+.menu-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 900px) {
@@ -364,10 +377,6 @@ hr {
   padding: 1rem;
 }
 
-.skills__values--2col {
-  column-count: 2;
-}
-
 .skills__values--1col {
   column-count: 1;
 }
@@ -392,6 +401,10 @@ hr {
   .skills__container {
     align-items: center;
     justify-content: center;
+  }
+
+  .skills__values--2col {
+    column-count: 2;
   }
 
   .skills__area {
@@ -432,24 +445,17 @@ hr {
   border: none;
   margin-top: 1em;
   padding: 12rem;
+  cursor: pointer;
 }
 
 .website {
   background: url(./assets/code_500x500.png) no-repeat;
   background-position: center;
-  filter: brightness(30%);
 }
 
 .quantum_lamps {
   background: url(./assets/quantum_lamps_500x500.png) no-repeat;
   background-position: center;
-  filter: brightness(50%);
-}
-
-.project:hover {
-  filter: brightness(100%);
-  cursor: pointer;
-  background-color: var(--project-hover-color);
 }
 
 .project__text {
