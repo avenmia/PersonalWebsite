@@ -266,6 +266,7 @@ hr {
   margin-top: 50px;
 }
 
+/* Hex code is for the external link icon */
 .link__external::after {
   content: "\f08e";
   font: var(--fa-font-solid);
@@ -460,19 +461,4 @@ hr {
 .project__text {
   text-align: center;
   font-size: 24px;
-}
-
-@media screen and (min-width: 900px) {
-  .quantum_lamps {
-    filter: brightness(50%);
-  }
-
-  .website {
-    filter: brightness(30%);
-  }
-
-  .project:hover {
-    filter: brightness(100%);
-    background-color: var(--project-hover-color);
-  }
 }
