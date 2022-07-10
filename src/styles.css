@@ -198,7 +198,7 @@ hr {
 
 .site-title__job {
   margin-top: 0px;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .menu-toggle {
@@ -448,14 +448,9 @@ hr {
   cursor: pointer;
 }
 
-.website {
-  background: url(./assets/code_500x500.png) no-repeat;
-  background-position: center;
-}
-
-.quantum_lamps {
-  background: url(./assets/quantum_lamps_500x500.png) no-repeat;
-  background-position: center;
+.image__project {
+  margin-top: 1rem;
+  border-radius: 18px;
 }
 
 .project__text {

@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="description" content="Michael Avendano's website." />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="./src/assets/favicon/favicon.ico"
+    />
     <link
       rel="stylesheet"
       as="font"
@@ -24,55 +28,56 @@
   </head>
   <body>
     <div id="app">
-      <div class="mobile-menu-wrapper">
-        <button aria-label="menu button" class="menu-btn">
-          <div id="close-icon" class="close-icon" data-state="hide">
-            <span>X</span>
-          </div>
-          <div class="bar" data-state="visible"></div>
-          <div class="bar" data-state="visible"></div>
-          <div class="bar" data-state="visible"></div>
-        </button>
-        <nav class="mobile-navbar" data-state="close">
-          <ul class="list--mobile-nav">
-            <li><a class="link page-nav-link" href="#about">About</a></li>
-            <li>
-              <a class="link page-nav-link" href="#experience">Experience</a>
-            </li>
-            <li><a class="link page-nav-link" href="#projects">Projects</a></li>
-            <br />
-            <li>
-              <a
-                class="link link__external social-link__github"
-                href="https://github.com/avenmia/"
-                rel="noopener noreferrer"
-                target="_blank"
-                >GitHub
-              </a>
-            </li>
-            <li>
-              <a
-                class="link link__external social-link__linkedin"
-                href="https://www.linkedin.com/in/michael-avendano/"
-                rel="noopener noreferrer"
-                target="_blank"
-                >LinkedIn
-              </a>
-            </li>
-            <li>
-              <a
-                class="link link__external social-link__stackoverflow"
-                href="https://stackoverflow.com/users/7331107/avenmia"
-                rel="noopener noreferrer"
-                target="_blank"
-                >Stack Overflow
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-
       <header>
+        <div class="mobile-menu-wrapper">
+          <button aria-label="menu button" class="menu-btn">
+            <div id="close-icon" class="close-icon" data-state="hide">
+              <i class="fa-solid fa-xmark"></i>
+            </div>
+            <div class="bar" data-state="visible"></div>
+            <div class="bar" data-state="visible"></div>
+            <div class="bar" data-state="visible"></div>
+          </button>
+          <nav class="mobile-navbar" data-state="close">
+            <ul class="list--mobile-nav">
+              <li><a class="link page-nav-link" href="#about">About</a></li>
+              <li>
+                <a class="link page-nav-link" href="#experience">Experience</a>
+              </li>
+              <li>
+                <a class="link page-nav-link" href="#projects">Projects</a>
+              </li>
+              <br />
+              <li>
+                <a
+                  class="link link__external social-link__github"
+                  href="https://github.com/avenmia/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  >GitHub
+                </a>
+              </li>
+              <li>
+                <a
+                  class="link link__external social-link__linkedin"
+                  href="https://www.linkedin.com/in/michael-avendano/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  >LinkedIn
+                </a>
+              </li>
+              <li>
+                <a
+                  class="link link__external social-link__stackoverflow"
+                  href="https://stackoverflow.com/users/7331107/avenmia"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  >Stack Overflow
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
         <nav class="navbar">
           <a
             class="navbar__link"
@@ -98,12 +103,12 @@
         </nav>
         <div class="site-title">
           <h1 class="site-title__name">Michael Avendano</h1>
-          <h2 class="site-title__job">Software Engineer</h2>
+          <h2 class="site-title__job">SOFTWARE ENGINEER</h2>
         </div>
         <nav class="page-nav">
-          <a class="page-nav__link" href="#about">About</a>
-          <a class="page-nav__link" href="#experience">Experience</a>
-          <a class="page-nav__link" href="#projects">Projects</a>
+          <a class="page-nav__link" href="#about">ABOUT</a>
+          <a class="page-nav__link" href="#experience">EXPERIENCE</a>
+          <a class="page-nav__link" href="#projects">PROJECTS</a>
         </nav>
       </header>
       <main>
@@ -238,7 +243,7 @@
               <div class="page__item page__item--right skills__container">
                 <div class="page__content--right">
                   <section class="skills__area">
-                    <h3 class="skills__header">Skills</h3>
+                    <h3 class="skills__header">SKILLS</h3>
                     <section class="skills__item">
                       <h4 class="skills__item__header">Languages</h4>
                       <ul class="skills__values--2col">
@@ -292,21 +297,27 @@
                 <section class="projects">
                   <div>
                     <a href="https://github.com/avenmia/PersonalWebsite">
-                      <button
-                        class="project website"
-                        aria-label="Personal Website Project Link"
-                      ></button>
+                      <img
+                        class="image__project"
+                        src="./src/assets/code_500x500.png"
+                        height="350px"
+                        width="350px"
+                        alt="Website code picture"
+                      />
                     </a>
 
                     <div class="project__text">Personal Website</div>
                   </div>
                   <div>
                     <a href="https://github.com/avenmia/quantum-lamps">
-                      <button
-                        class="project quantum_lamps"
-                        aria-label="Quantum Lamps Project Link"
-                      ></button
-                    ></a>
+                      <img
+                        class="image__project"
+                        src="./src/assets/quantum_lamps_500x500.png"
+                        height="350px"
+                        width="350px"
+                        alt="Quantum lamps picture"
+                      />
+                    </a>
                     <div class="project__text">Quantum Lamps</div>
                   </div>
                 </section>
