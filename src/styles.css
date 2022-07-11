@@ -19,8 +19,8 @@
 }
 
 body {
-  padding: 0px;
-  margin: 0px;
+  padding: 0rem;
+  margin: 0rem;
   font-family: "Lexend", sans-serif;
   font-display: swap;
 }
@@ -56,7 +56,7 @@ hr {
 }
 
 .page__header__title {
-  margin: 0px;
+  margin: 0rem;
   margin-bottom: 0.5rem;
   text-align: center;
 }
@@ -186,11 +186,11 @@ hr {
   font-display: swap;
   font-weight: normal;
   color: var(--section-accent-dark);
-  margin-bottom: 0px;
+  margin-bottom: 0rem;
 }
 
 .site-title__job {
-  margin-top: 0px;
+  margin-top: 0rem;
   font-size: 1.25rem;
 }
 
@@ -210,7 +210,7 @@ hr {
   height: 0.2rem;
   width: 1.5rem;
   background-color: var(--section-accent-dark);
-  margin: 5px;
+  margin: 0.3125rem;
   border-radius: 5px;
 }
 
@@ -254,9 +254,9 @@ hr {
 
 .list--mobile-nav {
   list-style-type: none;
-  margin: 5px;
+  margin: 0.3125rem;
   padding: 0;
-  margin-top: 50px;
+  margin-top: 3.125rem;
 }
 
 /* Hex code is for the external link icon */
@@ -340,18 +340,18 @@ hr {
 }
 
 .work__experience__header {
-  margin: 0px;
+  margin: 0rem;
   color: var(--work-exp-header-color);
 }
 
 .work__experience__subheader {
-  margin: 0px;
+  margin: 0rem;
   color: var(--section-header-color);
   font-weight: bold;
 }
 
 .work__experience__date {
-  margin: 0px;
+  margin: 0rem;
 }
 
 /* ------------------------- */
@@ -375,13 +375,13 @@ hr {
 }
 
 .skills__header {
-  margin: 0.5em;
+  margin: 0.5rem;
   color: var(--section-header-color);
   font-size: 1.5rem;
 }
 
 .skills__item__header {
-  margin-left: 1em;
+  margin-left: 1rem;
 }
 
 .skills__container {
@@ -413,7 +413,7 @@ hr {
   background-color: var(--resume-btn-color);
   border-radius: 18px;
   color: white;
-  margin-top: 1em;
+  margin-top: 1rem;
   border: none;
   padding: 10px;
   width: 100%;
@@ -435,7 +435,7 @@ hr {
   border-radius: 18px;
   background-color: var(--project-bg-color);
   border: none;
-  margin-top: 1em;
+  margin-top: 1rem;
   padding: 12rem;
   cursor: pointer;
 }
