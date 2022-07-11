@@ -31,7 +31,7 @@ header {
   justify-content: center;
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 56.25em) {
   header {
     justify-content: space-around;
   }
@@ -79,7 +79,7 @@ hr {
   width: 100%;
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 56.25em) {
   .page {
     width: 100%;
   }
@@ -152,8 +152,8 @@ hr {
 }
 
 .section {
-  padding-top: 4em;
-  padding-bottom: 2em;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
 }
 
 .section--light {
@@ -255,7 +255,7 @@ hr {
 .list--mobile-nav {
   list-style-type: none;
   margin: 0.3125rem;
-  padding: 0;
+  padding: 0rem;
   margin-top: 3.125rem;
 }
 
@@ -271,7 +271,7 @@ hr {
   cursor: pointer;
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 56.25em) {
   #about {
     padding-top: 0rem;
   }
@@ -389,7 +389,7 @@ hr {
   flex-direction: column;
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 56.25em) {
   .skills__container {
     align-items: center;
     justify-content: center;
@@ -400,7 +400,7 @@ hr {
   }
 
   .skills__area {
-    padding: 20px;
+    padding: 1.25rem;
   }
 }
 
@@ -415,11 +415,11 @@ hr {
   color: white;
   margin-top: 1rem;
   border: none;
-  padding: 10px;
+  padding: 0.625rem;
   width: 100%;
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 56.25em) {
   .resume__btn {
     width: 392px;
   }
