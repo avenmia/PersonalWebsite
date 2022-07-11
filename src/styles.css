@@ -18,16 +18,11 @@
   --menu-bg-color: rgba(80, 110, 115, 0.8);
 }
 
-html {
-  height: 100%;
-}
-
 body {
   padding: 0px;
   margin: 0px;
   font-family: "Lexend", sans-serif;
   font-display: swap;
-  height: 100%;
 }
 
 header {
@@ -43,12 +38,10 @@ header {
 }
 
 h2 {
-  font-size: 28px;
   color: var(--section-header-color);
 }
 
 hr {
-  /* width: 33%; */
   border-top: 5px solid var(--section-accent-dark);
 }
 
@@ -198,7 +191,7 @@ hr {
 
 .site-title__job {
   margin-top: 0px;
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 .menu-toggle {
@@ -228,7 +221,7 @@ hr {
 .close-icon[data-state="visible"] {
   display: block;
   color: white;
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 .close-icon[data-state="hide"] {
@@ -333,7 +326,7 @@ hr {
     color: var(--section-accent-dark);
     text-decoration: none;
     margin-left: 1rem;
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 
   .page-nav__link:hover {
@@ -342,7 +335,7 @@ hr {
 }
 
 .work__experience {
-  font-size: 18px;
+  font-size: 1.125rem;
   margin-top: 2rem;
 }
 
@@ -384,7 +377,7 @@ hr {
 .skills__header {
   margin: 0.5em;
   color: var(--section-header-color);
-  font-size: 25px;
+  font-size: 1.5rem;
 }
 
 .skills__item__header {
@@ -394,7 +387,6 @@ hr {
 .skills__container {
   display: flex;
   flex-direction: column;
-  /* margin-top: 250px; */
 }
 
 @media screen and (min-width: 900px) {
@@ -455,5 +447,5 @@ hr {
 
 .project__text {
   text-align: center;
-  font-size: 24px;
+  font-size: 1.5rem;
 }
