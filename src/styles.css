@@ -81,7 +81,7 @@ hr {
 
 @media screen and (min-width: 56.25em) {
   .page {
-    width: 100%;
+    width: max(60vw, 900px);
   }
 
   .page__header__title--rtl {
@@ -135,19 +135,32 @@ hr {
   .experience--title {
     width: fit-content;
   }
-  .experience--title::before {
-    content: "";
-    border-bottom: 7px solid var(--section-accent-dark);
-    height: 100%;
-    display: block;
-    margin-left: -100%;
-    position: relative;
-    top: 47px;
-    margin-left: -200%;
-  }
 
   .page__header__line--ltr {
     display: none !important;
+  }
+
+  .page__header__title {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .page__header__title::after {
+    border-bottom: 7px solid var(--section-accent-dark);
+    width: 50vw;
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 30px;
+  }
+
+  .page__header__title--ltr {
+    align-items: flex-end;
+  }
+
+  .page__header__line {
+    display: none;
   }
 }
 
