@@ -5,14 +5,21 @@ const bars = document.querySelectorAll(".bar");
 // Look into custom attributes for handling menu state
 // Add css classes that can be added or removed rather than hardcoding the styles.
 
+enum ElementState {
+  CLOSE = "close",
+  OPEN = "open",
+  VISIBLE = "visible",
+  HIDE = "hide",
+}
+
 function setClose() {
   if (!menu || !closeIcon) {
     return;
   }
-  menu.setAttribute("data-state", "close");
-  closeIcon.setAttribute("data-state", "hide");
+  menu.setAttribute("data-state", ElementState.CLOSE);
+  closeIcon.setAttribute("data-state", ElementState.HIDE);
   Array.from(bars).forEach((bar) => {
-    bar.setAttribute("data-state", "visible");
+    bar.setAttribute("data-state", ElementState.VISIBLE);
   });
 }
 
@@ -20,10 +27,10 @@ function setOpen() {
   if (!menu || !closeIcon) {
     return;
   }
-  menu.setAttribute("data-state", "open");
-  closeIcon.setAttribute("data-state", "visible");
+  menu.setAttribute("data-state", ElementState.OPEN);
+  closeIcon.setAttribute("data-state", ElementState.VISIBLE);
   Array.from(bars).forEach((bar) => {
-    bar.setAttribute("data-state", "hide");
+    bar.setAttribute("data-state", ElementState.HIDE);
   });
 }
 
@@ -32,7 +39,7 @@ function toggleMenu() {
     return;
   }
   // If menu is open, close the menu
-  if (menu.getAttribute("data-state") === "open") {
+  if (menu.getAttribute("data-state") === ElementState.OPEN) {
     setClose();
   } else {
     setOpen();

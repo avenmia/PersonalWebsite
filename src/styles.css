@@ -18,16 +18,11 @@
   --menu-bg-color: rgba(80, 110, 115, 0.8);
 }
 
-html {
-  height: 100%;
-}
-
 body {
-  padding: 0px;
-  margin: 0px;
+  padding: 0rem;
+  margin: 0rem;
   font-family: "Lexend", sans-serif;
   font-display: swap;
-  height: 100%;
 }
 
 header {
@@ -36,19 +31,17 @@ header {
   justify-content: center;
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 56.25em) {
   header {
     justify-content: space-around;
   }
 }
 
 h2 {
-  font-size: 28px;
   color: var(--section-header-color);
 }
 
 hr {
-  /* width: 33%; */
   border-top: 5px solid var(--section-accent-dark);
 }
 
@@ -63,7 +56,7 @@ hr {
 }
 
 .page__header__title {
-  margin: 0px;
+  margin: 0rem;
   margin-bottom: 0.5rem;
   text-align: center;
 }
@@ -86,9 +79,9 @@ hr {
   width: 100%;
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 56.25em) {
   .page {
-    width: 100%;
+    width: max(60vw, 900px);
   }
 
   .page__header__title--rtl {
@@ -142,25 +135,38 @@ hr {
   .experience--title {
     width: fit-content;
   }
-  .experience--title::before {
-    content: "";
-    border-bottom: 7px solid var(--section-accent-dark);
-    height: 100%;
-    display: block;
-    margin-left: -100%;
-    position: relative;
-    top: 47px;
-    margin-left: -200%;
-  }
 
   .page__header__line--ltr {
     display: none !important;
   }
+
+  .page__header__title {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .page__header__title::after {
+    border-bottom: 7px solid var(--section-accent-dark);
+    width: 50vw;
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 30px;
+  }
+
+  .page__header__title--ltr {
+    align-items: flex-end;
+  }
+
+  .page__header__line {
+    display: none;
+  }
 }
 
 .section {
-  padding-top: 4em;
-  padding-bottom: 2em;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
 }
 
 .section--light {
@@ -193,12 +199,12 @@ hr {
   font-display: swap;
   font-weight: normal;
   color: var(--section-accent-dark);
-  margin-bottom: 0px;
+  margin-bottom: 0rem;
 }
 
 .site-title__job {
-  margin-top: 0px;
-  font-size: 20px;
+  margin-top: 0rem;
+  font-size: 1.25rem;
 }
 
 .menu-toggle {
@@ -217,7 +223,7 @@ hr {
   height: 0.2rem;
   width: 1.5rem;
   background-color: var(--section-accent-dark);
-  margin: 5px;
+  margin: 0.3125rem;
   border-radius: 5px;
 }
 
@@ -228,7 +234,7 @@ hr {
 .close-icon[data-state="visible"] {
   display: block;
   color: white;
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 .close-icon[data-state="hide"] {
@@ -261,9 +267,9 @@ hr {
 
 .list--mobile-nav {
   list-style-type: none;
-  margin: 5px;
-  padding: 0;
-  margin-top: 50px;
+  margin: 0.3125rem;
+  padding: 0rem;
+  margin-top: 3.125rem;
 }
 
 /* Hex code is for the external link icon */
@@ -278,7 +284,7 @@ hr {
   cursor: pointer;
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 56.25em) {
   #about {
     padding-top: 0rem;
   }
@@ -333,7 +339,7 @@ hr {
     color: var(--section-accent-dark);
     text-decoration: none;
     margin-left: 1rem;
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 
   .page-nav__link:hover {
@@ -342,23 +348,23 @@ hr {
 }
 
 .work__experience {
-  font-size: 18px;
+  font-size: 1.125rem;
   margin-top: 2rem;
 }
 
 .work__experience__header {
-  margin: 0px;
+  margin: 0rem;
   color: var(--work-exp-header-color);
 }
 
 .work__experience__subheader {
-  margin: 0px;
+  margin: 0rem;
   color: var(--section-header-color);
   font-weight: bold;
 }
 
 .work__experience__date {
-  margin: 0px;
+  margin: 0rem;
 }
 
 /* ------------------------- */
@@ -382,22 +388,21 @@ hr {
 }
 
 .skills__header {
-  margin: 0.5em;
+  margin: 0.5rem;
   color: var(--section-header-color);
-  font-size: 25px;
+  font-size: 1.5rem;
 }
 
 .skills__item__header {
-  margin-left: 1em;
+  margin-left: 1rem;
 }
 
 .skills__container {
   display: flex;
   flex-direction: column;
-  /* margin-top: 250px; */
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 56.25em) {
   .skills__container {
     align-items: center;
     justify-content: center;
@@ -408,7 +413,7 @@ hr {
   }
 
   .skills__area {
-    padding: 20px;
+    padding: 1.25rem;
   }
 }
 
@@ -421,13 +426,13 @@ hr {
   background-color: var(--resume-btn-color);
   border-radius: 18px;
   color: white;
-  margin-top: 1em;
+  margin-top: 1rem;
   border: none;
-  padding: 10px;
+  padding: 0.625rem;
   width: 100%;
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 56.25em) {
   .resume__btn {
     width: 392px;
   }
@@ -443,7 +448,7 @@ hr {
   border-radius: 18px;
   background-color: var(--project-bg-color);
   border: none;
-  margin-top: 1em;
+  margin-top: 1rem;
   padding: 12rem;
   cursor: pointer;
 }
@@ -455,5 +460,5 @@ hr {
 
 .project__text {
   text-align: center;
-  font-size: 24px;
+  font-size: 1.5rem;
 }
