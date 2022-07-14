@@ -18,6 +18,11 @@
   --menu-bg-color: rgba(80, 110, 115, 0.8);
 }
 
+html {
+  overflow-x: hidden;
+  width: 100vw;
+}
+
 body {
   padding: 0rem;
   margin: 0rem;
