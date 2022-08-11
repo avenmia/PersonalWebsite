@@ -197,6 +197,7 @@ hr {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 1rem;
 }
 
 .site-title__name {
@@ -349,6 +350,10 @@ hr {
 
   .page-nav__link:hover {
     color: var(--link-hover-color);
+  }
+
+  .site-title {
+    margin-top: 0rem;
   }
 }
 
