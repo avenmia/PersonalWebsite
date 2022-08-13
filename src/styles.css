@@ -13,7 +13,7 @@
   --resume-btn-color: #aa3234;
   --project-hover-color: #d39e9f;
   --project-bg-color: #c4c4c4;
-  --backup-color2: #506e73;
+  --footer-color: #506e73;
   --work-exp-header-color: #01233f;
   --menu-bg-color: rgba(80, 110, 115, 0.8);
 }
@@ -82,6 +82,16 @@ hr {
 
 .page__header {
   width: 100%;
+}
+
+.footer {
+  display: flex;
+  height: 30px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--footer-color);
+  color: white;
 }
 
 @media screen and (min-width: 56.25em) {
