@@ -467,15 +467,7 @@ hr {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-}
-
-.project {
-  border-radius: 18px;
-  background-color: var(--project-bg-color);
-  border: none;
-  margin-top: 1rem;
-  padding: 12rem;
-  cursor: pointer;
+  flex-direction: column;
 }
 
 .image__project {
@@ -483,7 +475,10 @@ hr {
   border-radius: 18px;
 }
 
-.project__text {
-  text-align: center;
-  font-size: 1.5rem;
+.project {
+  display: flex;
+}
+
+.project__description {
+  width: 350px;
 }
