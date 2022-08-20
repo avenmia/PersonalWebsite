@@ -288,42 +288,98 @@
                 </h2>
                 <div class="page__header__line"></div>
               </div>
-              <div class="page__item page__item--projects">
-                <section class="projects">
-                  <div>
-                    <a
-                      href="https://github.com/avenmia/PersonalWebsite"
-                      rel="noopener noreferrer"
-                      target="_blank"
-                    >
-                      <img
-                        class="image__project"
-                        src="./src/assets/code_500x500.png"
-                        height="350px"
-                        width="350px"
-                        alt="Website code picture"
-                      />
-                    </a>
-
-                    <div class="project__text">Personal Website</div>
-                  </div>
-                  <div>
-                    <a
-                      href="https://github.com/avenmia/quantum-lamps"
-                      rel="noopener noreferrer"
-                      target="_blank"
-                    >
-                      <img
-                        class="image__project"
-                        src="./src/assets/quantum_lamps_500x500.png"
-                        height="350px"
-                        width="350px"
-                        alt="Quantum lamps picture"
-                      />
-                    </a>
-                    <div class="project__text">Quantum Lamps</div>
-                  </div>
-                </section>
+              <div class="page__item page__item--projects project1 proj__img">
+                <a
+                  href="https://github.com/avenmia/PersonalWebsite"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <picture>
+                    <source
+                      media="(min-width: 900px)"
+                      srcset="./src/assets/code_500x500.png"
+                    />
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="./src/assets/code_350x350.png"
+                    />
+                    <source
+                      media="(min-width: 100px)"
+                      srcset="./src/assets/code_175x175.png"
+                    />
+                    <img
+                      src="./src/assets/code.png"
+                      height="350px"
+                      width="350px"
+                      alt="Website code picture"
+                      class="image__project"
+                    />
+                  </picture>
+                </a>
+              </div>
+              <div class="page__item page__item--projects project1 proj__desc">
+                <h3 class="project__title">Personal Website</h3>
+                <ul class="project__info">
+                  <li>
+                    Website to showcase my projects as well as give an
+                    introduction to myself.
+                  </li>
+                  <li>
+                    The goal was to create a website without JavaScript
+                    framework while still prioritizing performance and
+                    accessibility.
+                  </li>
+                  <li>
+                    Built using:
+                    <ul>
+                      <li>HTML5</li>
+                      <li>CSS3</li>
+                      <li>TypeScript</li>
+                      <li>Vite</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="page__item page__item--projects project2 proj__img">
+                <a
+                  href="https://github.com/avenmia/quantum-lamps"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <img
+                    class="image__project"
+                    src="./src/assets/quantum_lamps_500x500.png"
+                    height="350px"
+                    width="350px"
+                    alt="Quantum lamps picture"
+                  />
+                </a>
+              </div>
+              <div class="page__item page__item--projects project2 proj__desc">
+                <h3 class="project__title">Quantum Lamps</h3>
+                <ul class="project__info">
+                  <li>
+                    Small IoT project that allows users to keep lights in sync
+                    by moving their respective light.
+                  </li>
+                  <li>
+                    This was accomplished through each lamp being a client and
+                    communicated with a server.
+                  </li>
+                  <li>
+                    Each lamp included an accelerometer which determined the
+                    orientation and was mapped to a particular color
+                  </li>
+                  <li>
+                    Built using:
+                    <ul>
+                      <li>Python3</li>
+                      <li>TypeScript</li>
+                      <li>Docker</li>
+                      <li>Raspberry Pi</li>
+                    </ul>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
