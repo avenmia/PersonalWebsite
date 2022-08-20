@@ -454,6 +454,8 @@ hr {
 .image__project {
   margin-top: 1rem;
   border-radius: 18px;
+  width: 100%;
+  height: auto;
 }
 
 @media screen and (min-width: 56.25em) {

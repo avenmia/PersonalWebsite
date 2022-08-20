@@ -294,13 +294,34 @@
                   rel="noopener noreferrer"
                   target="_blank"
                 >
-                  <img
+                  <!-- <img
                     class="image__project"
                     src="./src/assets/code_500x500.png"
                     height="350px"
                     width="350px"
                     alt="Website code picture"
-                  />
+                  /> -->
+                  <picture>
+                    <source
+                      media="(min-width: 900px)"
+                      srcset="./src/assets/code_500x500.png"
+                    />
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="./src/assets/code_350x350.png"
+                    />
+                    <source
+                      media="(min-width: 100px)"
+                      srcset="./src/assets/code_175x175.png"
+                    />
+                    <img
+                      src="./src/assets/code.png"
+                      height="350px"
+                      width="350px"
+                      alt="Website code picture"
+                      class="image__project"
+                    />
+                  </picture>
                 </a>
               </div>
               <div class="page__item page__item--projects project1 proj__desc">
