@@ -456,6 +456,8 @@ hr {
   border-radius: 18px;
   width: 100%;
   height: auto;
+  max-height: 400px;
+  max-width: 400px;
 }
 
 @media screen and (min-width: 56.25em) {
@@ -471,6 +473,7 @@ hr {
 
   .proj__img {
     grid-column-start: 1;
+    margin-left: 20%;
   }
 
   .proj__desc {
@@ -479,5 +482,10 @@ hr {
 
   .project2 {
     grid-row-start: 3;
+  }
+
+  .image__project {
+    max-height: 350px;
+    max-width: 350px;
   }
 }
