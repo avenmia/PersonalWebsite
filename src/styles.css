@@ -96,7 +96,7 @@ hr {
 
 @media screen and (min-width: 56.25em) {
   .page {
-    width: max(80vw, 900px);
+    width: max(60vw, 900px);
   }
 
   .page__header__title--rtl {
