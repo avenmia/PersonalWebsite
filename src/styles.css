@@ -38,7 +38,9 @@ header {
 
 @media screen and (min-width: 56.25em) {
   header {
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
   }
 }
 
@@ -48,6 +50,14 @@ h2 {
 
 hr {
   border-top: 5px solid var(--section-accent-dark);
+}
+
+p {
+  font-size: 1.125rem;
+}
+
+li {
+  font-size: 1.125rem;
 }
 
 /* ------------------------- */
@@ -348,7 +358,7 @@ hr {
     color: var(--section-accent-dark);
     text-decoration: none;
     margin-left: 1rem;
-    font-size: 1.25rem;
+    font-size: 1.125rem;
   }
 
   .page-nav__link:hover {
