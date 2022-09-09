@@ -358,7 +358,7 @@ li {
     color: var(--section-accent-dark);
     text-decoration: none;
     margin-left: 1rem;
-    font-size: 1.25rem;
+    font-size: 1.125rem;
   }
 
   .page-nav__link:hover {
