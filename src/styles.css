@@ -30,6 +30,10 @@ body {
   font-display: swap;
 }
 
+button {
+  font-family: "Lexend", sans-serif;
+}
+
 header {
   display: flex;
   flex-direction: row;
