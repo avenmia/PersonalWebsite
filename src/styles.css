@@ -485,6 +485,10 @@ li {
   color: var(--section-header-color);
 }
 
+.project__link {
+  word-wrap: break-word;
+}
+
 @media screen and (min-width: 56.25em) {
   .projects {
     display: grid;
