@@ -213,11 +213,12 @@ li {
 }
 
 .site-title__name {
-  font-family: "Rock Salt";
-  font-display: swap;
-  font-weight: normal;
-  color: var(--section-accent-dark);
-  margin-bottom: 0rem;
+  background-image: url("./assets/header-name.svg");
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 330px;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
 }
 
 .site-title__job {
