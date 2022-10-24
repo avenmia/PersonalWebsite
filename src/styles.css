@@ -341,6 +341,11 @@ li {
     display: none;
   }
 
+  .menu-btn {
+    display: none;
+    cursor: default;
+  }
+
   .navbar {
     display: block;
     align-self: center;
