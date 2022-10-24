@@ -11,7 +11,7 @@
     <link
       rel="stylesheet"
       as="font"
-      href="https://fonts.googleapis.com/css?family=Lexend|Rock+Salt&display=swap"
+      href="https://fonts.googleapis.com/css?family=Lexend&display=swap"
     />
     
     <script
@@ -20,8 +20,8 @@
     ></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Michael Avendano's Website</title>
-    <script type="module" crossorigin src="assets/index.53eccf3f.js"></script>
-    <link rel="stylesheet" href="assets/index.b0f70c39.css">
+    <script type="module" crossorigin src="assets/index.45149864.js"></script>
+    <link rel="stylesheet" href="assets/index.05cdd140.css">
   </head>
   <body>
     <div id="app">
@@ -80,6 +80,8 @@
             href="https://github.com/avenmia/"
             aria-label="GitHub link"
             title="GitHub Link"
+            rel="noopener noreferrer"
+            target="_blank"
             ><i class="fa-brands fa-github-square fa-2x navbar__link__icon"></i
           ></a>
           <a
@@ -87,6 +89,8 @@
             href="https://www.linkedin.com/in/michael-avendano/"
             aria-label="LinkedIn link"
             title="LinkedIn Link"
+            rel="noopener noreferrer"
+            target="_blank"
             ><i class="fa-brands fa-linkedin fa-2x navbar__link__icon"></i
           ></a>
           <a
@@ -94,11 +98,13 @@
             href="https://stackoverflow.com/users/7331107/avenmia"
             aria-label="Stack Overflow link"
             title="Stack Overflow Link"
+            rel="noopener noreferrer"
+            target="_blank"
             ><i class="fa-brands fa-stack-overflow fa-2x navbar__link__icon"></i
           ></a>
         </nav>
         <div class="site-title">
-          <h1 class="site-title__name">Michael Avendano</h1>
+          <div class="site-title__name"></div>
           <h2 class="site-title__job">SOFTWARE ENGINEER</h2>
         </div>
         <nav class="page-nav">
@@ -153,7 +159,7 @@
                     />
                     <img
                       src="assets/mike.cf9323d9.png"
-                      alt="IfItDoesntMatchAnyMedia"
+                      alt="Image of Michael Avendano"
                     />
                   </picture>
                 </div>
@@ -269,7 +275,7 @@
                     </section>
                   </section>
                   <div class="resume">
-                    <a href="./src/assets/resume.pdf" download>
+                    <a href="./resume.pdf" download>
                       <button class="resume__btn">VIEW RESUME</button>
                     </a>
                   </div>
@@ -290,28 +296,28 @@
                 <div class="page__header__line"></div>
               </div>
               <div class="page__item page__item--projects project1 proj__img">
+                <picture>
+                  <source
+                    media="(min-width: 900px)"
+                    srcset="assets/code_500x500.ca0db0f1.png "
+                  />
+                  <img
+                    src="assets/code.e7e949b2.png"
+                    height="350px"
+                    width="350px"
+                    alt="Picture of HTML code"
+                    class="image__project"
+                  />
+                </picture>
+              </div>
+              <div class="page__item page__item--projects project1 proj__desc">
+                <h3 class="project__title">Personal Website</h3>
                 <a
                   href="https://github.com/avenmia/PersonalWebsite"
                   rel="noopener noreferrer"
                   target="_blank"
+                  >https://github.com/avenmia/PersonalWebsite</a
                 >
-                  <picture>
-                    <source
-                      media="(min-width: 900px)"
-                      srcset="assets/code_500x500.ca0db0f1.png "
-                    />
-                    <img
-                      src="assets/code.e7e949b2.png"
-                      height="350px"
-                      width="350px"
-                      alt="Website code picture"
-                      class="image__project"
-                    />
-                  </picture>
-                </a>
-              </div>
-              <div class="page__item page__item--projects project1 proj__desc">
-                <h3 class="project__title">Personal Website</h3>
                 <p class="project__info">
                   This is a website that showcases my projects as well as gives
                   an introduction to myself. The goal was to create a website
@@ -327,22 +333,22 @@
                 </ul>
               </div>
               <div class="page__item page__item--projects project2 proj__img">
+                <img
+                  class="image__project"
+                  src="assets/quantum_lamps_500x500.3cfdde18.png"
+                  height="350px"
+                  width="350px"
+                  alt="Picture of toy whale that is lit up."
+                />
+              </div>
+              <div class="page__item page__item--projects project2 proj__desc">
+                <h3 class="project__title">Quantum Lamps</h3>
                 <a
                   href="https://github.com/avenmia/quantum-lamps"
                   rel="noopener noreferrer"
                   target="_blank"
+                  >https://github.com/avenmia/quantum-lamps</a
                 >
-                  <img
-                    class="image__project"
-                    src="assets/quantum_lamps_500x500.3cfdde18.png"
-                    height="350px"
-                    width="350px"
-                    alt="Quantum lamps picture"
-                  />
-                </a>
-              </div>
-              <div class="page__item page__item--projects project2 proj__desc">
-                <h3 class="project__title">Quantum Lamps</h3>
                 <p class="project__info">
                   Quantum Lamps was a small IoT project that allows users to
                   keep lights in sync by moving their respective light. The
