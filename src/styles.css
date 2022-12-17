@@ -487,6 +487,20 @@ li {
 
 .project__link {
   word-wrap: break-word;
+  text-decoration: none;
+}
+
+.project__link:link {
+  text-decoration: none;
+}
+
+.project__link:visited {
+  text-decoration: none;
+  color: var(--section-header-color);
+}
+
+.project__link:hover {
+  text-decoration: underline;
 }
 
 @media screen and (min-width: 56.25em) {
