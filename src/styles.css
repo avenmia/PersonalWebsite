@@ -165,7 +165,7 @@ li {
 
   .page__header__title::after {
     border-bottom: 7px solid var(--section-accent-dark);
-    width: 50vw;
+    width: 49vw;
     content: " ";
     display: block;
     position: absolute;
