@@ -1,68 +1,11 @@
 import React from "react";
 import "../styles.css";
+import Menu from "./Menu";
 
 const Header = () => {
   return (
     <header>
-      <div className="mobile-menu-wrapper">
-        <button aria-label="menu button" className="menu-btn">
-          <div id="close-icon" className="close-icon" data-state="hide">
-            <i className="fa-solid fa-xmark"></i>
-          </div>
-          <div className="bar" data-state="visible"></div>
-          <div className="bar" data-state="visible"></div>
-          <div className="bar" data-state="visible"></div>
-        </button>
-        <nav className="mobile-navbar" data-state="close">
-          <ul className="list--mobile-nav">
-            <li>
-              <a className="link page-nav-link" href="#about">
-                About
-              </a>
-            </li>
-            <li>
-              <a className="link page-nav-link" href="#experience">
-                Experience
-              </a>
-            </li>
-            <li>
-              <a className="link page-nav-link" href="#projects">
-                Projects
-              </a>
-            </li>
-            <li>
-              <a
-                className="link link__external social-link__github"
-                href="https://github.com/avenmia/"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a
-                className="link link__external social-link__linkedin"
-                href="https://www.linkedin.com/in/michael-avendano/"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                LinkedIn
-              </a>
-            </li>
-            <li>
-              <a
-                className="link link__external social-link__stackoverflow"
-                href="https://stackoverflow.com/users/7331107/avenmia"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                Stack Overflow
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+      <Menu />
       <nav className="navbar">
         <a
           className="navbar__link"
