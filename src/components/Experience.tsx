@@ -31,19 +31,30 @@ const Experience = () => {
                 </ul>
               </section>
               <section className="work__experience">
-                <h3 className="work__experience__header">Volunteer</h3>
-                <h4 className="work__experience__subheader">Code for Hawaii</h4>
+                <h3 className="work__experience__header">Organizer</h3>
+                <h4 className="work__experience__subheader">Code With Aloha</h4>
                 <h5 className="work__experience__date">01-2022 to Present</h5>
                 <ul>
                   <li>
-                    Triaging issues and contributing code to the Code for Hawaii
-                    website
+                    Leading volunteer teams of 5–10 developers within Code With
+                    Aloha (a 919-member group on meetup with 20–30 actively
+                    involved) to build and deploy impactful web solutions
+                    (Next.js, Prisma, React, Tailwind, TypeScript) driven by
+                    community needs.
                   </li>
                   <li>
-                    Onboarding new members by providing tutorials and
-                    familiarizing them with the code base
+                    Collaborating closely with government and civic stakeholders
+                    to ensure each digital platform aligns with initiatives for
+                    equity, open source, and positive community change—most
+                    notably, the HIERR survey project, which reached over 200
+                    Hawaiʻi community members.
                   </li>
-                  <li>Helping facilitate meetings</li>
+                  <li>
+                    Overseeing developer contributions for timely, high-impact
+                    deliverables; contributed to the Hawaiʻi Zoning Atlas,
+                    influencing affordable housing legislation and providing
+                    data to the National Zoning Atlas.
+                  </li>
                 </ul>
               </section>
               <section className="work__experience">
