@@ -89,7 +89,7 @@ const Projects = () => {
               <li>Python</li>
               <li>Jupyter Notebooks</li>
               <li>JavaScript</li>
-              <li>leaflet</li>
+              <li>Leaflet</li>
             </ul>
           </div>
           <div className="page__item page__item--projects project3 proj__img">
