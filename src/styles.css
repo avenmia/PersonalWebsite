@@ -213,7 +213,7 @@ li {
 }
 
 .site-title__name {
-  background-image: url("./assets/header-name.svg");
+  background-image: url("/assets/header-name.svg");
   background-repeat: no-repeat;
   height: 50px;
   width: 330px;
@@ -394,7 +394,7 @@ li {
 /* ------------------------- */
 
 .background-circle {
-  background-image: url("./assets/background-circle.svg");
+  background-image: url("/assets/background-circle.svg");
   background-repeat: no-repeat;
   height: 100%;
   position: relative;
