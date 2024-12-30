@@ -517,6 +517,14 @@ li {
     grid-row-start: 3;
   }
 
+  .project3 {
+    grid-row-start: 4;
+  }
+
+  .project4 {
+    grid-row-start: 5;
+  }
+
   .image__project {
     max-height: 350px;
     max-width: 350px;
