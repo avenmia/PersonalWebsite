@@ -401,23 +401,31 @@ li {
   top: 35px;
 }
 
-.skills__area {
+.skills__area,
+.credentials__area {
   background-color: var(--skills-area-color);
   border-radius: 18px;
   padding: 1rem;
 }
 
-.skills__values--1col {
+.credentials__area {
+  margin-top: 1rem;
+}
+
+.skills__values--1col,
+.credentials__values {
   column-count: 1;
 }
 
-.skills__header {
+.skills__header,
+.credentials__header {
   margin: 0.5rem;
   color: var(--section-header-color);
   font-size: 1.5rem;
 }
 
-.skills__item__header {
+.skills__item__header,
+.credentials__item__header {
   margin-left: 1rem;
 }
 
@@ -436,7 +444,8 @@ li {
     column-count: 2;
   }
 
-  .skills__area {
+  .skills__area,
+  .credentials__area {
     padding: 1.25rem;
   }
 }

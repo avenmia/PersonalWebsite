@@ -3,6 +3,7 @@ import {
   professional,
   volunteer,
 } from "../content/experience";
+import { awards, certifications, education } from "../content/credentials";
 import { skillGroups } from "../content/skills";
 import type { Position } from "../content/types";
 
@@ -52,6 +53,44 @@ const Experience = () => {
                     </ul>
                   </section>
                 ))}
+              </section>
+              <section className="credentials__area">
+                <h3 className="credentials__header">CREDENTIALS</h3>
+                {education.map((school) => (
+                  <section key={school.institution}>
+                    <h4 className="credentials__item__header">
+                      {school.institution}
+                    </h4>
+                    <ul className="credentials__values">
+                      {school.degrees.map((degree) => (
+                        <li key={`${degree.credential} ${degree.field}`}>
+                          {degree.credential}, {degree.field}, {degree.awarded}
+                        </li>
+                      ))}
+                    </ul>
+                  </section>
+                ))}
+                <section>
+                  <h4 className="credentials__item__header">Awards</h4>
+                  <ul className="credentials__values">
+                    {awards.map((award) => (
+                      <li key={`${award.event} ${award.year}`}>
+                        {award.placement}, {award.event} {award.year}
+                        {award.project ? ` (${award.project})` : ""}
+                      </li>
+                    ))}
+                  </ul>
+                </section>
+                <section>
+                  <h4 className="credentials__item__header">Certifications</h4>
+                  <ul className="credentials__values">
+                    {certifications.map((certification) => (
+                      <li key={certification.name}>
+                        {certification.issuer} {certification.name}
+                      </li>
+                    ))}
+                  </ul>
+                </section>
               </section>
               <div className="resume">
                 <a href="./resume.pdf" download>
