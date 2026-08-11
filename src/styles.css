@@ -465,8 +465,33 @@ li {
   width: 100%;
 }
 
+.resume__disclosure {
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.resume__summary {
+  color: var(--section-header-color);
+  cursor: pointer;
+}
+
+/* Browsers render PDFs in an iframe however they like, and some mobile
+   browsers show nothing at all -- the download button above stays the
+   reliable route. */
+.resume__preview {
+  width: 100%;
+  height: 60vh;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 18px;
+}
+
 @media screen and (min-width: 56.25em) {
   .resume__btn {
+    width: 392px;
+  }
+
+  .resume__disclosure {
     width: 392px;
   }
 }

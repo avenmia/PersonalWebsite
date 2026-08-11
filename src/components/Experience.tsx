@@ -96,6 +96,16 @@ const Experience = () => {
                 <a href="./resume.pdf" download>
                   <button className="resume__btn">VIEW RESUME</button>
                 </a>
+                <details className="resume__disclosure">
+                  <summary className="resume__summary">
+                    Preview resume on this page
+                  </summary>
+                  <iframe
+                    className="resume__preview"
+                    src="./resume.pdf"
+                    title="Michael Avendano's resume"
+                  ></iframe>
+                </details>
               </div>
             </div>
           </div>
