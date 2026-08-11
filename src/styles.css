@@ -476,6 +476,7 @@ li {
 }
 
 .project__link {
+  display: block;
   word-wrap: break-word;
   text-decoration: none;
 }
@@ -493,15 +494,19 @@ li {
   text-decoration: underline;
 }
 
-@media screen and (min-width: 56.25em) {
-  .projects {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-  }
+.project {
+  width: 100%;
+}
 
-  .project1 {
-    grid-row-start: 2;
+@media screen and (min-width: 56.25em) {
+  /* Each project is one full-width row that lays out its own image and
+     description columns. Rows are placed automatically, so the number of
+     projects is not encoded here -- adding one is a content change only. */
+  .project {
+    display: grid;
+    grid-column: 1 / -1;
+    grid-template-columns: 1fr 1fr;
+    gap: 3em;
   }
 
   .proj__img {
@@ -513,16 +518,9 @@ li {
     grid-column-start: 2;
   }
 
-  .project2 {
-    grid-row-start: 3;
-  }
-
-  .project3 {
-    grid-row-start: 4;
-  }
-
-  .project4 {
-    grid-row-start: 5;
+  /* A project with no image gives its description the full row. */
+  .proj__desc--full {
+    grid-column: 1 / -1;
   }
 
   .image__project {
