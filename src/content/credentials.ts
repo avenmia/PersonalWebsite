@@ -6,6 +6,7 @@ export const education: Education[] = [
     degrees: [
       { credential: "B.Sc.", field: "Computer Science", awarded: "Dec 2018" },
       { credential: "B.Sc.", field: "Physics", awarded: "May 2015" },
+      { credential: "A.A.S.", field: "Physics", awarded: "May 2012" },
     ],
   },
 ];

@@ -17,10 +17,10 @@ export const skillGroups: SkillGroup[] = [
       "Entity Framework",
       "Prisma",
       "Tailwind",
-      "CosmosDb",
+      "Cosmos DB",
       "MSSQL Server",
       "Azure",
-      "git",
+      "Git",
     ],
   },
   {

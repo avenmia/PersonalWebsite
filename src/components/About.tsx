@@ -23,7 +23,7 @@ const About = () => {
                 ways to approach problems.
               </p>
               <p>
-                Finding new solutions keeps me motivated while the ability to
+                Finding new solutions keeps me motivated, while the ability to
                 help others through code inspires me to keep learning.
               </p>
             </div>

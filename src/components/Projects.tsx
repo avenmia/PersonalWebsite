@@ -1,30 +1,45 @@
 import { projects } from "../content/projects";
 import type { Project, ProjectImage } from "../content/types";
 
-/** "https://github.com/avenmia/quantum-lamps" -> "github.com/avenmia/quantum-lamps" */
-const linkText = (url: string) => url.replace(/^https?:\/\//, "");
+const hostOf = (url: string) => new URL(url).hostname.replace(/^www\./, "");
 
-const ProjectArtwork = ({ image }: { image: ProjectImage }) =>
-  image.wideSrc ? (
-    <picture>
-      <source media="(min-width: 900px)" srcSet={image.wideSrc} />
-      <img
-        src={image.src}
-        height="350"
-        width="350"
-        alt={image.alt}
-        className="image__project"
-      />
-    </picture>
-  ) : (
+/* Source repositories are shown by what they are rather than by their URL.
+   Every repository is on GitHub today, so name it; anything else falls back to
+   its host rather than claiming the wrong one. */
+const repositoryLabel = (url: string) => {
+  const host = hostOf(url);
+  return host === "github.com"
+    ? "View source on GitHub"
+    : `View source on ${host}`;
+};
+
+const repositoryIcon = (url: string) =>
+  hostOf(url) === "github.com"
+    ? "fa-brands fa-github"
+    : "fa-solid fa-code-branch";
+
+/* The intrinsic width/height come from the file itself so the browser reserves
+   the right box before the image loads. CSS caps the rendered size. */
+const ProjectArtwork = ({ image }: { image: ProjectImage }) => {
+  const img = (
     <img
       src={image.src}
-      height="350"
-      width="350"
+      width={image.width}
+      height={image.height}
       alt={image.alt}
-      className="image__project"
+      className={`image__project image__project--${image.kind}`}
     />
   );
+
+  return image.wideSrc ? (
+    <picture>
+      <source media="(min-width: 900px)" srcSet={image.wideSrc} />
+      {img}
+    </picture>
+  ) : (
+    img
+  );
+};
 
 const ProjectEntry = ({ project }: { project: Project }) => (
   <div className="project">
@@ -48,7 +63,13 @@ const ProjectEntry = ({ project }: { project: Project }) => (
           rel="noopener noreferrer"
           target="_blank"
         >
-          {linkText(project.sourceRepository)}
+          <i
+            className={`${repositoryIcon(
+              project.sourceRepository
+            )} project__link__icon`}
+            aria-hidden="true"
+          ></i>
+          {repositoryLabel(project.sourceRepository)}
         </a>
       ) : null}
       {project.featuredLink ? (
@@ -58,6 +79,10 @@ const ProjectEntry = ({ project }: { project: Project }) => (
           rel="noopener noreferrer"
           target="_blank"
         >
+          <i
+            className="fa-solid fa-arrow-up-right-from-square project__link__icon"
+            aria-hidden="true"
+          ></i>
           {project.featuredLink.label}
         </a>
       ) : null}

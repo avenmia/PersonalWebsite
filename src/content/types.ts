@@ -9,7 +9,9 @@ export type OrganizationName =
   | "Electronic Visualization Laboratory at University of Illinois at Chicago";
 
 export type ProjectId =
+  | "tmpt"
   | "taking-stock-online"
+  | "fkt"
   | "hierr"
   | "hawaii-zoning-atlas"
   | "personal-website"
@@ -25,6 +27,8 @@ export interface FeaturedLink {
   label: string;
 }
 
+export type ProjectImageKind = "screenshot" | "logo";
+
 /** Optional — a Project without artwork renders description-only. */
 export interface ProjectImage {
   /** Shown below the 900px breakpoint. */
@@ -32,6 +36,9 @@ export interface ProjectImage {
   /** Shown at or above 900px. Omit to use `src` at every width. */
   wideSrc?: string;
   alt: string;
+  kind: ProjectImageKind;
+  width: number;
+  height: number;
 }
 
 export interface Project {
