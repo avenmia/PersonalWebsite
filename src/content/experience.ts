@@ -40,7 +40,7 @@ export const volunteer: Position[] = [
     end: null,
     highlights: [
       "Leading a volunteer team of 15–20 members to build and deploy impactful web solutions (Next.js, Prisma, React, Tailwind, TypeScript) driven by community needs.",
-      "Collaborating closely with government and civic stakeholders to ensure each digital platform aligns with initiatives for equity, open source, and positive community change—most.",
+      "Collaborating closely with government and civic stakeholders to ensure each digital platform aligns with initiatives for equity, open source, and positive community change.",
       "Overseeing developer contributions for timely, high-impact deliverables; contributed to the Hawaiʻi Zoning Atlas, influencing affordable housing legislation and providing data to the National Zoning Atlas.",
     ],
     projects: ["hierr", "hawaii-zoning-atlas"],
