@@ -15,7 +15,7 @@ const About = () => {
                 Hi! I'm Michael Avendano. I'm based in Honolulu, Hawai&#x02bb;i,
                 currently working at Pangaea Information Technologies as a
                 full-stack developer. In my spare time, I also volunteer at Code
-                for Hawaii.
+                With Aloha.
               </p>
               <p>
                 My hobbies often revolve around puzzle-solving. Whether it's
@@ -23,7 +23,7 @@ const About = () => {
                 ways to approach problems.
               </p>
               <p>
-                Finding new solutions keeps me motivated while the ability to
+                Finding new solutions keeps me motivated, while the ability to
                 help others through code inspires me to keep learning.
               </p>
             </div>

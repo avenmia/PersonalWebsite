@@ -401,23 +401,31 @@ li {
   top: 35px;
 }
 
-.skills__area {
+.skills__area,
+.credentials__area {
   background-color: var(--skills-area-color);
   border-radius: 18px;
   padding: 1rem;
 }
 
-.skills__values--1col {
+.credentials__area {
+  margin-top: 1rem;
+}
+
+.skills__values--1col,
+.credentials__values {
   column-count: 1;
 }
 
-.skills__header {
+.skills__header,
+.credentials__header {
   margin: 0.5rem;
   color: var(--section-header-color);
   font-size: 1.5rem;
 }
 
-.skills__item__header {
+.skills__item__header,
+.credentials__item__header {
   margin-left: 1rem;
 }
 
@@ -436,7 +444,8 @@ li {
     column-count: 2;
   }
 
-  .skills__area {
+  .skills__area,
+  .credentials__area {
     padding: 1.25rem;
   }
 }
@@ -456,8 +465,33 @@ li {
   width: 100%;
 }
 
+.resume__disclosure {
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.resume__summary {
+  color: var(--section-header-color);
+  cursor: pointer;
+}
+
+/* Browsers render PDFs in an iframe however they like, and some mobile
+   browsers show nothing at all -- the download button above stays the
+   reliable route. */
+.resume__preview {
+  width: 100%;
+  height: 60vh;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 18px;
+}
+
 @media screen and (min-width: 56.25em) {
   .resume__btn {
+    width: 392px;
+  }
+
+  .resume__disclosure {
     width: 392px;
   }
 }
@@ -471,37 +505,53 @@ li {
   max-width: 400px;
 }
 
+.image__project--logo {
+  width: auto;
+  height: auto;
+  max-height: 110px;
+  border-radius: 0;
+}
+
 .project__title {
   color: var(--section-header-color);
 }
 
-.project__link {
-  word-wrap: break-word;
-  text-decoration: none;
-}
-
-.project__link:link {
-  text-decoration: none;
-}
-
+.project__link,
+.project__link:link,
 .project__link:visited {
+  display: block;
+  word-wrap: break-word;
   text-decoration: none;
   color: var(--section-header-color);
 }
 
-.project__link:hover {
+.project__link__icon {
+  margin-right: 0.5rem;
+}
+
+.project__link + .project__link {
+  margin-top: 0.5rem;
+}
+
+.project__link:hover,
+.project__link:focus {
+  color: var(--link-hover-color);
   text-decoration: underline;
 }
 
-@media screen and (min-width: 56.25em) {
-  .projects {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-  }
+.project {
+  width: 100%;
+}
 
-  .project1 {
-    grid-row-start: 2;
+@media screen and (min-width: 56.25em) {
+  /* Each project is one full-width row that lays out its own image and
+     description columns. Rows are placed automatically, so the number of
+     projects is not encoded here -- adding one is a content change only. */
+  .project {
+    display: grid;
+    grid-column: 1 / -1;
+    grid-template-columns: 1fr 1fr;
+    gap: 3em;
   }
 
   .proj__img {
@@ -513,20 +563,17 @@ li {
     grid-column-start: 2;
   }
 
-  .project2 {
-    grid-row-start: 3;
-  }
-
-  .project3 {
-    grid-row-start: 4;
-  }
-
-  .project4 {
-    grid-row-start: 5;
+  /* A project with no image gives its description the full row. */
+  .proj__desc--full {
+    grid-column: 1 / -1;
   }
 
   .image__project {
     max-height: 350px;
     max-width: 350px;
+  }
+
+  .image__project--logo {
+    max-height: 110px;
   }
 }

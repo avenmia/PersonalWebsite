@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "../styles.css";
+import { pageSections, socialLinks } from "../content/navigation";
 
 const Menu = () => {
   const [open, setOpen] = useState(false);
@@ -25,51 +26,25 @@ const Menu = () => {
       {open ? (
         <nav className="mobile-navbar">
           <ul className="list--mobile-nav">
-            <li>
-              <a className="link page-nav-link" href="#about">
-                About
-              </a>
-            </li>
-            <li>
-              <a className="link page-nav-link" href="#experience">
-                Experience
-              </a>
-            </li>
-            <li>
-              <a className="link page-nav-link" href="#projects">
-                Projects
-              </a>
-            </li>
-            <li>
-              <a
-                className="link link__external social-link__github"
-                href="https://github.com/avenmia/"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a
-                className="link link__external social-link__linkedin"
-                href="https://www.linkedin.com/in/michael-avendano/"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                LinkedIn
-              </a>
-            </li>
-            <li>
-              <a
-                className="link link__external social-link__stackoverflow"
-                href="https://stackoverflow.com/users/7331107/avenmia"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                Stack Overflow
-              </a>
-            </li>
+            {pageSections.map((section) => (
+              <li key={section.id}>
+                <a className="link page-nav-link" href={`#${section.id}`}>
+                  {section.label}
+                </a>
+              </li>
+            ))}
+            {socialLinks.map((social) => (
+              <li key={social.label}>
+                <a
+                  className={`link link__external ${social.modifierClass}`}
+                  href={social.url}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  {social.label}
+                </a>
+              </li>
+            ))}
           </ul>
         </nav>
       ) : null}
